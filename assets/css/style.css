@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Forum&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family:'Forum', cursive;
+}
+
+body h1 {
+  font-family:'Amaranth', sans-serif;
+}
+
+/******************Navigation*********************/
+
+/******************Landing Page*********************/
+.backgroundimg {
+    background: url('http://placeimg.com/640/360/any') no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+/******************Section 1********************/
+#home-text {
+  margin: auto;
+}
+
+#home {
+  background: url('/assets/img/map.jpg') no-repeat center center fixed;
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+}
+
+.landing-text {
+  display:table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.landing-text h1 {
+  font-size: 5em;
+}
+
+.landing-text h3 {
+  padding: 30px;
+}
+
+
+
