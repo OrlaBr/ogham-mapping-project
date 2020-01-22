@@ -17,17 +17,28 @@ function initMap(){
         var markers = [
           {
           coords:{lat:52.12675, lng: -10.30457},
-          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-          content:'<h1>burnham</h1>'
+          iconImage:'assets/img/map-icon.png',
+          content:'<h3><a href="#" >Burnham</a></h3>',
+          draggable: false,
+          optimized: false
           },
           {
           coords:{lat:52.2174, lng: -10.3402},
-          content:'<h1>Feohanagh</h1>'
+          content:'<h3>Feohanagh</h3>',
+          draggable: false
           },
           {coords:{lat:52.1301, lng: -10.4503},
-          content:'<h1>Dunquin</h1>'
+          content:'<h3>Dunquin</h3>',
+          draggable: false
           }
         ];
+        //Animation of markers
+        var myoverlay = new google.maps.OverlayView();
+    myoverlay.draw = function () {
+        this.getPanes().markerLayer.id='markerLayer';
+    };
+myoverlay.setMap(map);
+
           // Loop through markers
           for(var i =0;i < markers.length;i++){
              // Add Marker
