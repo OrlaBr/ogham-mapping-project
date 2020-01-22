@@ -19,26 +19,29 @@ function initMap(){
           coords:{lat:52.12675, lng: -10.30457},
           iconImage:'assets/img/map-icon.png',
           content:'<h3><a href="#" >Burnham</a></h3>',
-          draggable: false,
-          optimized: false
+          draggable: false
           },
           {
-          coords:{lat:52.2174, lng: -10.3402},
-          content:'<h3>Feohanagh</h3>',
+          coords:{lat:52.15705, lng: -10.2517},
+          content:'<h3>Ballinasig</h3>',
           draggable: false
           },
-          {coords:{lat:52.1301, lng: -10.4503},
-          content:'<h3>Dunquin</h3>',
+          {
+          coords:{lat:52.14890, lng: -10.4471},
+          content:'<h3>Baile Uí Bhaoithín</h3>',
           draggable: false
-          }
-        ];
-        //Animation of markers
-        var myoverlay = new google.maps.OverlayView();
-    myoverlay.draw = function () {
-        this.getPanes().markerLayer.id='markerLayer';
-    };
-myoverlay.setMap(map);
-
+          },
+          {
+          coords:{lat:52.2103, lng: -9.9496},
+          content:'<h3>Gleann na nGealt</h3>',
+          draggable: false
+          },
+          {
+          coords:{lat:52.1674, lng: -10.3875},
+          content:'<h3>An Riasc (Reask)</h3>',
+          draggable: false
+          },
+        ]
           // Loop through markers
           for(var i =0;i < markers.length;i++){
              // Add Marker
