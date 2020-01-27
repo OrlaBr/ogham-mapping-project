@@ -59,9 +59,7 @@ body h1 {
 }
 
 /******************Ogham Map Info*********************/
-.mapPage {
-  height: 1500px;
-}
+
 
 .clearfix {
     clear: both;
@@ -72,10 +70,21 @@ body h1 {
 }
 
 .text-center h5 {
-    color: brown;
+    color: #410912;
 }
 
 .ogham-img {
     width : 100px;
 }
 /******************Ogham Map*********************/
+.col-sm-9 .mapBox {
+    margin: 0px;
+    padding: 0px;
+}
+
+#map {
+  height: 600px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+} 
