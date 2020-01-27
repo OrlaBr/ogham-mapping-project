@@ -47,26 +47,37 @@
 	</section>
 
 <!------------------Ogham Map------------------------->
-    <section class="container-fluid" id="mapPage">
-        <div class="row">
-            <div class="col-md-6 section-column">
-              <div class="container">
-                <div class="row">
-                  <div id="map">
-                  </div>
-                </div> 
-                </div>    
-            </div>
-            <!-------------Info ------------------------>
-            <div class="col-md-6 map-info section-column" id="mapInfo">
-                <div class="row">
-                    <div><h1>Ogham Stones Information</h1>
-                    </div>
-                    <p>Info about the project</p>
-                </div>
-            </div>
+ <section>
+<div class="container-fluid">
+  <div class="row mapPage">
+    <div class="col-sm-3 sidenav mapInfo">
+      <div class="oghamInfo">
+      <h4>Ogham in 3d</h4>
+      <h5>How to use this map<p>
+      </div>
+        <div>
+          <ul class="nav nav-tabs">
+              <li><a data-toggle="tab" href="#using">How to use</a></li>
+              <li><a data-toggle="tab" href="#usingInfo">Info</a></li>
+          </ul>
+        <div class="tab-content">
+          <div id="using" class="tab-pane fade in active">
+            <h3>How to use this map</h3>
+            <p>Some content.</p>
+          </div>
+          <div id="usingInfo" class="tab-pane fade">
+            <h3>More Info</h3>
+            <p>Some content in menu 1.</p>
+          </div>
+
         </div>
-    </section>
+        </div>   
+    </div>
+    <div class="col-sm-9 mapBox">
+      <div id="map"></div>
+    </div>
+  </div>
+</section>
 <!---------------info accordian ------------------------>
 
 <!---------------javascript,jquery, APIs ------------------------>
