@@ -11,7 +11,7 @@ function initMap(){
           panControlOptions: {
             position: google.maps.ControlPosition.LEFT_BOTTOM
           }
-        }
+        };
         var map = new google.maps.Map(document.getElementById('map'), options);
       //Array of Markers
         var markers = [
@@ -28,7 +28,7 @@ function initMap(){
           },
           {
           coords:{lat:52.14890, lng: -10.4471},
-          content:'<h3>Baile Uí Bhaoithín</h3>',
+          content:'<h3>Baile Ristín (Ballyrishteen)</h3>',
           draggable: false
           },
           {
@@ -41,7 +41,7 @@ function initMap(){
           content:'<h3>An Riasc (Reask)</h3>',
           draggable: false
           },
-        ]
+        ];
           // Loop through markers
           for(var i =0;i < markers.length;i++){
              // Add Marker
@@ -70,5 +70,5 @@ function initMap(){
       });
         }
       }
-
-    };
+    }
+    

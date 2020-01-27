@@ -8,23 +8,32 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Amaranth|Forum&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/style.css">
-      <script type ="text/javascript" src="assets/js/script.js"></script>
       <title>Ogham in 3d</title>
   </head>
 <body>
 <!---------------Navbar ------------------------>
-<nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<section id="navbar">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
+  <a class="navbar-brand" href="#">Ogham in 3d</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Ogham Map</a>
-      <a class="nav-item nav-link" href="#">Name Generator</a>
-      <a class="nav-item nav-link" href="#">About</a>
-    </div>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#map">Map</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#info">Info</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+    </ul>
   </div>
 </nav>
 <!------------------Landing page------------------------->
@@ -32,10 +41,9 @@
 		<div class="landing-text">
           <h1>Ogham in 3d</h1>
           <h3>Mapping the Ogham Stones of the Dingle Peninsula</h3>
+          <h5>A community digital archaeology project created by volunteers on the Dingle Peninsula, with the help of <a href="https://www.dias.ie/" target = "blank">Dublin Institute for Advanced Studies</a> and <a href="http://www.discoveryprogramme.ie/" target = "blank">The Discovery Program</a></h5>
           <a class="btn btn-danger" href="#">Find out more!</a>
         </div>
-    </div>
-		</div>
 	</section>
 
 <!------------------Ogham Map------------------------->
@@ -50,22 +58,24 @@
                 </div>    
             </div>
             <!-------------Info ------------------------>
-            <div class="col-md-6 map-info section-column text-center">
+            <div class="col-md-6 map-info section-column" id="mapInfo">
                 <div class="row">
-                        <h1 class="ogham-stones">Ogham Stones of the Dingle Peninsula</h1>
-                 </div>
-              <div class="card">
-                 <div class="card-btn">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               </div>
-              </div>
+                    <div><h1>Ogham Stones Information</h1>
+                    </div>
+                    <p>Info about the project</p>
+                </div>
             </div>
         </div>
+    </section>
+<!---------------info accordian ------------------------>
+
 <!---------------javascript,jquery, APIs ------------------------>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdD4fpDYpsgx1Ww6NiVhb_zEgpb1kGn5k&callback=initMap"></script>
+    <script src="assets/js/script.js"></script>
+
 </body>
+
 </html>
