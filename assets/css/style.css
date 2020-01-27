@@ -36,9 +36,11 @@ body h1 {
 }
 
 .landing-text {
-  display:table-cell;
+    display: table-cell;
   text-align: center;
   vertical-align: middle;
+
+
 }
 
 .landing-text h1 {
@@ -46,82 +48,34 @@ body h1 {
 }
 
 .landing-text h3 {
-  margin: 30px;
+    padding: 30px;
+}
+.landing-text h5 {
+    padding: 30px;
 }
 
-#home .landing-text p {
-    margin-bottom: 2em;
+.landing-text h5 a {
+    color:brown;
 }
 
-#home h5 {
-    padding-bottom: 20px;
+/******************Ogham Map Info*********************/
+.mapPage {
+  height: 1500px;
 }
 
-.landing-text .btn .btn-danger {
-    margin: 50px;
+.clearfix {
+    clear: both;
 }
 
-#home a.btn.btn-danger {
+.text-center h2 {
     padding-top: 20px;
 }
 
-/******************Landing Page Media Query*********************/
-
-@media (max-width: 768px) {
-  .landing-text h1 {
-    font-size: 350%;
-  }
+.text-center h5 {
+    color: brown;
 }
 
+.ogham-img {
+    width : 100px;
+}
 /******************Ogham Map*********************/
-.row.mapPage {
-  height: 1500px;
-}
-    
-.sidenav {
-      background-color: #f1f1f1;
-      height: 100%;
-}
-    
-.mapBox {
-  background:rgb(241, 243, 245);
-  margin: 0px;
-  padding: 0px;
-}
-.sidenav h4 {
-  padding-top: 20px;
-}
-
-#map {
-  height: 600px;
-  width: 1100px;
-  margin: auto;
-
-}   
-
-/*********Using the map*************/
-.nav-tabs li a {
-  padding-right: 20px;
-  color: #d9534f;
-  text-decoration: none;
-}
-
-.nav-tabs li a:hover {
-  color: #973A37;
-}
-
-.tab-content {
-  padding-top: 20px;
-}
-
-/**********************/
-/**********************/
-/**********************/
-    /* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height: auto;} 
-    }
