@@ -31,9 +31,10 @@ body h1 {
   position: relative;
   width: 100%;
   background-size: cover;
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.8);
   background-blend-mode: lighten;
 }
+
 
 .landing-text {
     display: table-cell;
@@ -60,9 +61,13 @@ body h1 {
 
 /******************Ogham Map Info*********************/
 
-
 .clearfix {
     clear: both;
+}
+
+.mapInfo {
+    background-color: #f9f9f9;
+    border: 1px solid #f8f9fa;
 }
 
 .text-center h2 {
@@ -88,3 +93,15 @@ body h1 {
   margin: 0px;
   padding: 0px;
 } 
+
+/******************3D*********************/
+
+#infoPage p {
+    padding: 20px;
+}
+
+/******************footer*********************/
+
+#footer p {
+    padding: 0px 20px;
+}

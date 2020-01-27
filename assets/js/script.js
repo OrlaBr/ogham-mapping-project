@@ -18,7 +18,7 @@ function initMap(){
           {
           coords:{lat:52.12675, lng: -10.30457},
           iconImage:'assets/img/map-icon.png',
-          content:'<h3><a href="#">Ballinrannig</a></h3>',
+          content:'<h5><a href="#">Ballinrannig</a></h5>',
           draggable: false
           },
           {

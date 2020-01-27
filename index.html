@@ -52,9 +52,8 @@
         <div class="container-fluid clear-fix no-gutters">
                 <div class="row mapPage">
                         <div class="col-sm-3 mapInfo text-center">
-                            <h2>Ogham Info</h2>
+                            <h2>How to use this map</h2>
                             <div>
-                                <h5>How to use this map</h5>
                                 <p>Click on the map markers to highlight the individual stones. Then click on the link for more information and to view the stone in 3d<p>
                                 <p>Map markers<p>
                                 <img class="ogham-img" src="/assets/img/ogham-text-2.png" alt="ogham text">
@@ -70,14 +69,29 @@
 </section>
 
 <!---------------info accordian ------------------------>
+<section id="infoPage">
+    <div class="text-center">
+        <hr class="my-4">
+        <h2>3d Mapping</h2>
+        <p class="lead">community digital archaeology </p>
+        <p>You can find out more each of the Ogham stones and view its 3d model here</p>
+        <a class="btn btn-danger btn-lg" href="#" role="button">See more</a>
+        <hr class="my-4">
+    </div>
+</section>
+<!---------------footer------------------------>
+<footer id="footer" class="text-center">
+   <p> &copy; <span id="year"></span> Breslin, Museum Corca Dhuibne, The Discovery Programme, Ogham in 3D.<p>
+</footer>
 
 <!---------------javascript,jquery, APIs ------------------------>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdD4fpDYpsgx1Ww6NiVhb_zEgpb1kGn5k&callback=initMap"></script>
     <script src="assets/js/script.js"></script>
-
+    <script type="text/javascript">var year = new Date().getFullYear().toString();document.getElementById("year").innerHTML = year;</script>
 </body>
 
 </html>
