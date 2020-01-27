@@ -1,97 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Amaranth|Forum&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/style.css">
-      <title>Ogham in 3d</title>
-  </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Ogham in 3d</title>
+</head>
+
 <body>
-<!---------------Navbar ------------------------>
-<section id="navbar">
-   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
-  <a class="navbar-brand" href="#"><img class="ogham-img" src="/assets/img/ogham-text-2.png" alt="ogham text"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <!---------------Navbar ------------------------>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
+            <a class="navbar-brand" href="#"><img class="ogham-img" src="/assets/img/ogham-text-2.png" alt="ogham text"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#map">Map</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#info">Info</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-</section>
-<!------------------Landing page------------------------->
-	<section id="home">
-		<div class="landing-text">
-          <h1>Ogham in 3d</h1>
-          <h3>Mapping the Ogham Stones of the Dingle Peninsula</h3>
-          <h5 class="links">A community digital archaeology project created by volunteers on the Dingle Peninsula, with the help of <a href="https://www.dias.ie/" target = "_blank">Dublin Institute for Advanced Studies</a> and <a href="http://www.discoveryprogramme.ie/" target = "_blank">The Discovery Program</a></h5>
-        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#map">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!------------------Landing page------------------------->
+    <section id="home">
+        <div class="landing-text">
+            <h1>Ogham in 3d</h1>
+            <h3>Mapping the Ogham Stones of the Dingle Peninsula</h3>
+            <h5 class="links">A community digital archaeology project created by volunteers on the Dingle Peninsula, with the help of <a href="https://www.dias.ie/" target = "_blank">Dublin Institute for Advanced Studies</a> and <a href="http://www.discoveryprogramme.ie/" target = "_blank">The Discovery Program</a></h5>
+
         </div>
-	</section>
+    </section>
 
-<!------------------Ogham Map------------------------->
-<section id="oghamMap">
+    <!------------------Ogham Map------------------------->
+    <section id="oghamMap">
         <div class="container-fluid clear-fix no-gutters">
-                <div class="row mapPage">
-                        <div class="col-sm-3 mapInfo text-center">
-                            <h2>How to use this map</h2>
-                            <div>
-                                <p>Click on the map markers to highlight the individual stones. Then click on the link for more information and to view the stone in 3d<p>
-                                <p>Map markers<p>
-                                <img class="ogham-img" src="/assets/img/ogham-text-2.png" alt="ogham text">
-                            </div>
-                        </div>
-                        <!---------------map------------------------>
-
-                        <div class="col-sm-9 mapBox ">
-                             <div id="map"></div>
-                        </div>
+            <div class="row mapPage">
+                <div class="col-sm-3 mapInfo text-center">
+                    <h2>How to use this map</h2>
+                    <div>
+                        <p>Click on the map markers to highlight the individual stones. Then click on the link for more information and to view the stone in 3d
+                            <p>
+                                <p>Map markers
+                                    <p>
+                                        <img class="ogham-img" src="/assets/img/ogham-text-2.png" alt="ogham text">
+                    </div>
                 </div>
+                <!---------------map------------------------>
+
+                <div class="col-sm-9 mapBox ">
+                    <div id="map"></div>
+                </div>
+            </div>
         </div>
-</section>
+    </section>
 
-<!---------------info accordian ------------------------>
-<section id="infoPage">
-    <div class="text-center">
-        <hr class="my-4">
-        <h2>3d Mapping</h2>
-        <p class="lead">community digital archaeology </p>
-        <p>You can find out more each of the Ogham stones and view its 3d model here</p>
-        <a class="btn btn-danger btn-lg" href="#" role="button">See more</a>
-        <hr class="my-4">
+    <!---------------3d info page------------------------>
+    <section id="infoPage">
+        <div class="text-center">
+            <div>
+                <hr class="my-4">
+                <h2>3d Mapping</h2>
+                <p>Click on a stone to find out more about it, and to view it in 3d!</p>
+            </div>
+            <!---------------accordian ------------------------>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-sm-12 col-m-12 col-lg-6">
+                        <div class="columnOne">
+                                <div class="ogham-accordian">
+      <!--button start---->
+    <button  class="accordian">Baile an Reannaigh (Ballinrannig) III</button>
+    <div class="panel">
+      <p>The present location of this stone is at Coláiste Íde, in Burnham, though its original location is unknow, as it waas moved in the 19th century. It  stands 1.16m high and is c. 0.34m wide and 0.14m thick. The reading of the full inscription is uncertain and only the following letters survive: ( )NAVICAS MAQI MUCO(I) ( )S.</p>
+      <div class="img-container">
+          <div class="sketchfab-embed-wrapper">
+          <iframe title="A 3D model" src="https://sketchfab.com/models/cc6897dc3c3e47149b97bf2cb187398e/embed"></iframe>
+          <p>
+          <a href="https://sketchfab.com/3d-models/ballinrannig-iii-rgb-cc6897dc3c3e47149b97bf2cb187398e?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Ballinrannig III (RGB)</a>
+          by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
+          on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+          </p>
+      </div> 
+      </div>     
     </div>
-</section>
-<!---------------footer------------------------>
-<footer id="footer" class="text-center">
-   <p> &copy; <span id="year"></span> Breslin, Museum Corca Dhuibne, The Discovery Programme, Ogham in 3D.<p>
-</footer>
+    <!---button end---->
+    <!---button start---->
+    <button  class="accordian">Baile an Ásaigh (Ballinasig) </button>
+    <div class="panel">
+      <p>The present location of this stone is at Coláiste Íde, in Burnham, though its original location is unknow, as it waas moved in the 19th century. It  stands 1.16m high and is c. 0.34m wide and 0.14m thick. The reading of the full inscription is uncertain and only the following letters survive: ( )NAVICAS MAQI MUCO(I) ( )S.</p>
+        <div class="img-container">
+          <div class="sketchfab-embed-wrapper">
+              <iframe title="A 3D model" src="https://sketchfab.com/models/f509e6e006384b328254fe25c2c1fa0a/embed?preload=1"></iframe>
+          <p>
+              <a href="https://sketchfab.com/3d-models/ballinasig-standing-stone-f509e6e006384b328254fe25c2c1fa0a?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Ballinasig standing stone</a>
+              by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
+              on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+          </p>
+          </div>  
+        </div>
+     </div>
+    <!---button end---->
+        <!---button start---->
+        <button  class="accordian">Baile Ristín (Ballyrishteen)</button>
+        <div class="panel">
+          <p>The present location of this stone is at Coláiste Íde, in Burnham, though its original location is unknow, as it waas moved in the 19th century. It  stands 1.16m high and is c. 0.34m wide and 0.14m thick. The reading of the full inscription is uncertain and only the following letters survive: ( )NAVICAS MAQI MUCO(I) ( )S.</p>
+          <div class="img-container">
+              <div class="sketchfab-embed-wrapper">
+              <iframe title="A 3D model" src="https://sketchfab.com/models/9745aed67ab84210a595312be8ec2f15/embed?preload=1"></iframe>
 
-<!---------------javascript,jquery, APIs ------------------------>
-    
+          <p>
+              <a href="https://sketchfab.com/3d-models/baile-ristin-9745aed67ab84210a595312be8ec2f15?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Baile Ristin</a>
+              by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
+              on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+          </p>
+          </div>
+        </div>     
+       </div>
+           <!---button end---->
+        <!---button start---->
+        <button  class="accordian">Cill Fhiontain (Kilfountain)</button>
+        <div class="panel">
+          <p>The present location of this stone is at Coláiste Íde, in Burnham, though its original location is unknow, as it waas moved in the 19th century. It  stands 1.16m high and is c. 0.34m wide and 0.14m thick. The reading of the full inscription is uncertain and only the following letters survive: ( )NAVICAS MAQI MUCO(I) ( )S.</p>
+          <div class="img-container">
+          <div class="sketchfab-embed-wrapper">
+              <iframe title="A 3D model" src="https://sketchfab.com/models/fea88f5a332047f59ac53b575b2dcc09/embed"></iframe>
+
+          <p>
+              <a href="https://sketchfab.com/3d-models/kilfountain-fea88f5a332047f59ac53b575b2dcc09?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Kilfountain</a>
+              by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
+              on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+          </p>
+          </div> 
+        </div>     
+       </div>
+           <!---button end---->
+        <!---button start---->
+        <button  class="accordian">Gleann na nGealt</button>
+        <div class="panel">
+          <p>The present location of this stone is at Coláiste Íde, in Burnham, though its original location is unknow, as it waas moved in the 19th century. It  stands 1.16m high and is c. 0.34m wide and 0.14m thick. The reading of the full inscription is uncertain and only the following letters survive: ( )NAVICAS MAQI MUCO(I) ( )S.</p>
+          <div class="img-container">
+            <div class="sketchfab-embed-wrapper">
+                <iframe title="A 3D model" src="https://sketchfab.com/models/ba50460f34394a4f96c0af724f968dcc/embed?preload=1"></iframe>
+
+            <p>
+                <a href="https://sketchfab.com/3d-models/carndonagh-ba50460f34394a4f96c0af724f968dcc?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Carndonagh</a>
+                by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
+                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+            </p>
+            </div>
+            </div> 
+        </div>     
+       </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-m-12 col-lg-6">
+                        <div class="columnTwo">
+                                <div class="ogham-accordian">
+      <!--button start---->
+    <button  class="accordian">Baile an Reannaigh (Ballinrannig) III</button>
+    <div class="panel">
+      <p>The present location of this stone is at Coláiste Íde, in Burnham, though its original location is unknow, as it waas moved in the 19th century. It  stands 1.16m high and is c. 0.34m wide and 0.14m thick. The reading of the full inscription is uncertain and only the following letters survive: ( )NAVICAS MAQI MUCO(I) ( )S.</p>
+      <div class="img-container">
+          <div class="sketchfab-embed-wrapper">
+          <iframe title="A 3D model" src="https://sketchfab.com/models/cc6897dc3c3e47149b97bf2cb187398e/embed"></iframe>
+          <p>
+          <a href="https://sketchfab.com/3d-models/ballinrannig-iii-rgb-cc6897dc3c3e47149b97bf2cb187398e?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Ballinrannig III (RGB)</a>
+          by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
+          on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+          </p>
+      </div> 
+      </div>     
+    </div>
+    <!---button end---->
+    <!---button start---->
+    <button  class="accordian">Baile an Ásaigh (Ballinasig) </button>
+    <div class="panel">
+      <p>The present location of this stone is at Coláiste Íde, in Burnham, though its original location is unknow, as it waas moved in the 19th century. It  stands 1.16m high and is c. 0.34m wide and 0.14m thick. The reading of the full inscription is uncertain and only the following letters survive: ( )NAVICAS MAQI MUCO(I) ( )S.</p>
+        <div class="img-container">
+          <div class="sketchfab-embed-wrapper">
+              <iframe title="A 3D model" src="https://sketchfab.com/models/f509e6e006384b328254fe25c2c1fa0a/embed?preload=1"></iframe>
+          <p>
+              <a href="https://sketchfab.com/3d-models/ballinasig-standing-stone-f509e6e006384b328254fe25c2c1fa0a?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Ballinasig standing stone</a>
+              by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
+              on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+          </p>
+          </div>  
+        </div>
+     </div>
+    <!---button end---->
+        <!---button start---->
+        <button  class="accordian">Baile Ristín (Ballyrishteen)</button>
+        <div class="panel">
+          <p>The present location of this stone is at Coláiste Íde, in Burnham, though its original location is unknow, as it waas moved in the 19th century. It  stands 1.16m high and is c. 0.34m wide and 0.14m thick. The reading of the full inscription is uncertain and only the following letters survive: ( )NAVICAS MAQI MUCO(I) ( )S.</p>
+          <div class="img-container">
+              <div class="sketchfab-embed-wrapper">
+              <iframe title="A 3D model" src="https://sketchfab.com/models/9745aed67ab84210a595312be8ec2f15/embed?preload=1"></iframe>
+
+          <p>
+              <a href="https://sketchfab.com/3d-models/baile-ristin-9745aed67ab84210a595312be8ec2f15?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Baile Ristin</a>
+              by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
+              on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+          </p>
+          </div>
+        </div>     
+       </div>
+           <!---button end---->
+        <!---button start---->
+        <button  class="accordian">Cill Fhiontain (Kilfountain)</button>
+        <div class="panel">
+          <p>The present location of this stone is at Coláiste Íde, in Burnham, though its original location is unknow, as it waas moved in the 19th century. It  stands 1.16m high and is c. 0.34m wide and 0.14m thick. The reading of the full inscription is uncertain and only the following letters survive: ( )NAVICAS MAQI MUCO(I) ( )S.</p>
+          <div class="img-container">
+          <div class="sketchfab-embed-wrapper">
+              <iframe title="A 3D model" src="https://sketchfab.com/models/fea88f5a332047f59ac53b575b2dcc09/embed"></iframe>
+
+          <p>
+              <a href="https://sketchfab.com/3d-models/kilfountain-fea88f5a332047f59ac53b575b2dcc09?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Kilfountain</a>
+              by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
+              on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+          </p>
+          </div> 
+        </div>     
+       </div>
+           <!---button end---->
+        <!---button start---->
+        <button  class="accordian">Gleann na nGealt</button>
+        <div class="panel">
+          <p>The present location of this stone is at Coláiste Íde, in Burnham, though its original location is unknow, as it waas moved in the 19th century. It  stands 1.16m high and is c. 0.34m wide and 0.14m thick. The reading of the full inscription is uncertain and only the following letters survive: ( )NAVICAS MAQI MUCO(I) ( )S.</p>
+          <div class="img-container">
+            <div class="sketchfab-embed-wrapper">
+                <iframe title="A 3D model" src="https://sketchfab.com/models/ba50460f34394a4f96c0af724f968dcc/embed?preload=1"></iframe>
+
+            <p>
+                <a href="https://sketchfab.com/3d-models/carndonagh-ba50460f34394a4f96c0af724f968dcc?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Carndonagh</a>
+                by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
+                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+            </p>
+            </div>
+            </div> 
+        </div>     
+       </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------/accordian ------------------------>
+            <hr class="my-4">
+        </div>
+    </section>
+    <!---------------footer------------------------>
+    <footer id="footer" class="text-center">
+        <div>
+            <img class="ogham-img" src="/assets/img/ogham-text-2.png" alt="ogham text">
+            <br>
+            <p> &copy; <span id="year"></span> Breslin, Museum Corca Dhuibne, The Discovery Programme, Ogham in 3D.
+                <p>
+
+        </div>
+    </footer>
+
+    <!---------------javascript,jquery, APIs ------------------------>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdD4fpDYpsgx1Ww6NiVhb_zEgpb1kGn5k&callback=initMap"></script>
     <script src="assets/js/script.js"></script>
-    <script>var year = new Date().getFullYear().toString();document.getElementById("year").innerHTML = year;</script>
+    <script src="assets/js/stones.js"></script>
+    <script>
+        var year = new Date().getFullYear().toString();
+        document.getElementById("year").innerHTML = year;
+    </script>
 </body>
 
 </html>

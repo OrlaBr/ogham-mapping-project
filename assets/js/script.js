@@ -10,7 +10,8 @@ function initMap(){
           },
           panControlOptions: {
             position: google.maps.ControlPosition.LEFT_BOTTOM
-          }
+          },
+          
         };
         var map = new google.maps.Map(document.getElementById('map'), options);
       //Array of Markers
