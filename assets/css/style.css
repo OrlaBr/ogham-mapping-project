@@ -1,195 +1,243 @@
 @import url('https://fonts.googleapis.com/css?family=Amaranth|Forum&display=swap');
-
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
 }
 
 body {
-    font-family:'Forum', cursive;
+	font-family: 'Forum', cursive;
 }
 
 body h1 {
-  font-family:'Amaranth', sans-serif;
+	font-family: 'Amaranth', sans-serif;
 }
+
 
 /******************Navigation*********************/
 
 
-
 /******************Landing Page *******************/
+
 #home-text {
-  margin: auto;
+	margin: auto;
 }
 
 #home {
-  background: url('/assets/img/map.jpg') no-repeat center center fixed;
-  display: table;
-  height: 800px;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  background-color: rgba(255,255,255,0.8);
-  background-blend-mode: lighten;
+	background: url('/assets/img/map.jpg') no-repeat center center fixed;
+	display: table;
+	height: 800px;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+	background-color: rgba(255, 255, 255, 0.8);
+	background-blend-mode: lighten;
 }
 
-
 .landing-text {
-    display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-
-
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .landing-text h1 {
-  font-size: 5em;
+	font-size: 5em;
 }
 
 .landing-text h3 {
-    padding: 30px;
+	padding: 30px;
 }
+
 .landing-text h5 {
-    padding: 30px;
+	padding: 30px;
 }
 
 .landing-text h5 a {
-    color:brown;
+	color: brown;
 }
 
 .text-center {
-    background-color: #f9f9f9;
+	background-color: #f9f9f9;
 }
+
+
 /******************Ogham Map Info*********************/
 
 .clearfix {
-    clear: both;
+	clear: both;
 }
 
 .mapInfo {
-    background-color: #f9f9f9;
-    border: 1px solid #f8f9fa;
+	background-color: #f9f9f9;
+	border: 1px solid #f8f9fa;
 }
 
 .text-center h2 {
-    padding-top: 20px;
+	padding-top: 20px;
 }
 
 .text-center h5 {
-    color: #410912;
+	color: #410912;
 }
 
 .ogham-img {
-    width : 100px;
+	width: 100px;
 }
+
+
 /******************Ogham Map*********************/
+
 .col-sm-9 .mapBox {
-    margin: 0px;
-    padding: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 #map {
-  height: 600px;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-} 
+	height: 600px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+/******************infowindows***************************/
+.card {
+  width: 18rem;
+  font-size: 12px;
+}
+
+.btn-default
+{
+  background-color:#dd2e44;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+  background-color: #2F3E48;
+  color:#FFF;
+  border-color: #31347B;
+ }
+
+
 
 /******************3D*********************/
+
 .clearfix {
-    clear: both;
+	clear: both;
 }
 
 #infoPage .lead {
-    margin: 0px;
+	margin: 0px;
 }
 
 #infoPage .lead p {
-    padding: 10px;
+	padding: 10px;
 }
 
 #info-page .col-lg-6 .col-sm-12 {
-    margin: 0 auto;
+	margin: 0 auto;
 }
+
 .stonesOne {
-    padding: 0px;
-    margin: 0px;
+	padding: 0px;
+	margin: 0px;
 }
+
 .columnOne {
-    background-color: aqua;
+	background-color: aqua;
 }
+
 .columnTwo {
-    background-color: rgb(26, 70, 70);
+	background-color: rgb(26, 70, 70);
 }
+
+
 /******************accordian*********************/
 
+
 /*styling the  accordian */
+
 .ogham-accordian {
-  width: 100%;
+	width: 100%;
 }
+
 .accordian {
-  background-color:#b46812;
-  color: white;
-  cursor: pointer; 
-  padding: 18px;
-  width: 100%;
-  text-align: center;
-  border: 1px solid white;
-  transition: 0.4s; 
-  font-size: 20px;
-  outline: none;
-  border-radius: 4px;
+	background-color: #b46812;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: center;
+	border: 1px solid white;
+	transition: 0.4s;
+	font-size: 20px;
+	outline: none;
+	border-radius: 4px;
 }
 
 .panel {
-  padding: 0 18px;
-  background-color:linen;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
+	padding: 0 18px;
+	background-color: linen;
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
 }
-p { font-size: 16px}
-.active, .accordian:hover {
-  background-color: #cd861c;
+
+.panel p {
+	font-size: 16px;
+    padding-top: 10px;
+}
+
+.active,
+.accordian:hover {
+	background-color: #cd861c;
 }
 
 .accordian:after {
-  content: '\02795'; 
-  font-size: 10px;
-  float: right;
-  margin-left: 5px;
+	content: '\02795';
+	font-size: 10px;
+	float: right;
+	margin-left: 5px;
 }
 
-.active:after{
-  content: '\2796';  
+.active:after {
+	content: '\2796';
 }
 
 .sketchfab-embed-wrapper {
-  text-align: center;
+	text-align: center;
 }
+
 
 /*styling the  accordian */
+
+
 /*styling iframe*/
+
 .img-container p {
-  font-size: 13px; 
-  font-weight: normal; 
-  margin: 5px; 
+	font-size: 13px;
+	font-weight: normal;
+	margin: 5px;
 }
 
-.img-container a{
-  color: #1CAAD9;
+.img-container a {
+	color: #1CAAD9;
 }
 
 iframe {
-  width: 440px; 
-  height: 280px;
+	width: 440px;
+	height: 280px;
 }
+
+
 /******************footer*********************/
+
 #footer {
-    background-color: #f9f9f9;
+	background-color: #f9f9f9;
 }
+
 #footer p {
-    padding: 0px 20px;
+	padding: 0px 20px;
 }
