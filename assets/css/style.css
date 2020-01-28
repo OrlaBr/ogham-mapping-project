@@ -103,7 +103,7 @@ body h1 {
 
 /******************infowindows***************************/
 .card {
-  width: 18rem;
+  width: 200px;
   font-size: 12px;
 }
 
@@ -120,6 +120,13 @@ body h1 {
   border-color: #31347B;
  }
 
+#oghamMap .gm-style-iw-d .cls {
+    max-width: 300px;
+}
+
+#oghamMap .gm-style-iw-d p {
+    width: 300px;
+}
 
 
 /******************3D*********************/
