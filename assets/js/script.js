@@ -97,6 +97,7 @@ function initMap() {
 
         marker.addListener('click', function(){
         infoWindow.open(map, marker);
+        //info window auto closes after 10 seconds
         setTimeout(function () { infoWindow.close(); }, 10000);
       });  
 

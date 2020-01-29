@@ -16,7 +16,13 @@ body h1 {
 
 
 /******************Navigation*********************/
+.navbar-light .navbar-nav .nav-link {
+  color: #410912;
+}
 
+#navbarSupportedContent a:hover {
+  color:#b46812;
+}
 
 /******************Landing Page *******************/
 
