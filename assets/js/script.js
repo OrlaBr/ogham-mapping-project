@@ -19,7 +19,7 @@ function initMap() {
         var markers = [
          {
          coords:{lat:52.12675, lng: -10.30457},
-         content:'<div class="infoWindowSize"><img src="info-window-ogham.png" alt="ogham stone"><p><strong>Ballinrannig</strong> - Not in its original location, currently on the grounds of Colaiste Ide, Burnham, with other re-located ogham stones</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Ballinrannig</a></div>',
+         content:'<div class="infoWindowSize"><img src="info-window-ogham.png" alt="ogham stone"><p><strong>Baile an Reannaigh</strong> - Not in its original location, currently on the grounds of Colaiste Ide, Burnham, with other re-located ogham stones</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Ballinrannig</a></div>',
          draggable: false
          },
          {
