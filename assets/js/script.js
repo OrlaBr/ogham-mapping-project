@@ -18,7 +18,7 @@ function initMap() {
         var markers = [
          {
          coords:{lat:52.12675, lng: -10.30457},
-         content:'<img src="oghamstone.jpg" alt="ogham stone"><p><strong>Ballinrannig</strong> - Not in its original location, currently on the grounds of Colaiste Ide, Burnham, with other re-located ogham stones</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Ballinrannig</a>',
+         content:'<div class="infoWindowSize"><img src="info-window-ogham.png" alt="ogham stone"><p><strong>Ballinrannig</strong> - Not in its original location, currently on the grounds of Colaiste Ide, Burnham, with other re-located ogham stones</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Ballinrannig</a></div>',
          draggable: false
          },
          {
@@ -91,15 +91,20 @@ function initMap() {
         //check content
         if(props.content){
           var infoWindow = new google.maps.InfoWindow({
-            content:props.content, maxWidth: 300
+            content:props.content, maxWidth: 200   
       });
+        this.infowindow = new google.maps.InfoWindow({
+            maxWidth: 200
+        });
         marker.addListener('click', function(){
         infoWindow.open(map, marker);
-      });      
+      });  
+
       //added a resize-event for responsive infoWindow 
         google.maps.event.addDomListener(window, 'resize', function() {
           infowindow.open(map);
         });
+
         }
       }
     };

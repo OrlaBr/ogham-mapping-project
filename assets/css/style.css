@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Amaranth|Forum&display=swap');
-body,
-html {
+body, html {
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -102,10 +101,7 @@ body h1 {
 }
 
 /******************infowindows***************************/
-.card {
-  width: 200px;
-  font-size: 12px;
-}
+
 
 .btn-default
 {
@@ -119,15 +115,6 @@ body h1 {
   color:#FFF;
   border-color: #31347B;
  }
-
-#oghamMap .gm-style-iw-d .cls {
-    max-width: 300px;
-}
-
-#oghamMap .gm-style-iw-d p {
-    width: 300px;
-}
-
 
 /******************3D*********************/
 
