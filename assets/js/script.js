@@ -13,6 +13,7 @@ function initMap() {
           }
         }
         var map = new google.maps.Map(document.getElementById('map'), options);
+
     
       //Array of Markers
         var markers = [
@@ -93,11 +94,10 @@ function initMap() {
           var infoWindow = new google.maps.InfoWindow({
             content:props.content, maxWidth: 200   
       });
-        this.infowindow = new google.maps.InfoWindow({
-            maxWidth: 200
-        });
+
         marker.addListener('click', function(){
         infoWindow.open(map, marker);
+        setTimeout(function () { infoWindow.close(); }, 10000);
       });  
 
       //added a resize-event for responsive infoWindow 

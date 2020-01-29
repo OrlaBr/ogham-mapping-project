@@ -116,7 +116,21 @@ body h1 {
   border-color: #31347B;
  }
 
-/******************3D*********************/
+.gm-style-iw {
+  width: 200px; 
+  min-height: 150px;
+}
+
+.iwContent p {
+    width:200px;
+    padding-top: 10px;
+}
+
+/*global max-width breaks in Google Maps*/
+#map img {
+    max-width: none;
+}
+***********3D iframes*********************/
 
 .clearfix {
 	clear: both;
