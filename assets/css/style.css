@@ -80,16 +80,20 @@ body h1 {
 	border: 1px solid #f8f9fa;
 }
 
-#oghamMap .mapPage .mapInfo .text-center h2 {
+#oghamMap h2 {
     color: #b46812;
 	padding-top: 20px;
 }
 
-.text-center h5 {
+#oghamMap h4 {
+    padding-bottom: 15px;
+}
+
+#oghamMap h5 {
 	color: #410912;
 }
 
-.ogham-img {
+#oghamMap .ogham-img{
 	width: 100px;
     padding: 20px;
 }
