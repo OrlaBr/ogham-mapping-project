@@ -48,6 +48,7 @@ body h1 {
 }
 
 .landing-text h1 {
+    color: #b46812;
 	font-size: 5em;
 }
 
@@ -79,7 +80,8 @@ body h1 {
 	border: 1px solid #f8f9fa;
 }
 
-.text-center h2 {
+#oghamMap .mapPage .mapInfo .text-center h2 {
+    color: #b46812;
 	padding-top: 20px;
 }
 
@@ -89,8 +91,8 @@ body h1 {
 
 .ogham-img {
 	width: 100px;
+    padding: 20px;
 }
-
 
 /******************Ogham Map*********************/
 

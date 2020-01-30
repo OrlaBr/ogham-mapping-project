@@ -2,7 +2,7 @@ function initMap() {
         var options = {
           center: {lat:52.1409, lng: -10.2640},
           zoom: 8,
-          mapTypeId: google.maps.MapTypeId.HYBRID,
+          mapTypeId: google.maps.MapTypeId.ROAD,
           minZoom: 9,   
           zoomControlOptions: {
             position: google.maps.ControlPosition.LEFT_BOTTOM, 
