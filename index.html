@@ -1,274 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Amaranth|Forum&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/style.css">
-      <title>Ogham in 3d</title>
-   </head>
-   <body>
-      <!---------------Navbar ------------------------>
-      <section id="navbar">
-         <nav class="navbar navbar-expand-lg navbar-light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Ogham in 3d</title>
+</head>
+
+<body>
+    <!---------------Navbar ------------------------>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"><img class="ogham-img" src="/assets/img/ogham-text-2.png" alt="ogham text"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#map">Map</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#infoPage">Ogham Info</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#about">About</a>
-                  </li>
-               </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#map">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#infoPage">Ogham Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
             </div>
-         </nav>
-      </section>
-      <!------------------Landing page------------------------->
-      <section id="home">
-         <div class="landing-text">
+        </nav>
+    </section>
+    <!------------------Landing page------------------------->
+    <section id="home">
+        <div class="landing-text">
             <h1>Ogham in 3d</h1>
             <h3>Mapping the Ogham Stones of the Dingle Peninsula</h3>
             <h5 class="links">A community digital archaeology project created by volunteers on the Dingle Peninsula, with the help of <a href="https://www.dias.ie/" target = "_blank">Dublin Institute for Advanced Studies</a> and <a href="http://www.discoveryprogramme.ie/" target = "_blank">The Discovery Program</a></h5>
-         </div>
-      </section>
-      <!------------------Ogham Map------------------------->
-      <section id="oghamMap">
-         <div class="container-fluid clear-fix no-gutters">
+        </div>
+    </section>
+    <!------------------Ogham Map------------------------->
+    <section id="oghamMap">
+        <div class="container-fluid clear-fix no-gutters">
             <div class="row mapPage">
-               <div class="col-sm-3 mapInfo text-center">
-                  <h2>How to use this map</h2>
-                  <div>
-                     <p>Click on the map markers to highlight the individual stones. Then click on the red link for more information and to view the stone in 3d
-                     <p>
-                     <h4>Map Markers</h4>
-                     <p class="mapIcon"><img src="/assets/img/map-icon-1.png" alt="map icon">Find location
-                     <img src="/assets/img/map-icon-2.png" alt="map icon">Original location
-                     <img src="/assets/img/map-icon-3.png" alt="map icon">Secondary Location</p>
-                    <img class="ogham-img" src="/assets/img/ogham-text-2.png" alt="ogham text">
-                  </div>
-               </div>
-               <!---------------map------------------------>
-               <div class="col-sm-9 mapBox ">
-                  <div id="map"></div>
-               </div>
+                <div class="col-sm-3 mapInfo text-center">
+                    <h2>How to use this map</h2>
+                    <div>
+                        <p>There are 3 colours of map marker, this is to differentiate the Ogham stones, on their origin as opposed to actual location. Some are in their current and original location ('find'), their original location but are now housed in a different location, such as a museum ('original'), or a have been moved in the past to a different location locally ('secondary').</p>
+                        <p class="mapIcon"><img src="/assets/img/map-icon-1.png" alt="map icon">&nbsp;Find location
+                            <img src="/assets/img/map-icon-2.png" alt="map icon">&nbsp;Original location
+                            <br>
+                            <img src="/assets/img/map-icon-3.png" alt="map icon">&nbsp;Secondary Location</p>
+                        <p>Click on the map markers to highlight each individual stones. Then click on the link for more information and to view the stone in 3d.</p>
+                        <p><img class="ogham-img" src="/assets/img/ogham-text-2.png" alt="ogham text"></p>
+                    </div>
+                </div>
+                <!---------------map------------------------>
+                <div class="col-sm-9 mapBox ">
+                    <div id="map"></div>
+                </div>
             </div>
-         </div>
-      </section>
-      <!---------------3d info page------------------------>
-      <section id="infoPage">
-         <div class="text-center">
+        </div>
+    </section>
+    <!---------------3d info page------------------------>
+    <section id="infoPage">
+        <div class="text-center">
             <div>
-               <hr class="my-4">
-               <h2>3d Mapping</h2>
-               <p>Click on a stone to find out more about it, and to view it in 3d!</p>
+                <hr class="my-4">
+                <h2>3d Mapping</h2>
+                <p>Click on an Ogham Stone to find out more about it, and to view it in 3d!</p>
             </div>
             <!---------------accordian ------------------------>
             <div class="container-fluid">
-               <div class="row text-center">
-                  <div class="col-sm-12 col-m-12 col-lg-6">
-                     <div class="columnOne">
-                        <div class="ogham-accordian">
-                           <!--Baile an Reannaigh start---->
-                           <button  class="accordian">Baile an Reannaigh (Ballinrannig) III</button>
-                           <div class="panel">
-                              <p>The present location of this stone is at Coláiste Íde, in Burnham, though its original location is unknown, as it was moved in the 19th century. It stands 1.16m high, c. 0.34m wide and 0.14m thick. The reading of the full inscription is uncertain and only the following letters survive<br><br>Ogham text: G̣ṚAVICAS MAQI MUCO  ̣  ̣ ?   ̣  ̣/ 
-                                </p>
-                                <p> Further information on <a href=”http://www.corcadhuibhne3d.ie/ballinrannig3.php” target=”_blank”>CorcaDhuibhne 3d</a> and <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&county=Kerry&stone=150._Ballinrannig_III&stoneinfo=inscription” target=”_blank”>Ogham in 3d</a></p>
-                              <div class="img-container">
-                                 <div class="sketchfab-embed-wrapper">
-                                    <iframe title="A 3D model" src="https://sketchfab.com/models/cc6897dc3c3e47149b97bf2cb187398e/embed"></iframe>
-                                    <p>
-                                       <a href="https://sketchfab.com/3d-models/ballinrannig-iii-rgb-cc6897dc3c3e47149b97bf2cb187398e?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Ballinrannig III (RGB)</a>
-                                       by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
-                                       on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+                <div class="row text-center">
+                    <div class="col-sm-12 col-m-12 col-lg-6">
+                        <div class="columnOne">
+                            <div class="ogham-accordian">
+                                <!--Baile an Reannaigh start---->
+                                <button class="accordian">Baile an Reannaigh (Ballinrannig) III</button>
+                                <div class="panel">
+                                    <p>The present location of this stone is at Coláiste Íde, in Burnham, though its original location is unknown, as it was moved in the 19th century. It stands 1.16m high, c. 0.34m wide and 0.14m thick. The reading of the full inscription is uncertain and only the following letters survive
+                                        <br>
+                                        <br>Ogham text: G̣ṚAVICAS MAQI MUCO ̣ ̣ ? ̣ ̣/
                                     </p>
-                                 </div>
-                              </div>
-                           </div>
-                           <!---Baile an Asaigh start---->
-                           <button  class="accordian">Baile an Ásaigh (Ballinasig) </button>
-                           <div class="panel">
-                              <p>A low standing stone situated on level reclaimed pastureland at the head of the valley which extends NE from Dingle Town. It stands 1.45m high but is broken across the top of its S side and may originally have been taller. At base it measures 1.04m x .5m; N-S.
-<br><br>Ogham text: Unknown</p>
-<p> Further information on <a href=”http://www.corcadhuibhne3d.ie/ballinasig.php” target=”_blank”>CorcaDhuibhne 3d</a></p>
-                              <div class="img-container">
-                                 <div class="sketchfab-embed-wrapper">
-                                    <iframe title="A 3D model" src="https://sketchfab.com/models/f509e6e006384b328254fe25c2c1fa0a/embed?preload=1"></iframe>
-                                    <p>
-                                       <a href="https://sketchfab.com/3d-models/ballinasig-standing-stone-f509e6e006384b328254fe25c2c1fa0a?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Ballinasig standing stone</a>
-                                       by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
-                                       on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+                                    <p> Further information on <a href=”http://www.corcadhuibhne3d.ie/ballinrannig3.php” target=”_blank”>CorcaDhuibhne 3d</a> and <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&county=Kerry&stone=150._Ballinrannig_III&stoneinfo=inscription” target=”_blank”>Ogham in 3d</a></p>
+                                    <div class="img-container">
+                                        <div class="sketchfab-embed-wrapper">
+                                            <iframe title="A 3D model" src="https://sketchfab.com/models/cc6897dc3c3e47149b97bf2cb187398e/embed"></iframe>
+                                            <p>
+                                                <a href="https://sketchfab.com/3d-models/ballinrannig-iii-rgb-cc6897dc3c3e47149b97bf2cb187398e?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Ballinrannig III (RGB)</a> by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---Baile an Asaigh start---->
+                                <button class="accordian">Baile an Ásaigh (Ballinasig) </button>
+                                <div class="panel">
+                                    <p>A low standing stone situated on level reclaimed pastureland at the head of the valley which extends NE from Dingle Town. It stands 1.45m high but is broken across the top of its S side and may originally have been taller. At base it measures 1.04m x .5m; N-S.
+                                        <br>
+                                        <br>Ogham text: Unknown</p>
+                                    <p> Further information on <a href=”http://www.corcadhuibhne3d.ie/ballinasig.php” target=”_blank”>CorcaDhuibhne 3d</a></p>
+                                    <div class="img-container">
+                                        <div class="sketchfab-embed-wrapper">
+                                            <iframe title="A 3D model" src="https://sketchfab.com/models/f509e6e006384b328254fe25c2c1fa0a/embed?preload=1"></iframe>
+                                            <p>
+                                                <a href="https://sketchfab.com/3d-models/ballinasig-standing-stone-f509e6e006384b328254fe25c2c1fa0a?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Ballinasig standing stone</a> by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---Cill Fhiontain--->
+                                <button class="accordian">Cill Fhiontain (Kilfountain)</button>
+                                <div class="panel">
+                                    <p>A bilingual stone with both an ogham inscription and an inscription in the Roman or Latin alphabet. Although bilingual ogham stones in both ogham (in Irish) and Roman letters (in Latin) are numerous in Wales and Devon and Cornwall, only a few examples are known in Ireland. It was probably reused, as a cross slab. The stone is a tall, slender pillar, roughly square in section, and tapering towards the base. Only the west face is decorated with an equal-armed cross set inside a circle. Little remains of the ogham inscription,
+                                        <br>
+                                        <br>Ogham text: [ ̣ ̣ ? ̣ ̣]EQỌDD[I ̣ ̣ ? ̣ ̣] Half-uncial: [SCI( )] F̣INTEN</p>
+                                    <p> Further information on <a href=”http://www.corcadhuibhne3d.ie/kilfountain.php” target=”_blank”>CorcaDhuibhne 3d</a> and <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&site=Kilfountain&stone=186._Kilfountain ” target=”_blank”>Ogham in 3D</a></p>
+                                    <div class="sketchfab-embed-wrapper">
+                                        <iframe title="A 3D model" src="https://sketchfab.com/models/fea88f5a332047f59ac53b575b2dcc09/embed"></iframe>
+                                        <p>
+                                            <a href="https://sketchfab.com/3d-models/kilfountain-fea88f5a332047f59ac53b575b2dcc09?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Kilfountain</a> by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <!---An Baile Riabhach ---->
+                                <button class="accordian">An Baile Riabhach (Ballymorereagh)</button>
+                                <div class="panel">
+                                    <p>Situated on the early ecclesiastical site of Teampall Mhancháin (Templemanaghan), also known as Teampall Geal overlooking Dingle bay. An Ogham stone stands beside the remains of a dry-stone oratory, dry-stone huts, a souterrain (Poll na Sagart 'the Priests' Hole'), a burial ground and the remains of a sub-circular enclosure. The Ogham stone is said to mark the grave of St Manachán
+                                        <br>
+                                        <br>Ogham text: QENỊLOCI MAQI MAQI-AINIA MUC̣[OI]
+                                        <br>Translation: 'of Cellach son of Mac-Áine? descendant of?'
                                     </p>
-                                 </div>
-                              </div>
-                           </div>
-                           <!---Cill Fhiontain--->
-                           <button  class="accordian">Cill Fhiontain (Kilfountain)</button>
-                           <div class="panel">
-                              <p>A bilingual stone with both an ogham inscription and an inscription in the Roman or Latin alphabet. Although bilingual ogham stones in both ogham (in Irish) and Roman letters (in Latin) are numerous in Wales and Devon and Cornwall, only a few examples are known in Ireland. It was probably reused, as a cross slab. The stone is a tall, slender pillar, roughly square in section, and tapering towards the base. Only the west face is decorated with an equal-armed cross set inside a circle. Little remains of the ogham inscription,
-<br><br>Ogham text: [ ̣ ̣ ? ̣ ̣]EQỌDD[I ̣ ̣ ? ̣ ̣] Half-uncial: [SCI( )] F̣INTEN</p>
-<p> Further information on <a href=”http://www.corcadhuibhne3d.ie/kilfountain.php” target=”_blank”>CorcaDhuibhne 3d</a> and <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&site=Kilfountain&stone=186._Kilfountain
-” target=”_blank”>Ogham in 3D</a></p>
-                    <div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" src="https://sketchfab.com/models/fea88f5a332047f59ac53b575b2dcc09/embed"></iframe>
-<p >
-    <a href="https://sketchfab.com/3d-models/kilfountain-fea88f5a332047f59ac53b575b2dcc09?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Kilfountain</a>
-    by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >The Discovery Programme</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Sketchfab</a>
-</p>
-</div>
+                                    <p> Further information on <a href=”http://www.corcadhuibhne3d.ie/riabhach.php ” target=”_blank”>CorcaDhuibhne 3d</a> and <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&site=Ballymorereagh&stone=170._Ballymorereagh” target=”_blank”>Ogham in 3D</a></p>
+                                    <div class="img-container">
+                                        <div class="sketchfab-embed-wrapper">
+                                            <iframe title="A 3D model" src="https://sketchfab.com/models/f630f0533b714a02b4d2cec3d6a5ef1f/embed"></iframe>
+                                            <p> <a href="https://sketchfab.com/3d-models/temple-geal-ogham-stone-f630f0533b714a02b4d2cec3d6a5ef1f?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Temple Geal, Ogham Stone</a> by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+                                            </p>
+                                        </div>
 
-                           </div>
-                           <!---An Baile Riabhach ---->
-                           <button  class="accordian">An Baile Riabhach (Ballymorereagh)</button>
-                           <div class="panel">
-                              <p>Situated on the early ecclesiastical site of Teampall Mhancháin (Templemanaghan), also known as Teampall Geal overlooking Dingle bay. An Ogham stone stands beside the remains of a dry-stone oratory, dry-stone huts, a souterrain (Poll na Sagart 'the Priests' Hole'), a burial ground and the remains of a sub-circular enclosure. The Ogham stone is said to mark the grave of St Manachán<br><br>Ogham text: QENỊLOCI MAQI MAQI-AINIA MUC̣[OI]<br>Translation: 'of Cellach son of Mac-Áine? descendant of?'
-</p>
-<p> Further information on <a href=”http://www.corcadhuibhne3d.ie/riabhach.php
-” target=”_blank”>CorcaDhuibhne 3d</a> and <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&site=Ballymorereagh&stone=170._Ballymorereagh” target=”_blank”>Ogham in 3D</a></p>
-                              <div class="img-container">
-                            <div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" src="https://sketchfab.com/models/f630f0533b714a02b4d2cec3d6a5ef1f/embed" ></iframe>
-<p> <a href="https://sketchfab.com/3d-models/temple-geal-ogham-stone-f630f0533b714a02b4d2cec3d6a5ef1f?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Temple Geal, Ogham Stone</a>
-    by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >The Discovery Programme</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
-</p>
-</div>
+                                    </div>
+                                </div>
+                                <!---Cill an gColmán ---->
+                                <button class="accordian">Cill an gColmán (Kilcolman)</button>
+                                <div class="panel">
+                                    <p>An Early Christian church site [Kilcolman (Cill na gColmán)] lying on the south slopes of an east-west spur of Lateevemore, overlooking Ventry Harbour. It consists of a circular enclosure within which are the reputed site of a church, the foundations of a least two huts and a number of graves and gravemarkers which probably relate to the use of the site, until the 19th century, as a calluragh burial ground. Also within the site are a cross-inscribed ogham stone, a small cross inscribed stone, a holed stone and 3 bullaun stones. Another cross-inscribed stone has been incorporated into the lane boundary wall on the N side of the field in which the enclosure is situated, and S of the enclosure is a holy well dedicated to St. Brendan
+                                        <br>
+                                        <br>Ogham text: ANM COL(OLṬḤ)ṂẠṆ ẠḶỊṬḤIR
+                                        <br>Translation: “name/inscription of Colmán the pilgrim'?”
+                                    </p>
+                                    <p> Further information on <a href=”http://www.corcadhuibhne3d.ie/kilcolman.php” target=”_blank”>CorcaDhuibhne 3d</a></p>
+                                    <div class="img-container">
+                                        <div class="sketchfab-embed-wrapper">
+                                            <iframe title="A 3D model" src="https://sketchfab.com/models/158b5bd86fd6421a97e4a07877bcd1a4/embed"></iframe>
+                                            <p>
+                                                <a href="https://sketchfab.com/3d-models/kilcolman-co-kerry-158b5bd86fd6421a97e4a07877bcd1a4?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Kilcolman, Co. Kerry</a> by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+                                            </p>
+                                        </div>
 
-                              </div>
-                           </div>
-                           <!---Cill an gColmán ---->
-                           <button  class="accordian">Cill an gColmán (Kilcolman)</button>
-                           <div class="panel">
-                              <p>An Early Christian church site [Kilcolman (Cill na gColmán)] lying on the south slopes of an east-west spur of Lateevemore, overlooking Ventry Harbour. It consists of a circular enclosure within which are the reputed site of a church, the foundations of a least two huts and a number of graves and gravemarkers which probably relate to the use of the site, until the 19th century, as a calluragh burial ground. Also within the site are a cross-inscribed ogham stone, a small cross inscribed stone, a holed stone and 3 bullaun stones. Another cross-inscribed stone has been incorporated into the lane boundary wall on the N side of the field in which the enclosure is situated, and S of the enclosure is a holy well dedicated to St. Brendan<br><br>Ogham text: ANM COL(OLṬḤ)ṂẠṆ ẠḶỊṬḤIR<br>Translation: “name/inscription of Colmán the pilgrim'?”
-</p>
-<p> Further information on <a href=”http://www.corcadhuibhne3d.ie/kilcolman.php” target=”_blank”>CorcaDhuibhne 3d</a></p>
-                              <div class="img-container">
-<div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" src="https://sketchfab.com/models/158b5bd86fd6421a97e4a07877bcd1a4/embed" ></iframe>
-<p >
-    <a href="https://sketchfab.com/3d-models/kilcolman-co-kerry-158b5bd86fd6421a97e4a07877bcd1a4?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Kilcolman, Co. Kerry</a>
-    by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
-</p>
-</div>
-
-                              </div>
-                           </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-            <!----------Second section of Ogham Accordian---------->
-                  <div class="col-sm-12 col-m-12 col-lg-6">
-                     <div class="columnTwo">
-                        <div class="ogham-accordian">
-                           <!--Cill Maoilchéadar---->
-                           <button  class="accordian">Cill Maoilchéadar (Kilmalkedar),</button>
-                           <div class="panel">
-                              <p>The early Christian and medieval site at Kilmalkedar covers a large area ... Although reputedly founded by Maolcethair in the seventh century, the site is associated with St Brendan. The ogham stone is part of a mid twelfth century church and remained important throughout the medieval period. Existing remains from the early Christian period include a corbelled building, perhaps a cell, some 50 m from the church, an ogham stone, the sundial stone, a plain stone cross and some bullaun stones. There is also St Brendan's oratory, situated some 400 m from the church. The stone is located on the north side of the pathway leading through the graveyard to the church, and measures 1.83m in height and .24m in width at base.<br><br>Ogham text: Remains of earlier inscription: ANṂ<br>
-Later inscription: ẠṆM MẠỊLE-INBIR/ MACI BROCANN
-<br>Translation: name/insciption of Máel-Inbher son of Broccán
-</p>
-<p> Further information on <a href=”http://www.corcadhuibhne3d.ie/kilmalkedar.php
-” target=”_blank”>CorcaDhuibhne 3d</a>and <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&site=Kilmalkedar&stone=187._Kilmalkedar&stoneinfo=inscription” target=”_blank”>Ogham in 3D</a></p>
-                              <div class="img-container">
-                            <div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model"src="https://sketchfab.com/models/726eec1b32ca48a5a66a69905825d439/embed"></iframe><p>
-    <a href="https://sketchfab.com/3d-models/kilmalkedar-ogham-stone-726eec1b32ca48a5a66a69905825d439?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Kilmalkedar ogham stone</a>
-    by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Sketchfab</a>
-</p>
-</div>
+                    </div>
+                    <!----------Second section of Ogham Accordian---------->
+                    <div class="col-sm-12 col-m-12 col-lg-6">
+                        <div class="columnTwo">
+                            <div class="ogham-accordian">
+                                <!--Cill Maoilchéadar---->
+                                <button class="accordian">Cill Maoilchéadar (Kilmalkedar),</button>
+                                <div class="panel">
+                                    <p>The early Christian and medieval site at Kilmalkedar covers a large area ... Although reputedly founded by Maolcethair in the seventh century, the site is associated with St Brendan. The ogham stone is part of a mid twelfth century church and remained important throughout the medieval period. Existing remains from the early Christian period include a corbelled building, perhaps a cell, some 50 m from the church, an ogham stone, the sundial stone, a plain stone cross and some bullaun stones. There is also St Brendan's oratory, situated some 400 m from the church. The stone is located on the north side of the pathway leading through the graveyard to the church, and measures 1.83m in height and .24m in width at base.
+                                        <br>
+                                        <br>Ogham text: Remains of earlier inscription: ANṂ
+                                        <br> Later inscription: ẠṆM MẠỊLE-INBIR/ MACI BROCANN
+                                        <br>Translation: name/insciption of Máel-Inbher son of Broccán
+                                    </p>
+                                    <p> Further information on <a href=”http://www.corcadhuibhne3d.ie/kilmalkedar.php ” target=”_blank”>CorcaDhuibhne 3d</a>and <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&site=Kilmalkedar&stone=187._Kilmalkedar&stoneinfo=inscription” target=”_blank”>Ogham in 3D</a></p>
+                                    <div class="img-container">
+                                        <div class="sketchfab-embed-wrapper">
+                                            <iframe title="A 3D model" src="https://sketchfab.com/models/726eec1b32ca48a5a66a69905825d439/embed"></iframe>
+                                            <p>
+                                                <a href="https://sketchfab.com/3d-models/kilmalkedar-ogham-stone-726eec1b32ca48a5a66a69905825d439?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Kilmalkedar ogham stone</a> by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+                                            </p>
+                                        </div>
 
-                              </div>
-                           </div>
-                           <!---Baile na hUnta---->
-                           <button  class="accordian">Baile na hUnta (Ballinahunt)</button>
-                           <div class="panel">
-                              <p>The find site of this ogham stone in Ballynahunt is a secondary location. The stone is thought to originally come from near a well "up the mountain east of Ballynahunt"'. 'Tobar na Croise is a spring well located near the head of Kilduff valley. If this is correct, the well may be associated with the ecclesiastical site of Kilduff (Cill Dubh), c.300 to the north east..<br><br>Ogham text: DUGẸNNG[I MA]QỊ RỌDỌS<br>Translation: 'of Dogenc? son of Rúad?
-</p>
-<p> Further information on <a href=”http://www.corcadhuibhne3d.ie/ballynahunt.php
- 
-” target=”_blank”>CorcaDhuibhne 3d</a>and <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&site=Ballynahunt&stone=171._Ballynahunt
-” target=”_blank”>Ogham in 3D</a></p>
-                              <div class="img-container">
-                                <div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" src="https://sketchfab.com/models/2cabef91647543a8aba340fa27d997de/embed"></iframe>
-<p>
-    <a href="https://sketchfab.com/3d-models/ballynahunt-ogham-stone-textured-2cabef91647543a8aba340fa27d997de?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Ballynahunt ogham stone (textured)</a>
-    by <a href="https://sketchfab.com/oghamin3d?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >oghamin3d</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Sketchfab</a>
-</p>
-</div>
+                                    </div>
+                                </div>
+                                <!---Baile na hUnta---->
+                                <button class="accordian">Baile na hUnta (Ballinahunt)</button>
+                                <div class="panel">
+                                    <p>The find site of this ogham stone in Ballynahunt is a secondary location. The stone is thought to originally come from near a well "up the mountain east of Ballynahunt"'. 'Tobar na Croise is a spring well located near the head of Kilduff valley. If this is correct, the well may be associated with the ecclesiastical site of Kilduff (Cill Dubh), c.300 to the north east..
+                                        <br>
+                                        <br>Ogham text: DUGẸNNG[I MA]QỊ RỌDỌS
+                                        <br>Translation: 'of Dogenc? son of Rúad?
+                                    </p>
+                                    <p> Further information on <a href=”http://www.corcadhuibhne3d.ie/ballynahunt.php ” target=”_blank”>CorcaDhuibhne 3d</a>and <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&site=Ballynahunt&stone=171._Ballynahunt ” target=”_blank”>Ogham in 3D</a></p>
+                                    <div class="img-container">
+                                        <div class="sketchfab-embed-wrapper">
+                                            <iframe title="A 3D model" src="https://sketchfab.com/models/2cabef91647543a8aba340fa27d997de/embed"></iframe>
+                                            <p>
+                                                <a href="https://sketchfab.com/3d-models/ballynahunt-ogham-stone-textured-2cabef91647543a8aba340fa27d997de?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Ballynahunt ogham stone (textured)</a> by <a href="https://sketchfab.com/oghamin3d?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">oghamin3d</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+                                            </p>
+                                        </div>
 
-                              </div>
-                           </div>
-                           <!---Áth na gCeap ---->
-                           <button  class="accordian">Áth na gCeap (Annagap)</button>
-                           <div class="panel">
-                              <p>Found near Anascaul in Co. Kerry. This fragment was bought by UCC in 1940 from Mr. Garret Fitzgerald and its provenance was given as Parkalassa Fort, Annagap (UCC). No ringfort in the townland is known by this name but the N half of Lisnakilla was owned by Mr. Fitzgerald and the present landowner confirms that it was from here that the ogham stone originally came. It is currently in Cork Public Museum. The stone measures .3 x .1m x .04m thick and is broken at both ends.
-</p>
-<p> Further information on <a href=”http://www.corcadhuibhne3d.ie/annagap.php
-” target=”_blank”>CorcaDhuibhne 3d</a></p>
-                              <div class="img-container">
-                                <div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" src="https://sketchfab.com/models/47333b32294d4d18b036451ddf38a919/embed" ></iframe>
-<p>
-    <a href="https://sketchfab.com/3d-models/annagap-ogham-fragment-untextured-47333b32294d4d18b036451ddf38a919?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Annagap ogham fragment (untextured)</a>
-    by <a href="https://sketchfab.com/oghamin3d?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >oghamin3d</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Sketchfab</a>
-</p>
-</div>
+                                    </div>
+                                </div>
+                                <!---Áth na gCeap ---->
+                                <button class="accordian">Áth na gCeap (Annagap)</button>
+                                <div class="panel">
+                                    <p>Found near Anascaul in Co. Kerry. This fragment was bought by UCC in 1940 from Mr. Garret Fitzgerald and its provenance was given as Parkalassa Fort, Annagap (UCC). No ringfort in the townland is known by this name but the N half of Lisnakilla was owned by Mr. Fitzgerald and the present landowner confirms that it was from here that the ogham stone originally came. It is currently in Cork Public Museum. The stone measures .3 x .1m x .04m thick and is broken at both ends.
+                                    </p>
+                                    <p> Further information on <a href=”http://www.corcadhuibhne3d.ie/annagap.php ” target=”_blank”>CorcaDhuibhne 3d</a></p>
+                                    <div class="img-container">
+                                        <div class="sketchfab-embed-wrapper">
+                                            <iframe title="A 3D model" src="https://sketchfab.com/models/47333b32294d4d18b036451ddf38a919/embed"></iframe>
+                                            <p>
+                                                <a href="https://sketchfab.com/3d-models/annagap-ogham-fragment-untextured-47333b32294d4d18b036451ddf38a919?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Annagap ogham fragment (untextured)</a> by <a href="https://sketchfab.com/oghamin3d?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">oghamin3d</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+                                            </p>
+                                        </div>
 
-                              </div>
-                           </div>
-                           <!---Inis Mhic Aoibhleáin---->
-                           <button  class="accordian">Inis Mhic Aoibhleáin (Inishvickillane),</button>
-                           <div class="panel">
-                              <p>At the south-east end of the island [of Inishvickillane] are the remains of an early monastic settlement. The site comprises of the ruins of a dry-stone oratory, a graveyard, a leacht [and stone cross], a possible beehive hut-sit, and a holy well dedicated to St Brendan. This stone is inscribed with a 'plain cross of 2 lines' lay within the graveyard. It is currently housed in Trinity College Dublin.<br><br>Ogham text:[CO?]BB[A?] AVI VLATIAMI MAQ.
-<br>Translation: '... Uí Flaithim? [son of...]'
-</p>
-<p> Further information on <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&site=Trinity_College_Dublin&stone=185._Inishvickillane&stoneinfo=inscription” target=”_blank”>Ogham in 3D</a></p>
-                              <div class="img-container">
-                            <div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" src="https://sketchfab.com/models/c02e94c3a036491b9cf33d6182aa8266/embed" ></iframe>
-<p >
-    <a href="https://sketchfab.com/3d-models/inishvickillane-ogham-stone-c02e94c3a036491b9cf33d6182aa8266?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Inishvickillane, Ogham Stone</a>
-    by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >The Discovery Programme</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
-</p>
-</div>
+                                    </div>
+                                </div>
+                                <!---Inis Mhic Aoibhleáin---->
+                                <button class="accordian">Inis Mhic Aoibhleáin (Inishvickillane),</button>
+                                <div class="panel">
+                                    <p>At the south-east end of the island [of Inishvickillane] are the remains of an early monastic settlement. The site comprises of the ruins of a dry-stone oratory, a graveyard, a leacht [and stone cross], a possible beehive hut-sit, and a holy well dedicated to St Brendan. This stone is inscribed with a 'plain cross of 2 lines' lay within the graveyard. It is currently housed in Trinity College Dublin.
+                                        <br>
+                                        <br>Ogham text:[CO?]BB[A?] AVI VLATIAMI MAQ.
+                                        <br>Translation: '... Uí Flaithim? [son of...]'
+                                    </p>
+                                    <p> Further information on <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&site=Trinity_College_Dublin&stone=185._Inishvickillane&stoneinfo=inscription” target=”_blank”>Ogham in 3D</a></p>
+                                    <div class="img-container">
+                                        <div class="sketchfab-embed-wrapper">
+                                            <iframe title="A 3D model" src="https://sketchfab.com/models/c02e94c3a036491b9cf33d6182aa8266/embed"></iframe>
+                                            <p>
+                                                <a href="https://sketchfab.com/3d-models/inishvickillane-ogham-stone-c02e94c3a036491b9cf33d6182aa8266?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Inishvickillane, Ogham Stone</a> by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">The Discovery Programme</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Sketchfab</a>
+                                            </p>
+                                        </div>
 
-                              </div>
-                           </div>
-                           <!---An Bhreac-chluain---->
-                           <button  class="accordian"> An Bhreac-chluain (Brackloon)</button>
-                           <div class="panel">
-                              <p>This fragment of an ogham stone is currently on display in Músaem Chorca Dhuibhne, Ballyferriter. It was found in a fence in Brackloon (An Bhreac-chluain) townland, and was for many years preserved in the grounds of Ballinagroun House, near Inch. It is not known from where it originally came, but it may be a portion of a stone that came from a souterrain within a rath in Brackloon townland<br><br>Ogham text::... MA]Q̣I MUCC̣[OI …<br>
-Later inscription: ẠṆM MẠỊLE-INBIR/ MACI BROCANN
-<br>Translation: ... son of the descendant of …</p>
-<p> Further information on <a href=”http://www.corcadhuibhne3d.ie/brackloon.php
-” target=”_blank”>CorcaDhuibhne 3d</a>and <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&site=Musaem_Chorca_Dhuibhne&stone=173._Brackloon&stoneinfo=inscription” target=”_blank”>Ogham in 3D</a></p>
-                              <div class="img-container">
-<div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model"" src="https://sketchfab.com/models/bb5e1b023e5b4edc8bd5e04e3f91e17f/embed" ></iframe>
+                                    </div>
+                                </div>
+                                <!---An Bhreac-chluain---->
+                                <button class="accordian"> An Bhreac-chluain (Brackloon)</button>
+                                <div class="panel">
+                                    <p>This fragment of an ogham stone is currently on display in Músaem Chorca Dhuibhne, Ballyferriter. It was found in a fence in Brackloon (An Bhreac-chluain) townland, and was for many years preserved in the grounds of Ballinagroun House, near Inch. It is not known from where it originally came, but it may be a portion of a stone that came from a souterrain within a rath in Brackloon townland
+                                        <br>
+                                        <br>Ogham text::... MA]Q̣I MUCC̣[OI …
+                                        <br> Later inscription: ẠṆM MẠỊLE-INBIR/ MACI BROCANN
+                                        <br>Translation: ... son of the descendant of …</p>
+                                    <p> Further information on <a href=”http://www.corcadhuibhne3d.ie/brackloon.php ” target=”_blank”>CorcaDhuibhne 3d</a>and <a href=”https://ogham.celt.dias.ie/stone.php?lang=en&site=Musaem_Chorca_Dhuibhne&stone=173._Brackloon&stoneinfo=inscription” target=”_blank”>Ogham in 3D</a></p>
+                                    <div class="img-container">
+                                        <div class="sketchfab-embed-wrapper">
+                                            <iframe title="A 3D model" " src="https://sketchfab.com/models/bb5e1b023e5b4edc8bd5e04e3f91e17f/embed " ></iframe>
 
 <p>
-    <a href="https://sketchfab.com/3d-models/brackloon-ogham-stone-rgb-bb5e1b023e5b4edc8bd5e04e3f91e17f?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank">Brackloon, Ogham Stone (RGB)</a>
-    by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >The Discovery Programme</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" >Sketchfab</a>
+    <a href="https://sketchfab.com/3d-models/brackloon-ogham-stone-rgb-bb5e1b023e5b4edc8bd5e04e3f91e17f?utm_medium=embed&utm_source=website&utm_campaign=share-popup " target="_blank ">Brackloon, Ogham Stone (RGB)</a>
+    by <a href="https://sketchfab.com/discoveryprogramme?utm_medium=embed&utm_source=website&utm_campaign=share-popup " target="_blank " >The Discovery Programme</a>
+    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup " target="_blank " >Sketchfab</a>
 </p>
 </div>
 
@@ -280,28 +277,28 @@ Later inscription: ẠṆM MẠỊLE-INBIR/ MACI BROCANN
                </div>
             </div>
             <!---------------/accordian ------------------------>
-            <hr class="my-4">
+            <hr class="my-4 ">
          </div>
       </section>
       <!---------------footer------------------------>
-      <footer id="footer" class="text-center">
+      <footer id="footer " class="text-center ">
          <div>
-            <img class="ogham-img" src="/assets/img/ogham-text-2.png" alt="ogham text">
+            <img class="ogham-img " src="/assets/img/ogham-text-2.png " alt="ogham text ">
             <br>
-            <p> &copy; <span id="year"></span> Breslin.
+            <p> &copy; <span id="year "></span> Breslin.
             <p>
          </div>
       </footer>
       <!---------------javascript,jquery, APIs ------------------------>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-     <script src="assets/js/script.js"></script>
-      <script src="assets/js/stones.js"></script>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdD4fpDYpsgx1Ww6NiVhb_zEgpb1kGn5k&callback=initMap"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+     <script src="assets/js/script.js "></script>
+      <script src="assets/js/stones.js "></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdD4fpDYpsgx1Ww6NiVhb_zEgpb1kGn5k&callback=initMap "></script>
       <script>
          var year = new Date().getFullYear().toString();
-         document.getElementById("year").innerHTML = year;
+         document.getElementById("year ").innerHTML = year;
       </script>
    </body>
 </html>

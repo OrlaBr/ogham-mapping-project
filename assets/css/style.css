@@ -24,6 +24,9 @@ body h1 {
   color:#b46812;
 }
 
+.ogham-img{
+    width: 100px;
+}
 /******************Landing Page *******************/
 
 #home-text {
@@ -85,17 +88,13 @@ body h1 {
 	padding-top: 20px;
 }
 
-#oghamMap h4 {
-    padding-bottom: 15px;
-}
 
 #oghamMap h5 {
 	color: #410912;
 }
 
-#oghamMap .ogham-img{
-	width: 100px;
-    padding: 20px;
+.fontAwesome {
+    font-size: 30px;
 }
 
 /******************Ogham Map*********************/
