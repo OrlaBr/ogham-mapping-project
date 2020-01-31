@@ -25,7 +25,7 @@ function initMap() {
                 lng: -10.30457
             },
             iconImage: 'assets/img/map-icon-1.png',
-            content: '<div class="infoWindowSize"><img src="info-window-ogham.png" alt="ogham stone"><p><strong>Baile an Reannaigh</strong> - Not in its original location, currently on the grounds of Colaiste Ide, Burnham, with other re-located ogham stones</p><a href="/#ballinrannig/" class="btn btn-default btn-sm iwButton">Read more about Ballinrannig</a></div>',
+            content: '<div class="infoWindowSize"><img src="info-window-ogham.png" alt="ogham stone"><p><strong>Baile an Reannaigh</strong> - Not in its original location, currently on the grounds of Colaiste Ide, Burnham, with other re-located ogham stones</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Ballinrannig</a></div>',
             draggable: false
         },
         {
@@ -88,7 +88,7 @@ function initMap() {
                 lng: -10.606058
             },
             iconImage: 'assets/img/map-icon-2.png',
-            content: '<img src="oghamstone.jpg" alt="ogham stone"><p><strong>Inis Mhic Aoibhleáin</strong> - Original site of this ogham stone, is believed to be part of a monastic enclosure, though it now resides in the ‘Book of Kells’ Exhibition in Trinity College, Dublin.</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Inis Mhic Aoibhleáin</a>',
+            content: '<img src="oghamstone.jpg" alt="ogham stone"><p><strong>Inis Mhic Aoibhleáin</strong> - Original site of this ogham stone, is believed to be part of a monastic enclosure, though it now resides in the ‘Book of Kells’ Exhibition in Trinity College, Dublin.</p>' + '<a href="#stoneOne">' + 'Read more about Inis Mhic Aoibhleáin</a>',
             draggable: false
         },
         {
@@ -149,8 +149,9 @@ function initMap() {
             //added a resize-event for responsive infoWindow 
             google.maps.event.addDomListener(window, 'resize', function() {
                 infowindow.open(map);
-            });
-
+            });   
+            //adding bootstrap collapse-show to the href link
+            $('a').button('toggle').addClass('show')
         }
     }
 };
