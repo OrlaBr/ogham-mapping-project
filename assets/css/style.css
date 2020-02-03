@@ -195,3 +195,25 @@ iframe {
 }
 
 /******************about page***************************/
+#about {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#about .container {
+    padding-top: 30px;
+}
+
+#about p {
+    display: block;
+}
+
+#about .container h2 {
+    color: #cd861c;
+    padding: 20px;
+}
+
+.aboutImg {
+    width: 350px;
+}
