@@ -22,7 +22,7 @@
      width: 100px;
 }
 /******************Landing Page *******************/
- #home-text {
+#home-text {
      margin: auto;
 }
  #home {
@@ -193,3 +193,5 @@ iframe {
  #footer p {
      padding: 0px 20px;
 }
+
+/******************about page***************************/

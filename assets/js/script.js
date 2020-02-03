@@ -25,7 +25,7 @@ function initMap() {
                 lng: -10.30457
             },
             iconImage: 'assets/img/map-icon-1.png',
-            content: '<div class="infoWindowSize"><img src="info-window-ogham.png" alt="ogham stone"><p><strong>Baile an Reannaigh</strong> - Not in its original location, currently on the grounds of Colaiste Ide, Burnham, with other re-located ogham stones</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Ballinrannig</a></div>',
+            content: '<div class="infoWindowSize"><img src="info-window-ogham.png" alt="ogham stone"><p><strong>Baile an Reannaigh</strong> - Not in its original location, currently on the grounds of Colaiste Ide, Burnham, with other re-located ogham stones</p><a href="ballinrannig" class="btn btn-default btn-sm iwButton">Read more about Ballinrannig</a></div>',
             draggable: false
         },
         {
@@ -34,7 +34,7 @@ function initMap() {
                 lng: -10.306496
             },
             iconImage: 'assets/img/map-icon-1.png',
-            content: '<img src="oghamstone.jpg" alt="ogham stone"><p><strong>Cill Fhiontain</strong> - An unusual bilingual stone with both an ogham inscription and an inscription in the Roman or Latin alphabet.</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Cill Fhiontain</a>',
+            content: '<div class="infoWindowSize"><img src="oghamstone.jpg" alt="ogham stone"><p><strong>Cill Fhiontain</strong> - An unusual bilingual stone with both an ogham inscription and an inscription in the Roman or Latin alphabet.</p><a href="kilfountain" class="btn btn-default btn-sm iwButton">Read more about Cill Fhiontain</a></div>',
             draggable: false
         },
         {
@@ -43,7 +43,7 @@ function initMap() {
                 lng: -10.331399
             },
             iconImage: 'assets/img/map-icon-1.png',
-            content: '<img src="oghamstone.jpg" alt="ogham stone"><p><strong>An Baile Riabhach</strong> - This ogham stone stands among an early ecclesiastical site, overlooking Dingle Bay </p><a href="#" class="btn btn-default btn-sm iwButton">Read more about An Baile Riabhach</a>',
+            content: '<div class="infoWindowSize"><img src="/assets/img/inisvickillane.jpg" alt="ogham stone"><p><strong>An Baile Riabhach</strong> - This ogham stone stands among an early ecclesiastical site, overlooking Dingle Bay </p><a href="#" class="btn btn-default btn-sm iwButton">Read more about An Baile Riabhach</a></div>',
             draggable: false
         },
         {
@@ -52,7 +52,7 @@ function initMap() {
                 lng: -10.358471
             },
             iconImage: 'assets/img/map-icon-1.png',
-            content: '<img src="oghamstone.jpg" alt="ogham stone"><p><strong>Cill an gColmán</strong> - A large irregularly-shaped boulder, its west face inscribed with an ogham inscription and 2 crosses on an early Christian church site</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Cill an gColmán</a>',
+            content: '<div class="infoWindowSize"><img src="/assets/img/kilcolman.jpg" alt="ogham stone"><p><strong>Cill an gColmán</strong> - A large irregularly-shaped boulder, its west face inscribed with an ogham inscription and 2 crosses on an early Christian church site</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Cill an gColmán</a></div>',
             draggable: false
         },
         {
@@ -61,7 +61,7 @@ function initMap() {
                 lng: -10.336582
             },
             iconImage: 'assets/img/map-icon-1.png',
-            content: '<img src="oghamstone.jpg" alt="ogham stone"><p><strong>Kilmalkeadar</strong> - Located on the north side of the pathway leading through the graveyard to the Kilmalkeadar Church, and early christian and medieval site</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Kilmalkeadar</a>',
+            content: '<div class="infoWindowSize"><img src="oghamstone.jpg" alt="ogham stone"><p><strong>Kilmalkeadar</strong> - Located on the north side of the pathway leading through the graveyard to the Kilmalkeadar Church, and early christian and medieval site</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Kilmalkeadar</a></div>',
             draggable: false
         },
         {
@@ -70,7 +70,7 @@ function initMap() {
                 lng: -10.057940
             },
             iconImage: 'assets/img/map-icon-1.png',
-            content: '<img src="oghamstone.jpg" alt="ogham stone"><p><strong>Áth na gCeap</strong> - Thought to have come from the townlands of Annascaul, this stone now resides in Cork Public Museum</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Áth na gCeap</a>',
+            content: '<div class="infoWindowSize"><img src="/assets/img/annagap.jpg" alt="ogham stone"><p><strong>Áth na gCeap</strong> - Thought to have come from the townlands of Annascaul, this stone now resides in Cork Public Museum</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Áth na gCeap</a></div>',
             draggable: false
         },
         {
@@ -79,7 +79,7 @@ function initMap() {
                 lng: -10.002512
             },
             iconImage: 'assets/img/map-icon-1.png',
-            content: '<img src="oghamstone.jpg" alt="ogham stone"><p><strong>Baile na hUnta</strong> - This is thought to be the original site of this ogham stone.</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Baile na hUnta</a>',
+            content: '<div class="infoWindowSize"><img src="oghamstone.jpg" alt="ogham stone"><p><strong>Baile na hUnta</strong> - This is thought to be the original site of this ogham stone.</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Baile na hUnta</a></div>',
             draggable: false
         },
         {
@@ -88,7 +88,7 @@ function initMap() {
                 lng: -10.606058
             },
             iconImage: 'assets/img/map-icon-2.png',
-            content: '<img src="oghamstone.jpg" alt="ogham stone"><p><strong>Inis Mhic Aoibhleáin</strong> - Original site of this ogham stone, is believed to be part of a monastic enclosure, though it now resides in the ‘Book of Kells’ Exhibition in Trinity College, Dublin.</p>' + '<a href="#stoneOne">' + 'Read more about Inis Mhic Aoibhleáin</a>',
+            content: '<div class="infoWindowSize"><img src="/assets/img/inisvickillane.jpg" alt="ogham stone"><p><strong>Inis Mhic Aoibhleáin</strong> - Original site of this ogham stone, is believed to be part of a monastic enclosure, though it now resides in the ‘Book of Kells’ Exhibition in Trinity College, Dublin.</p>' + '<a href="#inisvickillane">' + 'Read more about Inis Mhic Aoibhleáin</a></div>',
             draggable: false
         },
         {
@@ -97,7 +97,7 @@ function initMap() {
                 lng: -10.405999
             },
             iconImage: 'assets/img/map-icon-3.png',
-            content: '<img src="oghamstone.jpg" alt="ogham stone"><p><strong>Imleach an Daingin</strong> - Original site of this ogham stone is unknown, but it can be seen in Museum Chorca Dhuibhne, in Ballyferriter</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Imleach an Daingin</a>',
+            content: '<div class="infoWindowSize"><img src="oghamstone.jpg" alt="ogham stone"><p><strong>Imleach an Daingin</strong> - Original site of this ogham stone is unknown, but it can be seen in Museum Chorca Dhuibhne, in Ballyferriter</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Imleach an Daingin</a></div>',
             draggable: false
         },
         {
@@ -106,11 +106,9 @@ function initMap() {
                 lng: -10.24003028869629
             },
             iconImage: 'assets/img/map-icon-3.png',
-            content: '<img src="oghamstone.jpg" alt="ogham stone"><p><strong>Baile an Ásaigh</strong> - A low standing stone situated on level reclaimed pastureland at the head of the valley which extends north east from Dingle Town</p><a href="#" class="btn btn-default btn-sm iwButton">Read more about Baile an Ásaigh</a>',
+            content: '<div class="infoWindowSize"><img src="/assets/img/ballinasig.jpg" alt="ogham stone"><p><strong>Baile an Ásaigh</strong> - A low standing stone situated on level reclaimed pastureland at the head of the valley which extends north east from Dingle Town</p><a href="#ballinasig" class="btn btn-default btn-sm iwButton">Read more about Baile an Ásaigh</a></div>',
             draggable: false
         },
-
-
 
     ];
     // Loop through markers
@@ -151,7 +149,6 @@ function initMap() {
                 infowindow.open(map);
             });   
             //adding bootstrap collapse-show to the href link
-            $('a').button('toggle').addClass('show')
         }
     }
 };
