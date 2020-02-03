@@ -275,9 +275,9 @@
                     </div>
                 </div>
             </div>
-            <!---------------/modal ------------------------>
-
-            <div class="container modalInfo">
+        </div>
+         <!---------------/modal ------------------------>
+                    <div class="container modalInfo">
                     <!-- Trigger the modal with a button -->
                     <button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#myModal">Click here if the 3d models are black</button>
                     <!-- Modal -->
@@ -286,11 +286,16 @@
                         <!-- Modal content-->
                         <div class="modal-content">
                             <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title">Viewing Sketchfab on mobile</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div class="modal-body">
-                            <p>Sketchfab is a powerful platform, so you should be able to see the model, but if you cant, it means your device is not caple of rendering the 3d models. If this is happening to you, and you really want to see these models on your device, we suggets you download the <a href="https://sketchfab.com/" data-toggle="tooltip" title="Bring me to Sketchfab!">Sketchfab app</a></p>
+                            <p>We are sorry you cannot see the 3d models! Although Sketchfab is a powerful online platform, the models may show up black on certain mobiles and browsers. There are a few ways you can fix this </p>
+                            <ul class="modalList">
+                                <li>Check to see if your <strong>WebGL</strong>(Web Graphics Library) is enabled.<br>You can check <a href="https://get.webgl.org/" alt="link to webgl.org">here</a>. If it is not you can read a wiki on how to enable your WebGL here <a href="https://www.wikihow.com/Enable-Webgl" alt="link to webgl wiki">here</a> </li>
+                                <li>Try a different browser. </li>
+                                <li>Download the <a href="https://sketchfab.com/" data-toggle="tooltip" title="Bring me to Sketchfab!">Sketchfab app</a></p></li>
+                            </ul> 
                             </div>
                             <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -299,9 +304,7 @@
                         
                         </div>
                     </div>
-            <hr class="my-4 ">
-        </div>
-
+<hr class="my-4 ">
     </section>
 <!---------------footer------------------------>
     <footer id="footer" class="text-center">

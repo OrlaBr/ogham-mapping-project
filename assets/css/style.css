@@ -195,6 +195,9 @@
 .modal-open {
     padding: auto;
 }
+.modal-body {
+    text-align: left;
+}
 /******************footer*********************/
  #footer {
      background-color: #f9f9f9;
