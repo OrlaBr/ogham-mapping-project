@@ -182,9 +182,18 @@
 .img-container a {
      color: #1CAAD9;
 }
-iframe {
+.iframe {
      width: 440px;
      height: 280px;
+}
+/******************modal*********************/
+
+.modalInfo {
+    padding-top: 30px;
+}
+
+.modal-open {
+    padding: auto;
 }
 /******************footer*********************/
  #footer {
