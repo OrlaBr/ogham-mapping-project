@@ -1,4 +1,4 @@
-#Stones of the Dingle Peninsula
+# Stones of the Dingle Peninsula
 ***
 ![logo for ogham-in-3d](web address)
 
