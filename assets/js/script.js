@@ -14,7 +14,7 @@ function initMap() {
         panControlOptions: {
             position: google.maps.ControlPosition.LEFT_BOTTOM
         }
-    }
+    };
     var map = new google.maps.Map(document.getElementById('map'), options);
 
 
@@ -143,19 +143,15 @@ function initMap() {
                     infoWindow.close();
                 }, 10000);
             });
-
-            //added a resize-event for responsive infoWindow 
-            google.maps.event.addDomListener(window, 'resize', function() {
-                infowindow.open(map);
-            });   
-            //adding bootstrap collapse-show to the href link
+   
         }
     }
     
-};
-
+}
+//making the href link in the coordinates work
 var hash = window.location.hash;
 var anchor = $('a[href$="'+hash+'"]');
 if (anchor.length > 0){
 anchor.click();
 }
+  

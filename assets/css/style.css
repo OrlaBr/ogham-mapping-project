@@ -205,9 +205,17 @@ body h2 {
 /******************footer*********************/
  #footer {
      background-color: #f9f9f9;
+     padding-top: 30px;
+    padding-bottom: 30px;
 }
  #footer p {
      padding: 0px 20px;
+
+}
+
+#footer .container span {
+  color:#cd861c;
+  font-size: 15px;
 }
 
 /******************about page***************************/
