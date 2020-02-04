@@ -248,6 +248,10 @@ body h2 {
     margin-top: 20px;
 }
 
-.furtherLinks {
-    text-align: center;
+.well ul {
+text-align: center;
+}
+
+.well li {
+display: inline-block;
 }
