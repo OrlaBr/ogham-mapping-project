@@ -9,6 +9,6 @@ function sendMail(contactForm) {
           console.log("Success", response);
         },
         function(error) {
-          console.log("Failled", error);
+          console.log("Failed", error);
         });
 }
