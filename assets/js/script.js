@@ -88,7 +88,7 @@ function initMap() {
                 lng: -10.606058
             },
             iconImage: 'assets/img/map-icon-2.png',
-            content: '<div class="infoWindowSize"><img src="/assets/img/inishvic.jpg" alt="ogham stone"><p><strong>Inis Mhic Aoibhleáin</strong> - Original site of this ogham stone, is believed to be part of a monastic enclosure, though it now resides in the ‘Book of Kells’ Exhibition in Trinity College, Dublin.</p><a href="#inisVic" class="btn btn-default btn-sm iwButton">Read more about Inis Mnic Aoibheáin</a></div>',
+            content: '<div class="infoWindowSize"><img src="/assets/img/inishvic.jpg" alt="ogham stone"><p><strong>Inis Mhic Aoibhleáin</strong> - Original site of this ogham stone, is believed to be part of a monastic enclosure, though it now resides in the ‘Book of Kells’ Exhibition in Trinity College, Dublin.</p><a href="#inisVic" class="btn btn-default btn-sm iwButton">Read more about Inis Mhic Aoibheáin</a></div>',
             draggable: false
         },
         {
