@@ -1,5 +1,5 @@
 # Ogham in 3d
-***
+
 ![landing page of website](https://github.com/OrlaBr/community-woodlands-project/blob/master/corcadhuibhne-sm.jpg 'Landing page')
 
 The aim of this website is to create a repository for a local community digital archaeology project. A group of volunteers, with the help of Dublin Institute of Advanced Studies and The Discovery Programme conducted a series of 3d mapping, starting with ogham stones, and moving onto other ancient antiquities, on the Dingle Peninsula. They are using Structure from Motion, a technique to create a 3-D structure of a scene from a set of 2-D images (photos). This website is the beginning of a digital archive of the research carried out.
@@ -9,22 +9,26 @@ View deployed site here: https://orlabr.github.io/ogham-mapping-project/index.ht
 
 ## Table of Contents:
 
-- [Project outline](#project-outline)
-- [User Experience](#user-experience)
-- [Design](#design)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Testing](#testing)
+1. [Project outline](#project-outline)
+2. [User Experience](#user-experience)
+3. [Design](#design)
+4. [Features](#features)
+5. [Technologies](#technologies)
+6. [Testing](#testing)
+7. [Deployment](#deployment)
+8. [Licence](#licence)
+9. [Further Learning](#further-learning)
+
 
 ## <img of ogham stone>
 
 ***
 
-## Project Outline :black_nib:
+## Project Outline
 This website has a dual purpose. It was created as a digital archive to showcase some of the Ogham Stones the project has been looking into, their location, information about the stone, and incorporate the 3d mapped scan.\\
 It also deploys all my course learning to date with the Code Institute. The elements I used in creating this website, are all practical techniques I have been learning,  working through the Interactive Front End Development modules of the Full Stack Developer Bootcamp.\\
 ---
-## User Experience :busts_in_silhouette:
+## User Experience
 
 ### Research:
 Before starting my UX research for this project, I did some research on creating ‘Interactive Maps’ and found lots of great websites and articles, (links and further reading below).
@@ -53,6 +57,10 @@ _Developer:_
 As a developer, I wanted to create a fully responsive website with a clean modern take on digital archiving. As a history fan I regularly visit online digital archives, but find a lot of them usually feel heavy and clunky, too academic focused, and are not mobile friendly.
 * This website would help me practice my new coding skills, develop logic and understanding of responsive interactive front end development.
 * Development of coding skills using HTML, CSS and Javascript in unison, and in different ways to create a website that is simple, extremely user friendly, with easy navigation, and yet capable of providing large bodies of information.
+
+---
+
+## Design
 
 #### Strategy & Scope:
 The website is designed to have a minimal and clean interface. With most of the information contained in just one scrollable page. I selected 10 stones to work with. If I was using more stones, I probably would move to a slightly different format, using more pages, but for the purpose of this project, I kept it to a minimal amount. The website uses a single index.html file to host most of the information, using the Bootstrap Framework to ensure mobile first fully responsive design.
@@ -84,14 +92,16 @@ After I had started the project, and realised the fault of the wireframe design,
 [Back to Top](#table-of-contents) 
 ---
 
-## Features :ledger:
+## Features 
 
 #### Existing Features
  - *Google Maps API* - incorporate a fully functioning Google Map with locations of ogham stones. Personalized infor window with image and link to further information.
  - *Contact Form* - Simple contact form to connect the project for information
  - Embedded iframes - styled iframes from online platform 'Sketchfab'
+ 
+ ----
 
-## Technologies Used :paperclip:
+## Technologies
  - Programming languages used: HTML, CSS & Javascript 
  - Frameworks used: <a href="https://getbootstrap.com/"> Bootstrap Framework</a> ~ 
  - Editors used:
@@ -110,8 +120,10 @@ After I had started the project, and realised the fault of the wireframe design,
 - <a href="https://fonts.google.com/">Google Fonts<a/> - sytlesheet linked to customize fonts
 - <a href="https://fontawesome.com/">Font Awesome<a/> - stylesheet linked to custimize icons
 - <a href="https://www.emailjs.com//">EmailJS<a/> - create usable contact form
+	
 ---
-## Testing: :wrench:
+	
+## Testing
 _Dev Tools_:
     These tools were used throughout the project build.
 * Google Chrome DevTools ~ used throughout the project for testing and debugging
@@ -126,4 +138,8 @@ _Code Validation:_
 
 [Back to Top](#table-of-contents)
 
+## Deployment
 
+## Licence
+
+## Further Learning
