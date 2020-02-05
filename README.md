@@ -5,6 +5,8 @@
 The aim of this website is to create a repository for a local community digital archaeology project. A group of volunteers, with the help of Dublin Institute of Advanced Studies and The Discovery Programme conducted a series of 3d mapping, starting with ogham stones, and moving onto other ancient antiquities, on the Dingle Peninsula. They are using Structure from Motion, a technique to create a 3-D structure of a scene from a set of 2-D images (photos). This website is the beginning of a digital archive of the research carried out.
 
 View deployed site here: https://orlabr.github.io/ogham-mapping-project/index.html
+
+
 ---
 
 ## Table of Contents:
