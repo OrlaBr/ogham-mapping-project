@@ -43,7 +43,7 @@ function initMap() {
                 lng: -10.331399
             },
             iconImage: 'assets/img/map-icon-1.png',
-            content: '<div class="infoWindowSize"><img src=/assets/img/ballymorereagh.jpg" alt="ogham stone"><p><strong>An Baile Riabhach</strong> - This ogham stone stands among an early ecclesiastical site, overlooking Dingle Bay </p><a href="#baileRiabh" class="btn btn-default btn-sm iwButton">Read more about An Baile Riabhach</a></div>',
+            content: '<div class="infoWindowSize"><img src="/assets/img/ballymorereagh.jpg" alt="ogham stone"><p><strong>An Baile Riabhach</strong> - This ogham stone stands among an early ecclesiastical site, overlooking Dingle Bay </p><a href="#baileRiabh" class="btn btn-default btn-sm iwButton">Read more about An Baile Riabhach</a></div>',
             draggable: false
         },
         {
@@ -61,7 +61,7 @@ function initMap() {
                 lng: -10.336582
             },
             iconImage: 'assets/img/map-icon-1.png',
-            content: '<div class="infoWindowSize"><img src=/assets/img/kilmalkedar2.jpg" alt="ogham stone"><p><strong>Kilmalkeadar</strong> - Located on the north side of the pathway leading through the graveyard to the Kilmalkeadar Church, and early christian and medieval site</p><a href="#cillM" class="btn btn-default btn-sm iwButton">Read more about Kilmalkeadar</a></div>',
+            content: '<div class="infoWindowSize"><img src="/assets/img/kilmalkedar2.jpg" alt="ogham stone"><p><strong>Kilmalkeadar</strong> - Located on the north side of the pathway leading through the graveyard to the Kilmalkeadar Church, and early christian and medieval site</p><a href="#cillM" class="btn btn-default btn-sm iwButton">Read more about Kilmalkeadar</a></div>',
             draggable: false
         },
         {
@@ -148,7 +148,7 @@ function initMap() {
     }
 
 }
-//making the href link in the coordinates work
+//making the href link in the infowindow work
 var hash = window.location.hash;
 var anchor = $('a[href$="' + hash + '"]');
 if (anchor.length > 0) {
