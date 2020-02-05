@@ -143,15 +143,14 @@ function initMap() {
                     infoWindow.close();
                 }, 10000);
             });
-   
+
         }
     }
-    
+
 }
 //making the href link in the coordinates work
 var hash = window.location.hash;
-var anchor = $('a[href$="'+hash+'"]');
-if (anchor.length > 0){
-anchor.click();
+var anchor = $('a[href$="' + hash + '"]');
+if (anchor.length > 0) {
+    anchor.click();
 }
-  
