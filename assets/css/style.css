@@ -37,7 +37,7 @@
      position: relative;
      width: 100%;
      background-size: cover;
-     background-color: rgba(255, 255, 255, 0.7);
+     background-color: rgba(255, 255, 255, 0.8);
      background-blend-mode: lighten;
 }
  .landing-text {
@@ -121,10 +121,8 @@
  .clearfix {
      clear: both;
 }
- #infoPage .lead {
-     margin: 0px;
-}
- #infoPage .lead p {
+
+ #infoPage p {
      padding: 10px;
 }
  #info-page .col-lg-6 .col-sm-12 {
