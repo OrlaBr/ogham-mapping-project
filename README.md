@@ -12,11 +12,8 @@ View deployed site here: https://orlabr.github.io/ogham-mapping-project/index.ht
 - [User Experience](#user-experience)
 - [Design](#design)
 - [Features](#features)
-
-
-
-
-***
+- [Technologies](#technologies)
+- [Testing](#testing)
 
 ## <img of ogham stone>
 
@@ -28,15 +25,15 @@ It also deploys all my course learning to date with the Code Institute. The elem
 
 ## User Experience :busts_in_silhouette:
 ---
-#### Research:
+### Research:
 Before starting my UX research for this project, I did some research on creating ‘Interactive Maps’ and found lots of great websites and articles, (links and further reading below).
-```Making Maps -  is a blog about diy cartography. Based on the  book Making Maps 3nd edition. It has some excellent blog posts about creating maps
-Robert E. Roth has written many papers on creating interactive maps. I particularly liked his work explaining The Three U’s of Interface Success. A successful interactive map in practice is contingent upon three components: the user, its utility, and its usability.```
-```Victor Gerard Temprano of Mapster has written some great articles too, on creating Interactive Maps. One particular article describes the user in detail, and this influenced my user story and design...“Don't assume your users will know how to use an online map...You need to consider how your grandmother (no offense to techie grandmas!) might react if she landed on the map. Where would she look, what would she click and be interested in?”```
+Making Maps -  is a blog about diy cartography. Based on the  book Making Maps 3nd edition. It has some excellent blog posts about creating maps
+Robert E. Roth has written many papers on creating interactive maps. I particularly liked his work explaining The Three U’s of Interface Success. A successful interactive map in practice is contingent upon three components: the user, its utility, and its usability.
+Victor Gerard Temprano of Mapster has written some great articles too, on creating Interactive Maps. One particular article describes the user in detail, and this influenced my user story and design...“Don't assume your users will know how to use an online map...You need to consider how your grandmother (no offense to techie grandmas!) might react if she landed on the map. Where would she look, what would she click and be interested in?”
 
 <img src="ux/interactive-map.png" alt="diagram of interactive map pyramid" title="Interactive Map Success Triangle" width="150" height="300">
 ---
-#### User Stories:
+### User Stories:
 
 * The website is a digital public archive of the research carried out by volunteers of ‘Corca Dhuibhne 3d, a pilot community digital archaeology project to 3d map Ogham stones on the Dingle Peninsula. It holds some of  the research carried out by volunteers, as well as a map of the stones that have been scanned.
 
@@ -102,7 +99,7 @@ After I had started the project, and realised the fault of the wireframe design,
 - <a href="https://fontawesome.com/">Font Awesome<a/> - stylesheet linked to custimize icons
 - <a href="https://www.emailjs.com//">EmailJS<a/>- create usable contact form
 ---
-## Testing and Validation: :wrench:
+## Testing: :wrench:
 _Dev Tools_:
 These tools were used throughout the project build.
 * Google Chrome DevTools ~ used throughout the project for testing and debugging
