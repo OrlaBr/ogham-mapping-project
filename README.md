@@ -27,20 +27,18 @@ View deployed site here: https://orlabr.github.io/ogham-mapping-project/index.ht
 ***
 
 ## Project Outline
-
 This website has a dual purpose. It was created as a digital archive to showcase some of the Ogham Stones the project has been looking into, their location, information about the stone, and incorporate the 3d mapped scan.\\
 It also deploys all my course learning to date with the Code Institute. The elements I used in creating this website, are all practical techniques I have been learning,  working through the Interactive Front End Development modules of the Full Stack Developer Bootcamp.\\
-
 ---
 ## User Experience
 
-### Research
+### Research:
 Before starting my UX research for this project, I did some research on creating ‘Interactive Maps’ and found lots of great websites and articles, (links and further reading below).
+Making Maps -  is a blog about diy cartography. Based on the  book Making Maps 3nd edition. It has some excellent blog posts about creating maps
+>Robert E. Roth has written many papers on creating interactive maps. I particularly liked his work explaining The Three U’s of Interface Success. A successful interactive map in practice is contingent upon three components: the user, its utility, and its usability.
+<img src="ux/interactive-map.png" alt="diagram of interactive map pyramid" title="Interactive Map Success Triangle" width="275" height="205">
+>Victor Gerard Temprano of Mapster has written some great articles too, on creating Interactive Maps. One particular article describes the user in detail, and this influenced my user story and design...“Don't assume your users will know how to use an online map...You need to consider how your grandmother (no offense to techie grandmas!) might react if she landed on the map. Where would she look, what would she click and be interested in?”
 
- - Making Maps is a blog about diy cartography. Based on the  book Making Maps 3nd edition. It has some excellent blog posts about creating maps. 
- - Robert E. Roth has written many papers on creating interactive maps. I particularly liked his work explaining The Three U’s of Interface Success. A successful interactive map in practice is contingent upon three components: the user, its utility, and its usability.
-<img src="ux/interactive-map.png" alt="diagram of interactive map pyramid" title="Interactive Map Success Triangle">
- - Victor Gerard Temprano of Mapster has written some great articles too, on creating Interactive Maps. One particular article describes the user in detail, and this influenced my user story and design...“Don't assume your users will know how to use an online map...You need to consider how your grandmother (no offense to techie grandmas!) might react if she landed on the map. Where would she look, what would she click and be interested in?”
 
 ---
 
@@ -138,7 +136,7 @@ _Code Validation:_
 * <a href="https://validator.w3.org/">W3C HTML Validator</a> 
 * <a href="https://validator.w3.org/">W3C CSS Validator</a> 
 * <a href="https://jshint.com/">JSHint</a> 
-* <a href="https://esprima.org/demo/validate.html">Esprima Syntax Validator</a>
+* <a href=”https://esprima.org/demo/validate.html”>Esprima Syntax Validator</a>
 
 [Back to Top](#table-of-contents)
 
@@ -147,11 +145,3 @@ _Code Validation:_
 ## Licence
 
 ## Further Learning
-
-I used different online platforms to help learn more, and fix bugs.
-Google Maps - Code Institute tutorials, YouTube Envato Tuts and Travesty Media were invaluable
-Stackoverflow 
-
-
-
-[Back to Top](#table-of-contents)
