@@ -89,6 +89,11 @@ body h2 {
      padding: 0px;
 }
 /******************infowindows***************************/
+
+.infoWindowSize img {
+    width: 200px;
+}
+
  .btn-default {
      background-color:#b46812;
      color: white;
