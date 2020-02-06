@@ -142,8 +142,9 @@ _Code Validation:_
     I used a few online validators and formatters to check the code at regular intervals throughout the build.
 * <a href="https://validator.w3.org/">W3C HTML Validator</a> 
 * <a href="https://validator.w3.org/">W3C CSS Validator</a> 
-* <a href="https://jshint.com/">JSHint</a> 
-* <a href=”https://esprima.org/demo/validate.html”>Esprima Syntax Validator</a>
+* <a href="https://jshint.com/">JSHint</a> - Javascript validator
+* <a href="https://esprima.org/demo/validate.html">Esprima</a> - Javascrupt synthax validator
+* <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en">Chrome Lens</a> - Accessibility validator
 
 
 ## Deployment
@@ -172,7 +173,6 @@ I had a number of small bugs to fix after deployment.
 - Overflow of text on viewing on tablet at the map section - added medium col variable.
 - Missing metatags in header - added
 - Spelling errrors - fixed
-- Accessabily  - used [Chrome Lens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en) to check the legibility of the site eg colours
 
 I had 1 big bug to fix after deployment - Sketchfab models not displaying properly - the appear black.
 - I had regularly checked the website during build using Chrome and Firefox dev tools. 
