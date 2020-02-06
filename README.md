@@ -169,7 +169,7 @@ _After deployment I made a snag list_
 I had a number of small bugs to fix after deployment.
 - Image paths - image paths differ on Gitpod and Github. I had to modify the paths of the images to display properly
 - About Page - social media falvicons in the footer were not working as font awesome link was not in header
-- Overflow of text on viewing on tablet at the map section
+- Overflow of text on viewing on tablet at the map section - added medium col variable.
 - Missing metatags in header
 - Accessabilyt guidelines
 
