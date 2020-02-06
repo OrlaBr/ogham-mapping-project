@@ -140,7 +140,7 @@ After I had started the project, and realised the fault of the wireframe design,
 _Dev Tools_:
     These tools were used throughout the project build.
 * Google Chrome DevTools ~ used throughout the project for testing and debugging
-* Firebox Firebug ~ used throughout the project for testing and debugging
+* Firebox Developer Tools ~ used throughout the project for testing and debugging
 
 _Code Validation:_
     I used a few online validators and formatters to check the code at regular intervals throughout the build.
@@ -179,6 +179,11 @@ I had a number of small bugs to fix after deployment.
 - Overflow of text on viewing on tablet at the map section - added medium col variable.
 - Missing metatags in header - added
 - Spelling errors - fixed
+- Console log errors:
+     - Chrome 'SameSite' cookies error - new chrome cookie development. Added suggeted Javascript code from [Google Chrome Labs](https://github.com/GoogleChromeLabs/samesite-examples)
+     `document.cookie = 'same-site-cookie=foo; SameSite=Lax';
+        document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';`
+     - Too many Active WebGL contexts. Oldest context will be lost - Sketchfab modals not showing on mobile and
 
 I had 1 big bug to fix after deployment - Sketchfab models not displaying properly - the appear black.
 - I had regularly checked the website during build using Chrome and Firefox dev tools. 
