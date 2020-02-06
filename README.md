@@ -75,13 +75,15 @@ _Style:_
  - Design - minimalist, clean design
  - Fonts - I used Google Fonts to personalize the text. Most sites when discussing ‘Celtic’ antiquities use a ‘celtic style font, however I don’t think it looks great on a web page, particularly mobile. I chose ‘Aramath’ and ‘Forum’, as they are stylised but clean and readably fonts.
  - Color Scheme - The color scheme is simple, and kept to a minimum to ensure full eligibility. Off white background, dark text with headings and buttons a shade of brown. These browns are  based on colouring from old medieval maps.
+ - Map markers -  I played around with map marker types, and decided to stick with generic map markers rather than stylized markers with an icon. This kept within my design remit of simplicity and ease of use. I personalized the markers colours using [Icons8](https://icons8.com/).
+
   <img src="ux/map-theme.jpg" alt="colour shceme for website design" width="600">  
 
 _Photos and 3D Models:_
 The Corca Dhuibhne 3d models were created by volunteers, of which I was one, using an educational copy of Agisoft donated by the Discovery Programme. They are in the public domain, but are copyright to Corca Dhuibhne 3d group, of which I am a member. I have full permission to use the information, photos, and 3 models on my website, which I have listed as educational use. I have written a tutorial about using Agisoft, you can read it on my blog [here](http://fitefuaite.com/digital-artefact/agisoft-photoscan/). The Corca Dhuibhne 3d website is currently under review, and I am hoping to incorporate some of the elements of this website and the map into the website.
     
 
-#### Structure, Skeleton & Skeleton:
+#### Structure, Skeleton & Surface:
 Keeping the pyramid of interface success, 'user - utility- usability', and my user story in mind, simplicity and ease of use were the most important design elements, when creating the wireframe and mock up. Keeping images to a minimum, with simple explainiations of how to use the site, with a very deliberate colour scheme and simple fonts.
 
 _Wireframing:_
@@ -103,9 +105,9 @@ After I had started the project, and realised the fault of the wireframe design,
 
 #### Existing Features
  - *Javascript and DOM manipulation - using javascript and DOM manipulation to create a responsive and interactive website
- - *Google Maps API* - incorporate a fully functioning Google Map with locations of ogham stones. Personalized infor window with image and link to further information.
-  - *Embedded iframes* - styled iframes from online platform 'Sketchfab'
-  - *Contact Form* - Simple contact form to connect to the project for information
+ - *Google Maps API* - incorporate a fully functioning Google Map with locations of ogham stones. Personalized infowindow with image and link to further information.
+ - *Embedded iframes* - styled iframes from online platform 'Sketchfab'
+ - *Contact Form* - Simple contact form to connect to the project for information
 
   <img src="ux/emailjs.png" height="200" title="Screenshot of 3d model of ogham stone">
 
@@ -128,8 +130,8 @@ After I had started the project, and realised the fault of the wireframe design,
 - <a href="https://balsamiq.com/">Balsamiq<a/> - to create initial wireframe
 - <a href="https://www.canva.com/">Canva<a/> - to create a detailed mock-up
 - <a href="https://www.adobe.com/">Adobe Photoshop<a/> - to edit the photographs
-- <a href="https://fonts.google.com/">Google Fonts<a/> - sytlesheet linked to customize fonts
-- <a href="https://fontawesome.com/">Font Awesome<a/> - stylesheet linked to custimize icons
+- <a href="https://fonts.google.com/">Google Fonts<a/> - stylesheet linked to customize fonts
+- <a href="https://fontawesome.com/">Font Awesome<a/> - stylesheet linked to customize icons
 - <a href="https://www.emailjs.com//">EmailJS<a/> - create usable contact form
 	
 ---
@@ -145,17 +147,18 @@ _Code Validation:_
 * <a href="https://validator.w3.org/">W3C HTML Validator</a> 
 * <a href="https://validator.w3.org/">W3C CSS Validator</a> 
 * <a href="https://jshint.com/">JSHint</a> - Javascript validator
-* <a href="https://esprima.org/demo/validate.html">Esprima</a> - Javascrupt synthax validator
+* <a href="https://esprima.org/demo/validate.html">Esprima</a> - Javascript syntax validator
 * <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en">Chrome Lens</a> - Accessibility validator
 
+---
 
 ## Deployment
-This website was developed using Gitpod and hosted using Github, generated from a template created by the Code Instutute, and then deployed directly from the master branch. 
+This website was developed using Gitpod and hosted using Github, generated from a template created by the Code Institute, and then deployed directly from the master branch. 
 Regular changes were made and all updates were then committed to the master branch. The first or home page is called index.html, as servers expect index.html to be the 
 name of the main file of a website folder. An assets folder was then created, to include the CSS stylesheet, Javascript files and an sub folder with images used on the site. 
-I proceeded to work on sections, commiting as I went. I created a UX folder to hold any wireframes, designs or other research material.
+I proceeded to work on sections, committing as I went. I created a UX folder to hold any wireframes, designs or other research material.
 
-Changes made: Originally I wanted the accordian to be insode a toggles side panel, but after building it, I discovered it just didnt work in mobile view, so I adapted my design 
+Changes made: Originally I wanted the accordion to be inside a toggles side panel, but after building it, I discovered it just didn't work in mobile view, so I adapted my design 
 so I fixed the navbar to the top. This caused issues with the first section, so I had to adjust the margin and paddings to fit. The 'about' and 'contact' 
 Throughout the design and implementation of the website I kept code snippets in Repl and notes in Google Docs. I then cross referenced the Read Me page and the website, 
 working through the sections, eg UX, UI, testing, validation, correcting errors when I came across them. 
@@ -168,36 +171,39 @@ working through the sections, eg UX, UI, testing, validation, correcting errors 
 4. Run `$ npm install` to install the project dependencies
 5. Run `$ npm start` to start live preview server
 
-_After deployment I made a snag list_
+_Post deployment snag list_
+
 I had a number of small bugs to fix after deployment.
 - Image paths - image paths differ on Gitpod and Github. I had to modify the paths of the images to display properly - corrected
-- About Page - social media falvicons in the footer were not working as font awesome link was not in header - added
+- About Page - social media favicons in the footer were not working as font awesome link was not in header - added
 - Overflow of text on viewing on tablet at the map section - added medium col variable.
 - Missing metatags in header - added
-- Spelling errrors - fixed
+- Spelling errors - fixed
 
 I had 1 big bug to fix after deployment - Sketchfab models not displaying properly - the appear black.
 - I had regularly checked the website during build using Chrome and Firefox dev tools. 
 The 3d models worked perfectly, when checking the responsive mode, different devices and models. However these were all still on a desktop computer.
-When I deployed the site and checked the models on actual physical devices, phones, tablets, in some cases the 3d models didnt display properly. 
-Although Sketchfab is a very powerful platform and fully responsive, there can be some issues with ram capacity and different browers on different makes and ages of mobiles.
+When I deployed the site and checked the models on actual physical devices, phones, tablets, in some cases the 3d models didn't display properly. 
+Although Sketchfab is a very powerful platform and fully responsive, there can be some issues with ram capacity and different browsers on different makes and ages of mobiles.
 I looked into working with Sketchfab API if that would work better, I changed the 3d models so they were embedded pre-loaded, but there was nothing I can do if people are viewing
-the models on a phone that isnt capable of renedering 3d images. On some browsers the WebGL is automatically disabled too. I was very disappoingted as it defeated my goal of making digital archives including 3d materials
+the models on a phone that isn't capable of rendering 3d images. On some browsers the WebGL is automatically disabled too. I was very disappointed as it defeated my goal of making digital archives including 3d materials
 renderable on a mobile scale. I thought about removing the 3d models altogether, but they worked so well within the site, I decided to keep them in the site but add an information
-modal, a disclaimer of sorts, explaining why the models might appear black. This actually fitted in with my user story, of an older, less 'tech savvie person' using the website.
-This person is also less likely to regularily upgrade their phones and software. They also have a tendency to be more patient, and not expect immediate answers coming from a pre-digital age.
+modal, a disclaimer of sorts, explaining why the models might appear black. This actually fitted in with my user story, of an older, less 'tech savvy person' using the website.
+This person is also less likely to regularly upgrade their phones and software. They also have a tendency to be more patient, and not expect immediate answers coming from a pre-digital age.
 So I decided to retain the 3d models within the website.
 
 
-
+---
 ## Credits 
  - Permission granted from Corca Dhuibhne 3d to use material ~ text, images and 3d models.
  - Text collated from online sources - Ogham in 3D, Discovery Programme, Corca Dhuibhne 3d, National Archaeology Records.
  - Sketchfab models - free for educational use. Copyright Corca Dhuibhne 3d
  - Background map image copyright free from <https://pixabay.com/>.
  - Social media icons copyright free from <https://fontawesome.com/>.
+ - Map markers  - free from <https://icons8.com/icons>
  - [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/) Orla Breslin 2020
  
+---
 ## Acknowledgements
 
 _Interactive Maps:_
@@ -209,8 +215,8 @@ _Interactive Maps:_
 _Coding Tutorials:_
 - [Code Institute](https://codeinstitute.net)
 - [YouTube Tutorials](https://www.youtube.com) eg mmtuts, Traversy Media, Academind, Envoto
-- [Stackoverflow](https://stackoverflow.com/) coding issues with map marker links to bootstrap accordian
+- [Stack Overflow](https://stackoverflow.com/) coding issues with map marker links to bootstrap accordion
 - [Free Code Camp ](https://www.freecodecamp.org/) coding tutorials and problem solving
 
 
-<img src="assets/img/oghamstones.png" height="200" title="collage of 3 ogham stones">
+<img src="ux/ogham-stones.png" height="200" title="collage of 3 ogham stones">
