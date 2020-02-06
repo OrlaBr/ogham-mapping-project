@@ -1,6 +1,6 @@
 # Ogham in 3d
 
-![landing page of website](https://github.com/OrlaBr/community-woodlands-project/blob/master/corcadhuibhne-sm.jpg 'Landing page')
+<img src="ux/responsive-desing.png" height="200 " title="Screenshot of website on different devices">
 
 The aim of this website is to create a repository for a local community digital archaeology project. A group of volunteers, with the help of Dublin Institute of Advanced Studies and The Discovery Programme conducted a series of 3d mapping, starting with ogham stones, and moving onto other ancient antiquities, on the Dingle Peninsula. They are using Structure from Motion, a technique to create a 3-D structure of a scene from a set of 2-D images (photos). This website is the beginning of a digital archive of the research carried out.
 
@@ -23,9 +23,8 @@ View deployed site here: https://orlabr.github.io/ogham-mapping-project/index.ht
 10. [Acknowledgements](#Acknowledgements)
 
 
-## <img of ogham stone>
-
 ***
+<img src="ux/oghamstone.jpg" height="200" alt="Screenshot of 3d model of ogham stone">
 
 ## Project Outline
 
@@ -41,7 +40,7 @@ Before starting my UX research for this project, I did some research on creating
 >Victor Gerard Temprano of Mapster has written some great articles too, on creating Interactive Maps. One particular article describes the user in detail, and this influenced my user story and design...“Don't assume your users will know how to use an online map...You need to consider how your grandmother (no offense to techie grandmas!) might react if she landed on the map. Where would she look, what would she click and be interested in?”
 >Robert E. Roth has written many papers on creating interactive maps. I particularly liked his work explaining The Three U’s of Interface Success. A successful interactive map in practice is contingent upon three components: the user, its utility, and its usability.
 
-><img src="ux/interactive-map.png" alt="diagram of interactive map pyramid" title="Interactive Map Success Triangle" width="175" height="105">
+><img src="ux/interactive-map.png" alt="diagram of interactive map pyramid" width="175">
 
 
 
@@ -73,13 +72,12 @@ As a developer, I wanted to create a fully responsive website with a clean moder
 The website is designed to have a minimal and clean interface. With most of the information contained in just one scrollable page. I selected 10 stones to work with. If I was using more stones, I probably would move to a slightly different format, using more pages, but for the purpose of this project, I kept it to a minimal amount. The website uses a single index.html file to host most of the information, using the Bootstrap Framework to ensure mobile first fully responsive design.
 
 _Style:_
-
  - Design - minimalist, clean design
  - Fonts - I used Google Fonts to personalize the text. Most sites when discussing ‘Celtic’ antiquities use a ‘celtic style font, however I don’t think it looks great on a web page, particularly mobile. I chose ‘Aramath’ and ‘Forum’, as they are stylised but clean and readably fonts.
  - Color Scheme - The color scheme is simple, and kept to a minimum to ensure full eligibility. Off white background, dark text with headings and buttons a shade of brown. These browns are  based on colouring from old medieval maps.
-    
-_Photos and 3D Models:_
+  <img src="ux/map-theme.jpg" alt="colour shceme for website design" width="600">  
 
+_Photos and 3D Models:_
 The Corca Dhuibhne 3d models were created by volunteers, of which I was one, using an educational copy of Agisoft donated by the Discovery Programme. They are in the public domain, but are copyright to Corca Dhuibhne 3d group, of which I am a member. I have full permission to use the information, photos, and 3 models on my website, which I have listed as educational use. I have written a tutorial about using Agisoft, you can read it on my blog [here](http://fitefuaite.com/digital-artefact/agisoft-photoscan/). The Corca Dhuibhne 3d website is currently under review, and I am hoping to incorporate some of the elements of this website and the map into the website.
     
 
@@ -87,17 +85,18 @@ The Corca Dhuibhne 3d models were created by volunteers, of which I was one, usi
 Keeping the pyramid of interface success, 'user - utility- usability', and my user story in mind, simplicity and ease of use were the most important design elements, when creating the wireframe and mock up. Keeping images to a minimum, with simple explainiations of how to use the site, with a very deliberate colour scheme and simple fonts.
 
 _Wireframing:_
-
 I created a wireframe for this website using Balsamiq, but found the original design, using a bootstrap collapsible sidebar did not work well on mobile. The design only worked in landscape view on a mobile, and to me this meant it was not fully responsive. So I changed the layout to have a collapsible accordion bootstrap style beneath the map.
-<img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/wire-frame-mapping-project.pdf" alt="wireframe of mapping project" title="link to pdf of wireframe">
+<img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/wire-frame-mapping-project.pdf" alt="wireframe of mapping project">
 
 _Detailed mockup_
-
 After I had started the project, and realised the fault of the wireframe design, I edited my design using Canva, to create a more detailed mock up of the website. This enabled me to test the details such as fonts, imagery etc, in more detail.
-<img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/ogham-in-3d.pdf" alt="ogham mapping mock up" title="link to pdf of mock up">
+<img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/ogham-in-3d.pdf" alt="ogham mapping mock up">
 
 
-[Back to Top](#table-of-contents) 
+
+[Back to Top](#table-of-contents)
+
+
 ---
 
 ## Features 
@@ -105,8 +104,11 @@ After I had started the project, and realised the fault of the wireframe design,
 #### Existing Features
  - *Javascript and DOM manipulation - using javascript and DOM manipulation to create a responsive and interactive website
  - *Google Maps API* - incorporate a fully functioning Google Map with locations of ogham stones. Personalized infor window with image and link to further information.
- - *Contact Form* - Simple contact form to connect to the project for information
- - *Embedded iframes* - styled iframes from online platform 'Sketchfab'
+  - *Embedded iframes* - styled iframes from online platform 'Sketchfab'
+  - *Contact Form* - Simple contact form to connect to the project for information
+
+  <img src="ux/emailjs.png" height="200" title="Screenshot of 3d model of ogham stone">
+
  
  ----
 
@@ -211,3 +213,4 @@ _Coding Tutorials:_
 - [Free Code Camp ](https://www.freecodecamp.org/) coding tutorials and problem solving
 
 
+<img src="assets/img/oghamstones.png" height="200" title="collage of 3 ogham stones">
