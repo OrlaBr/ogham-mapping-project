@@ -29,19 +29,20 @@ View deployed site here: https://orlabr.github.io/ogham-mapping-project/index.ht
 
 ## Project Outline
 
-This website has a dual purpose. It was created as a digital archive to showcase some of the Ogham Stones the project has been looking into, their location, information about the stone, and incorporate the 3d mapped scan.
-It also deploys all my course learning to date with the Code Institute. The elements I used in creating this website, are all practical techniques I have been learning,  working through the Interactive Front End Development modules of the Full Stack Developer Bootcamp.
----
+This website has a dual purpose. It was created as a digital archive to showcase some of the Ogham Stones the project has been looking into, their location, information about the stone, and incorporate the 3d mapped scan. It also deploys all my course learning to date with the Code Institute. The elements I used in creating this website, are all practical techniques I have been learning,  working through the Interactive Front End Development modules of the Full Stack Developer Bootcamp
 
+----
 
 ## User Experience
 
 ### Research:
 Before starting my UX research for this project, I did some research on creating ‘Interactive Maps’ and found lots of great websites and articles, (links and further reading below).
->Making Maps -  is a blog about diy cartography. Based on the  book Making Maps 3nd edition. It has some excellent blog posts about creating maps
->Robert E. Roth has written many papers on creating interactive maps. I particularly liked his work explaining The Three U’s of Interface Success. A successful interactive map in practice is contingent upon three components: the user, its utility, and its usability.
-><img src="ux/interactive-map.png" alt="diagram of interactive map pyramid" title="Interactive Map Success Triangle" width="275" height="205">
+>Making Maps -  is a blog about diy cartography. Based on the  book Making Maps 3nd edition. It has some excellent blog posts about creating maps.
 >Victor Gerard Temprano of Mapster has written some great articles too, on creating Interactive Maps. One particular article describes the user in detail, and this influenced my user story and design...“Don't assume your users will know how to use an online map...You need to consider how your grandmother (no offense to techie grandmas!) might react if she landed on the map. Where would she look, what would she click and be interested in?”
+>Robert E. Roth has written many papers on creating interactive maps. I particularly liked his work explaining The Three U’s of Interface Success. A successful interactive map in practice is contingent upon three components: the user, its utility, and its usability.
+
+><img src="ux/interactive-map.png" alt="diagram of interactive map pyramid" title="Interactive Map Success Triangle" width="175" height="105">
+
 
 
 ---
@@ -79,21 +80,21 @@ _Style:_
     
 _Photos and 3D Models:_
 
-The Corca Dhuibhne 3d models were created by volunteers, using an educational copy of Agisoft donated by the Discovery Programme. They are in the public domain, but are copyright to Corca Dhuibhne 3d group, of which I am a member. I have full permission to use the information, photos, and 3 models on my website, which I have listed as educational use. The ‘corca dhuibhne 3d website is currently under review, and I am hoing to incorporate some of the elements of this website and the map into the website.
+The Corca Dhuibhne 3d models were created by volunteers, of which I was one, using an educational copy of Agisoft donated by the Discovery Programme. They are in the public domain, but are copyright to Corca Dhuibhne 3d group, of which I am a member. I have full permission to use the information, photos, and 3 models on my website, which I have listed as educational use. I have written a tutorial about using Agisoft, you can read it on my blog [here](http://fitefuaite.com/digital-artefact/agisoft-photoscan/). The Corca Dhuibhne 3d website is currently under review, and I am hoping to incorporate some of the elements of this website and the map into the website.
     
 
 #### Structure, Skeleton & Skeleton:
-Keeping the pyramid of interface success, user - utility- usability, and my user story in mind, simplicity and ease of use were the most important design elements, when creating the wireframe and mock up. Keeping images to a minimum, with simple explainiations of how to use the site, with a very deliberate colour scheme and simple fonts.
+Keeping the pyramid of interface success, 'user - utility- usability', and my user story in mind, simplicity and ease of use were the most important design elements, when creating the wireframe and mock up. Keeping images to a minimum, with simple explainiations of how to use the site, with a very deliberate colour scheme and simple fonts.
 
 _Wireframing:_
 
 I created a wireframe for this website using Balsamiq, but found the original design, using a bootstrap collapsible sidebar did not work well on mobile. The design only worked in landscape view on a mobile, and to me this meant it was not fully responsive. So I changed the layout to have a collapsible accordion bootstrap style beneath the map.
-<img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/wire-frame-mapping-project.pdf" alt="wireframe of mapping project" title="Wireframe of Ogham mapping project">
+<img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/wire-frame-mapping-project.pdf" alt="wireframe of mapping project" title="link to pdf of wireframe">
 
 _Detailed mockup_
 
 After I had started the project, and realised the fault of the wireframe design, I edited my design using Canva, to create a more detailed mock up of the website. This enabled me to test the details such as fonts, imagery etc, in more detail.
-<img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/ogham-in-3d.pdf" alt="ogham mapping mock up" title="ogham mapping mock up">
+<img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/ogham-in-3d.pdf" alt="ogham mapping mock up" title="link to pdf of mock up">
 
 
 [Back to Top](#table-of-contents) 
@@ -102,22 +103,23 @@ After I had started the project, and realised the fault of the wireframe design,
 ## Features 
 
 #### Existing Features
+ - *Javascript and DOM manipulation - using javascript and DOM manipulation to create a responsive and interactive website
  - *Google Maps API* - incorporate a fully functioning Google Map with locations of ogham stones. Personalized infor window with image and link to further information.
- - *Contact Form* - Simple contact form to connect the project for information
- - Embedded iframes - styled iframes from online platform 'Sketchfab'
+ - *Contact Form* - Simple contact form to connect to the project for information
+ - *Embedded iframes* - styled iframes from online platform 'Sketchfab'
  
  ----
 
 ## Technologies
- - Programming languages used: HTML, CSS & Javascript 
+ - Programming languages used: HTML5, CSS3 & Javascript 
  - Frameworks used: <a href="https://getbootstrap.com/"> Bootstrap</a> 
  - Editors used:
-	* <a href="https://repl.it">Repl</a> ~ I used Repl to write and test code snippets. This is helping me build up a personal library of code snippets and hacks that I can use in different projects in the future.
+	* <a href="https://repl.it/@orlabr">Repl</a> ~ I use Repl to write and test code snippets. This is helping me build up a personal library of code snippets and hacks that I can use in different projects in the future.
 	* <a href="https://gitpod.com">Gitpod</a> ~ I used Gitpod to build the full website. 
  - Hosting: <a href="https://github.com">Github</a> ~ Github is where I am hosting my deployed website
  - Frameworks ~ <a href="https://getbootstrap.com/">Bootstrap</a> 
  - API ~ <a href="https://developers.google.com/maps/documentation">Google Maps Platform</a> 
- - iFrames ~ using <a href="https://sketchfab.com"></a>Sketchfab embedded iframe, manipulated through CSS
+ - iFrames ~ using <a href="https://sketchfab.com/"></a>Sketchfab embedded iframe, manipulated and styled through CSS
 
 *Other web applications used:*
 
@@ -137,7 +139,7 @@ _Dev Tools_:
 * Firebox Firebug ~ used throughout the project for testing and debugging
 
 _Code Validation:_
-    I used  few online validators and formatters to check the code at regular intervals throughout the build.
+    I used a few online validators and formatters to check the code at regular intervals throughout the build.
 * <a href="https://validator.w3.org/">W3C HTML Validator</a> 
 * <a href="https://validator.w3.org/">W3C CSS Validator</a> 
 * <a href="https://jshint.com/">JSHint</a> 
@@ -163,11 +165,13 @@ working through the sections, eg UX, UI, testing, validation, correcting errors 
 4. Run `$ npm install` to install the project dependencies
 5. Run `$ npm start` to start live preview server
 
-_Deployment Bugs_
+_After deployment I made a snag list_
 I had a number of small bugs to fix after deployment.
 - Image paths - image paths differ on Gitpod and Github. I had to modify the paths of the images to display properly
 - About Page - social media falvicons in the footer were not working as font awesome link was not in header
-- 
+- Overflow of text on viewing on tablet at the map section
+- Missing metatags in header
+- Accessabilyt guidelines
 
 I had 1 big bug to fix after deployment - Sketchfab models not displaying properly - the appear black.
 - I had regularly checked the website during build using Chrome and Firefox dev tools. 
@@ -184,18 +188,25 @@ So I decided to retain the 3d models within the website.
 
 
 ## Credits 
-Permission granted from Corca Dhuibhne 3d to use material ~ text, images and 3d models.
-Text collated from online sources - Ogham in 3D, Discovery Programme, Corca Dhuibhne 3d, National Archaeology Records.
-Sketchfab models - free for educational use. Copyright Corca Dhuibhne 3d
-Background map image copyright free from <https://pixabay.com/>.
-Social media icons copyright free from <https://fontawesome.com/>.
-[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
-Orla Breslin 2020
+ - Permission granted from Corca Dhuibhne 3d to use material ~ text, images and 3d models.
+ - Text collated from online sources - Ogham in 3D, Discovery Programme, Corca Dhuibhne 3d, National Archaeology Records.
+ - Sketchfab models - free for educational use. Copyright Corca Dhuibhne 3d
+ - Background map image copyright free from <https://pixabay.com/>.
+ - Social media icons copyright free from <https://fontawesome.com/>.
+ - [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/) Orla Breslin 2020
  
 ## Acknowledgements
 
-Interactive Maps:
+_Interactive Maps:_
+ - [Making Maps](https://makingmaps.net/) - Blog based on the research and books of The book 'Making Maps' by John Krygier and Denis Wood for the Do It Yourself (DIY) cartographer 
+ - [Victor Gerard Temprano](https://www.codementor.io/@victorgerardtemprano/principles-of-interactive-map-design-gpelaseu2) - article on the principles of Interactive Map Design
+ - [Robert E. Roth](https://www.researchgate.net/profile/Robert_Roth8) - teaches and researches interactive mapping. He has co-written some interesting papers on interactive mapping design.
 
-Coding Tutorials:
-- [Code Institute](https://codeinstitute.net), [YouTube Tutorials](https://www.youtube.com) eg mmtuts, Traversy Media, Academind, Envoto.
+
+_Coding Tutorials:_
+- [Code Institute](https://codeinstitute.net)
+- [YouTube Tutorials](https://www.youtube.com) eg mmtuts, Traversy Media, Academind, Envoto
+- [Stackoverflow](https://stackoverflow.com/) coding issues with map marker links to bootstrap accordian
+- [Free Code Camp ](https://www.freecodecamp.org/) coding tutorials and problem solving
+
 
