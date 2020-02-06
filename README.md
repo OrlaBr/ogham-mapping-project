@@ -167,11 +167,12 @@ working through the sections, eg UX, UI, testing, validation, correcting errors 
 
 _After deployment I made a snag list_
 I had a number of small bugs to fix after deployment.
-- Image paths - image paths differ on Gitpod and Github. I had to modify the paths of the images to display properly
-- About Page - social media falvicons in the footer were not working as font awesome link was not in header
+- Image paths - image paths differ on Gitpod and Github. I had to modify the paths of the images to display properly - corrected
+- About Page - social media falvicons in the footer were not working as font awesome link was not in header - added
 - Overflow of text on viewing on tablet at the map section - added medium col variable.
-- Missing metatags in header
-- Accessabilyt guidelines
+- Missing metatags in header - added
+- Spelling errrors - fixed
+- Accessabily  - used [Chrome Lens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en) to check the legibility of the site eg colours
 
 I had 1 big bug to fix after deployment - Sketchfab models not displaying properly - the appear black.
 - I had regularly checked the website during build using Chrome and Firefox dev tools. 
