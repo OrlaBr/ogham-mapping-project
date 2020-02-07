@@ -2,7 +2,7 @@
 
 <img src="ux/responsive-desing.png" height="200 " title="Screenshot of website on different devices">
 
-The aim of this website is to create a repository for a local community digital archaeology project. A group of volunteers, with the help of Dublin Institute of Advanced Studies and The Discovery Programme conducted a series of 3d mapping, starting with ogham stones, and moving onto other ancient antiquities, on the Dingle Peninsula. They are using Structure from Motion, a technique to create a 3-D structure of a scene from a set of 2-D images (photos). This website is the beginning of a digital archive of the research carried out.
+The aim of this website is to explore digital archiving, and create a repository for a local community digital archaeology project. A group of volunteers, with the help of Dublin Institute of Advanced Studies and The Discovery Programme conducted research on ancient antiquities of the Dingle Peninsula, starting with starting with ogham stones. They gathered text, photos and created 3d scans of the stones, using Structure from Motion, a technique to create a 3-D structure of a scene from a set of 2-D images (photos). This website is the beginning of a digital archive of the research carried out.
 
 View deployed site here: https://orlabr.github.io/ogham-mapping-project/index.html
 
@@ -36,9 +36,9 @@ This website has a dual purpose. It was created as a digital archive to showcase
 
 ### Research:
 Before starting my UX research for this project, I did some research on creating ‘Interactive Maps’ and found lots of great websites and articles, (links and further reading below).
->Making Maps -  is a blog about diy cartography. Based on the  book Making Maps 3nd edition. It has some excellent blog posts about creating maps.
->Victor Gerard Temprano of Mapster has written some great articles too, on creating Interactive Maps. One particular article describes the user in detail, and this influenced my user story and design...“Don't assume your users will know how to use an online map...You need to consider how your grandmother (no offense to techie grandmas!) might react if she landed on the map. Where would she look, what would she click and be interested in?”
->Robert E. Roth has written many papers on creating interactive maps. I particularly liked his work explaining The Three U’s of Interface Success. A successful interactive map in practice is contingent upon three components: the user, its utility, and its usability.
+> - Making Maps -  is a blog about diy cartography. Based on the  book Making Maps 3nd edition. It has some excellent blog posts about creating maps.
+> - Victor Gerard Temprano of Mapster has written some great articles too, on creating Interactive Maps. One particular article describes the user in detail, and this influenced my user story and design...“Don't assume your users will know how to use an online map...You need to consider how your grandmother (no offense to techie grandmas!) might react if she landed on the map. Where would she look, what would she click and be interested in?”
+> - Robert E. Roth has written many papers on creating interactive maps. I particularly liked his work explaining The Three U’s of Interface Success. A successful interactive map in practice is contingent upon three components: the user, its utility, and its usability.
 
 ><img src="ux/interactive-map.png" alt="diagram of interactive map pyramid" width="175">
 
@@ -48,9 +48,11 @@ Before starting my UX research for this project, I did some research on creating
 
 ### User Stories:
 
-The website is a digital public archive of the research carried out by volunteers of ‘Corca Dhuibhne 3d, a pilot community digital archaeology project to 3d map Ogham stones on the Dingle Peninsula. It holds some of  the research carried out by volunteers, as well as a map of the stones that have been scanned.
+The website is a digital public archive of the research carried out by volunteers of ‘Corca Dhuibhne 3d. It holds some of  the research carried out by volunteers, as well as a map of the stones that have been scanned.
 
-There is already a website, run by the Dublin Institute of Advanced Studies of research they have conducted across Ireland, with archival information, and a map of ancient antiquities they have 3d scanned. There is also a website created for the ancient antiquities that have been scanned called ‘Corca Dhuibhne 3d’. However both of the websites are more academic based, and not particularly user friendly. The Ogham in 3d map on the DIAS website is quite annoying to use, if you are looking for stones particular to the Dingle Peninsula. It doesn’t focus on the stones, provides links to other pages but with no backlinks to the map. And you constantly have to zoom in on the map, to get to the stones, in order to pick one in particular. The Corca Dhuibhne 3d website is particular to the pilot project, but does not contain a map, and is also not user friendly, proving too much academic style information to the average viewer. This website I have designed, is harnessing the information from both the existing websites, but in a more modern, responsive style, that will appeal to participants of the project, but also to a generic user. It is an experiment in presenting blocks of information in a minimal way.
+There is already a website, run by the [Dublin Institute of Advanced Studies](https://ogham.celt.dias.ie/menu.php?lang=en) of research they have conducted across Ireland, with archival information, and a map of ancient antiquities they have 3d scanned. There is also a website created for the ancient antiquities that have been scanned called [Corca Dhuibhne 3d](http://www.corcadhuibhne3d.ie/). However both of the websites are more academic based, and not particularly user friendly. 
+
+The Ogham in 3d map on the DIAS website is quite annoying to use, if you are looking for stones particular to the Dingle Peninsula. It doesn’t focus on the stones, provides links to other pages but with no backlinks to the map. And you constantly have to zoom in on the map, to get to the stones, in order to pick one in particular. The Corca Dhuibhne 3d website is particular to the pilot project, but does not contain a map, and is also not user friendly, proving too much academic style information to the average viewer. This website I have designed, is harnessing the information from both the existing websites, but in a more modern, responsive style, that will appeal to participants of the project, but also to a generic user. It is an experiment in presenting blocks of information in a minimal way.
 
 _For the Generic User:_
 
@@ -69,7 +71,7 @@ As a developer, I wanted to create a fully responsive website with a clean moder
 ## Design
 
 #### Strategy & Scope:
-The website is designed to have a minimal and clean interface. With most of the information contained in just one scrollable page. I selected 10 stones to work with. If I was using more stones, I probably would move to a slightly different format, using more pages, but for the purpose of this project, I kept it to a minimal amount. The website uses a single index.html file to host most of the information, using the Bootstrap Framework to ensure mobile first fully responsive design.
+The website is designed to have a minimal and clean interface. With most of the information contained in just one scrollable page. I selected 10 stones to work with. If I was using more stones, I probably would move to a slightly different format, perhaps using more pages, but for the purpose of this project, I kept it to a minimal amount. I decided against using modals as opposed to the accordian because firstly on mobile pop ups can be annoying, and secondly to try test out the accordian/hidden information concept, with Javascript DOM manipulation, the information needed to be on the same pageThe website uses a single index.html file to host most of the information, using the Bootstrap Framework to ensure mobile first fully responsive design.
 
 _Style:_
  - Design - minimalist, clean design
@@ -80,11 +82,11 @@ _Style:_
   <img src="ux/map-theme.jpg" alt="colour shceme for website design" width="600">  
 
 _Photos and 3D Models:_
-The Corca Dhuibhne 3d models were created by volunteers, of which I was one, using an educational copy of Agisoft donated by the Discovery Programme. They are in the public domain, but are copyright to Corca Dhuibhne 3d group, of which I am a member. I have full permission to use the information, photos, and 3 models on my website, which I have listed as educational use. I have written a tutorial about using Agisoft, you can read it on my blog [here](http://fitefuaite.com/digital-artefact/agisoft-photoscan/). The Corca Dhuibhne 3d website is currently under review, and I am hoping to incorporate some of the elements of this website and the map into the website.
+The Corca Dhuibhne 3d models were created by volunteers, of which I was one, using an educational copy of Agisoft donated by the Discovery Programme. They are in the public domain, but are copyright to Corca Dhuibhne 3d group. I have full permission to use the information, photos, and 3 models on my website, which I have listed as educational use. I have written a tutorial about using Agisoft, you can read it on my blog [here](http://fitefuaite.com/digital-artefact/agisoft-photoscan/). The Corca Dhuibhne 3d website is currently under review, and I am hoping to incorporate some of the elements of this website and in particular develop a map into the website.
     
 
 #### Structure, Skeleton & Surface:
-Keeping the pyramid of interface success, 'user - utility- usability', and my user story in mind, simplicity and ease of use were the most important design elements, when creating the wireframe and mock up. Keeping images to a minimum, with simple explainiations of how to use the site, with a very deliberate colour scheme and simple fonts.
+Keeping the pyramid of interface success, 'user - utility- usability', and my user story in mind, simplicity and ease of use were the most important design elements, when creating the wireframe and mock up. Keeping images to a minimum, with simple explanations of how to use the site, with a very deliberate colour scheme and simple fonts.
 
 _Wireframing:_
 I created a wireframe for this website using Balsamiq, but found the original design, using a bootstrap collapsible sidebar did not work well on mobile. The design only worked in landscape view on a mobile, and to me this meant it was not fully responsive. So I changed the layout to have a collapsible accordion bootstrap style beneath the map.
@@ -105,8 +107,8 @@ After I had started the project, and realised the fault of the wireframe design,
 
 #### Existing Features
  - *Javascript and DOM manipulation - using javascript and DOM manipulation to create a responsive and interactive website
- - *Google Maps API* - incorporate a fully functioning Google Map with locations of ogham stones. Personalized infowindow with image and link to further information.
- - *Embedded iframes* - styled iframes from online platform 'Sketchfab'
+ - *Google Maps API* - incorporate a fully functioning Google Map with locations of ogham stones. Personalized infowindow with image and link to further information in the bootstrap accordian.
+ - *Embedded iframes* - css styled iframes embedded online platform 'Sketchfab'
  - *Contact Form* - Simple contact form to connect to the project for information
 
   <img src="ux/emailjs.png" height="200" title="Screenshot of 3d model of ogham stone">
@@ -118,7 +120,7 @@ After I had started the project, and realised the fault of the wireframe design,
  - Programming languages used: HTML5, CSS3 & Javascript 
  - Frameworks used: <a href="https://getbootstrap.com/"> Bootstrap</a> 
  - Editors used:
-	* <a href="https://repl.it/@orlabr">Repl</a> ~ I use Repl to write and test code snippets. This is helping me build up a personal library of code snippets and hacks that I can use in different projects in the future.
+	* <a href="https://repl.it/@orlabr">Repl</a> ~ I use Repl to write and test code snippets. 
 	* <a href="https://gitpod.com">Gitpod</a> ~ I used Gitpod to build the full website. 
  - Hosting: <a href="https://github.com">Github</a> ~ Github is where I am hosting my deployed website
  - Frameworks ~ <a href="https://getbootstrap.com/">Bootstrap</a> 
@@ -135,7 +137,28 @@ After I had started the project, and realised the fault of the wireframe design,
 - <a href="https://www.emailjs.com//">EmailJS<a/> - create usable contact form
 	
 ---
-	
+
+## Building	
+
+##### Website Build
+The main body of the website was build using Gitpod. but I used REpl heavily throughout the build, for 2 reasons. It helped me build and play with elements and sections before incorporating them in the main build on Gitpod. Once I had played with a section, and developed it to suit my needs, I then rebuild it inGitpod and asdded the styling. Using Repl in this way is also helping me build my own personal library of code snippets and hacks that I can use in different projects in the future. Being new to Gitpod, it also helped my overcome my fear of commits and undoing, by feeling the ocde was safely stored elsewhere.
+
+##### Sections Build
+I had started the website build using the wireframe, when I decided to change structural elements. This was because of the lack of responsiveness of the toggled side panel. And following Victor Gerard Temprano's advice on not presuming your user knows how to use the map, decided to incorporate a section on how to use the map.
+
+_Google Maps_
+ - I used a Google API key in developer mode to start with. Using tutorials from the Code Institute and [YouTube](https://www.youtube.com/) notably Travesty Media, Envato Tuts and Google Devleopers.
+ - From research, not all the stones were already located on a public Google Maps so I decided not to pull the information ofrom online sources, but input it all myself. I tried a few different ways of inputting the content, either as a string, or array, but decided on a simple div in the end, because there is not a huge amount of content, it was easier to imput the material myself. I could then style the div using classes and CSS.
+ - I had some issues with linking the button in the infowindow with the bootstrap accordian. I tried several different ways to connect. I changed to content to a string and tried calling it, I tried jquery to call a class to open the accordian. However keeping my user story in mind, I didnt want the screen jumping about too much and I wanted to link th the information, but I didnt want the accordian to actually open, simply give the user the option to open. Otherwise it would take too many clicks to return to the map, and possibly frustrate my user. Eventually I found the soulution from [Digiplek](https://www.digiplek.nl/open-jquery-ui-panel-via-an-external-link-url-with-hash.html#1)
+  ```var hash = window.location.hash;
+        var anchor = $('a[href$="'+hash+'"]');
+        if (anchor.length > 0){
+        anchor.click();
+        }```
+
+ _Contact From_
+ My original design didnt have a contact form on it, but I decided to incorporate a small one, firstly because I wanted to practice building a working contact form. Also, as the Corca Dhuibhne 3d project doesnt have a very visible social media presence, contact the project would have to be through email.
+ I used the Code Institute tutorial to build the contact form, using Bootstrap, HTML, CSS and EMail JS
 ## Testing
 _Dev Tools_:
     These tools were used throughout the project build.
@@ -149,6 +172,9 @@ _Code Validation:_
 * <a href="https://jshint.com/">JSHint</a> - Javascript validator
 * <a href="https://esprima.org/demo/validate.html">Esprima</a> - Javascript syntax validator
 * <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en">Chrome Lens</a> - Accessibility validator
+
+_Bootstrap Accordian_
+I used a bootstrap accordian to hold the main body of content. I used tutorials from [](https://www.youtube.com/)
 
 ---
 
