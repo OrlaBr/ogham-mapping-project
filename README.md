@@ -280,6 +280,13 @@ modal, a disclaimer of sorts, explaining why the models might appear black. This
 This person is also less likely to regularly upgrade their phones and software. They also have a tendency to be more patient, and not expect immediate answers coming from a pre-digital age.
 So I decided to retain the 3d models within the website.
 
+---
+## Future Development
+I really enjoyed working on this project, testing out my new knowledge of Javascript. Due to time contraints I didnt get to add all the features I would have liked, but am adding them here for furture reference, so I can update the website aber assessment
+ - Name Generator - If you look at the original mockup you'll see one of the nav menus is 'Name Generator'. I wanted to create a javascript generator that would allow you to add your name and it would be translated to Ogham. There are several already out there ([Ogh.am](https://ogh.am/) is my favourite). I just didnt have the time. I would love to try generate the letters onto a background image of a stone, so you could see what your name looked like on the stone.
+ - Weather App - I had drafted a weather app in Repl, and wanted to incorporate it into the site. This would have a fixed loction, the Dingle Peninsula, so people visiting or planning to visit, could see what the weather was like at that moment. Althought the app was working I had too many small errors showing up in the javascript, and decided not to add it into the website the day before the assessment deadline. After the assessment I will definately incorporate it. Open Weather Maps, do a historial data map api, which could be interesting to look into considering the historic nature of the site
+ - Timeline of the Dingle Peninsula. Who doesnt love a good timeline! I absolutely love the interactive map of the [Witcher](https://www.witchernetflix.com/en-gb) TV series, my dream would be to be able to design interactive maps like that. 
+ 
 
 ---
 ## Credits 
@@ -301,7 +308,7 @@ _Interactive Maps:_
 
 
 _Coding Tutorials:_
-- [Code Institute](https://codeinstitute.net)
+- [Code Institute](https://codeinstitute.net) course materials
 - [YouTube Tutorials](https://www.youtube.com) eg mmtuts, Traversy Media, Academind, Envoto
 - [Stack Overflow](https://stackoverflow.com/) coding issues with map marker links to bootstrap accordion
 - [Free Code Camp ](https://www.freecodecamp.org/) coding tutorials and problem solving
