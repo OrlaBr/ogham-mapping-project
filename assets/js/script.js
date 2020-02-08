@@ -109,7 +109,6 @@ function initMap() {
             content: '<div class="infoWindowSize"><img src="assets/img/ballinasig1.jpg" alt="ogham stone"><p><strong>Baile an Ásaigh</strong> - A low standing stone situated on level reclaimed pastureland at the head of the valley which extends north east from Dingle Town</p><a href="#ballinasig" class="btn btn-default btn-sm iwButton">Read more about Baile an Ásaigh</a></div>',
             draggable: false
         },
-
     ];
     // Loop through markers
     for (var i = 0; i < markers.length; i++) {
