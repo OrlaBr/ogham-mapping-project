@@ -54,7 +54,7 @@ There is already a website, run by the [Dublin Institute of Advanced Studies](ht
 
 The Ogham in 3d map on the DIAS website is quite annoying to use, if you are looking for stones particular to the Dingle Peninsula. It doesn’t focus on the stones, provides links to other pages but with no backlinks to the map. And you constantly have to zoom in on the map, to get to the stones, in order to pick one in particular. The Corca Dhuibhne 3d website is particular to the pilot project, but does not contain a map, and is also not user friendly, proving too much academic style information to the average viewer. This website I have designed, is harnessing the information from both the existing websites, but in a more modern, responsive style, that will appeal to participants of the project, but also to a generic user. It is an experiment in presenting blocks of information in a minimal way.
 
-<img src="ux/ogham-mock-up" alt="ogham website mockup" width="500">
+<img src="ux/ogham-mock-up.jpg" alt="ogham website mockup" width="500">
 
 _For the Generic User:_
 
@@ -70,6 +70,7 @@ As a developer, I wanted to create a fully responsive website with a clean moder
 * Development of coding skills using HTML, CSS and Javascript in unison, and in different ways to create a website that is simple, extremely user friendly, with easy navigation, and yet capable of providing large bodies of information.
 * I decided to create a website that incorporated a map as opposed to a single page website which consisted of just the map. My plan was to incorporate as many simple yet effective elements in a website, that could make it interesting but self contained.
  <img src="ux/ogham-map-mock-up.jpg" alt="Ogham map mock up" width="200"> 
+
 ---
 
 ## Design
@@ -95,12 +96,12 @@ Keeping the pyramid of interface success, 'user - utility- usability', and my us
 
 _Wireframing:_
 I created a wireframe for this website using Balsamiq, but found the original design, using a bootstrap collapsible sidebar did not work well on mobile. The design only worked in landscape view on a mobile, and to me this meant it was not fully responsive. So I changed the layout to have a collapsible accordion bootstrap style beneath the map.
-<img src="ux/ogham-mock-up.png" height="300" title="website mock-up">
-<img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/wire-frame-mapping-project.pdf" alt="wireframe of mapping project">
+PDF of <img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/wire-frame-mapping-project.pdf" alt="wireframe of mapping project">
 
+<img src="ux/ogham-mock-up.jpg" height="300" alt="website mock-up">
 _Detailed mockup_
 After I had started the project, and realised the fault of the wireframe design, I edited my design using Canva, to create a more detailed mock up of the website. This enabled me to test the details such as fonts, imagery etc, in more detail.
-<img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/ogham-in-3d.pdf" alt="ogham mapping mock up">
+PDF of <img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/ogham-in-3d.pdf" alt="ogham mapping mock up">
 
 
 
@@ -117,9 +118,6 @@ After I had started the project, and realised the fault of the wireframe design,
  - *Google Maps API* - incorporate a fully functioning Google Map with locations of ogham stones. Personalized infowindow with image and link to further information in the bootstrap accordian.
  - *Embedded iframes* - css styled iframes embedded online platform 'Sketchfab'
  - *Contact Form* - Simple contact form to connect to the project for information
-
-  <img src="ux/emailjs.png" height="200" title="Screenshot of 3d model of ogham stone">
-
  
  ----
 
@@ -142,17 +140,21 @@ After I had started the project, and realised the fault of the wireframe design,
 - <a href="https://fonts.google.com/">Google Fonts<a/> - stylesheet linked to customize fonts
 - <a href="https://fontawesome.com/">Font Awesome<a/> - stylesheet linked to customize icons
 - <a href="https://www.emailjs.com//">EmailJS<a/> - create usable contact form
-	
+
+<img src="ux/emailjs.png" height="200" alt="Screenshot of emailjs setup">
+
 ---
 
 ## Building	
 
 #### Website Build
-The main body of the website was build using Gitpod. but I used Repl heavily throughout the build, for 2 reasons. It helped me create and play with elements and sections before incorporating them in the main build on Gitpod. Once I had played with a section and developed it to suit my needs, I then rebuild it inGitpod and added the styling. 
+The main body of the website was build using Gitpod. but I used Repl heavily throughout the build, for 2 reasons. It helped me create and play with elements and sections before incorporating them in the main build on Gitpod. Once I had played with a section and developed it to suit my needs, I then rebuild it in Gitpod and added the styling. 
 Using Repl in this way is also helping me build my own personal library of code snippets and hacks that I can use in different projects in the future. Being new to Gitpod, it also helped my overcome my fear of commits and undoing, by knowing my code was safely stored elsewhere.
 
 #### Sections Build
 I had started the website build based on the wireframe, when I decided to change structural elements. This was because of the lack of responsiveness of the toggled side panel. Following Victor Gerard Temprano's advice on not presuming your user knows how to use the map, decided to incorporate a section on how to use the map as a side panel and put the main body of the content in the bootstrap accordian.
+
+<img src="ux/how-to-use.jpg" height="200" alt="Screenshot of how to use section on the website">
 
 _Google Maps_
  - I used a Google API key in developer mode to start with, using tutorials from the Code Institute and [YouTube](https://www.youtube.com/) notably Travesty Media, Envato Tuts and Google Devleopers. The Javascript is stored in the script.js file
@@ -165,22 +167,28 @@ _Google Maps_
         }
  ```
 
-_Bootstrap Accordian_
+_Bootstrap Accordian:_
+
 I used a bootstrap accordian to hold the main body of content. I used tutorials from [YouTube](https://www.youtube.com/), notably The Net Ninja & Quentin Watt. This uses Javascript, to help the smooth scrolling action. This is stored in stones.js file.
 
-_Sketchfab iFrames_
+_Sketchfab iFrames:_
+
 I decided to embed the 3d models of the Ogham Stones as they are a majour feature of the project, and it really interesting to be able to see the stones in such detail. The scanning process picks up much more detail than the human eye.
 when I embedded the iframes, I got several console log errors because the styling was incorporated within the iframe element from Sketchfab, but it is not an accepted element. So I removed the styling from the iframes, and altered them using CSS instead.
 I also used a variant of the model that was pre-loaded and user controlled to try cut down on the pressure of the devices capabilitities.
 
- _Contact From_
+ _Contact Form:_
+
  My original design didn't have a contact form on it, but I decided to incorporate a small one, firstly because I wanted to practice building a working contact form. Also, as the Corca Dhuibhne 3d project doesnt have a very visible social media presence, contact the project would have to be through email.
  I used the Code Institute tutorial to build the contact form, using Bootstrap, HTML, CSS and EMail JS. The Javascript is stored in the sendEmail.js file.
 
-_Date Stamp_
-So many websites fail to update their copyright notice in their footer. A small, but noticable factor when trying to validate the authority of the site. I decided to incorporate an automated javascript date. This javascript code is help in script tags in the bottom of the body, even though the date codeing itself is in the footer
-
-_About Page_
+_Date Stamp:_
+So many websites fail to update their copyright notice in their footer. A small, but noticable factor when trying to validate the authority of a site. I decided to incorporate an automated javascript date. This javascript code is help in script tags in the bottom of the body, even though the date coding itself is in the footer
+        ```
+        var year = new Date().getFullYear().toString();
+        document.getElementById("year").innerHTML = year;
+        ```
+_About Page:_
 My wireframe did not contain an 'About Page', although I did want to build one. One of the resons for this is because I have a lot of external links. Being a community project, and an archive, its neccessary to fully credit all organisations involved. Originally I had external links on the landing page for the Músaeum Chorca Dhuibhne, Dublin Institute for Advanced Studies and The Discovery Programme. I decided to remove these links from the landing page, as it is probably not good practice to put external links on the landing page. Instead I decided to remove those links to a 'Further Reading' section on the about page, and add a button to the landing page instead.
 
 
@@ -215,13 +223,13 @@ _Elements testing_
 | Modal        	| toggle, responsive                   	| ✔      	| ✔       	|
 | Contact form 	| required fields, send                	| ✔      	| ✔       	|
 
-<img src="browser-testing" height="200" alt="Samples of cross browser testing">
+<img src="browser-testing.jpg" height="200" alt="Samples of cross browser testing">
 
-| Testing                                           |
+| Testing   | Cross-browser/ cross-device           |
 |---------	|--------------------------------------	|
 | Browser   |Chrome, Firefox, Safari, Opera         |
 | Device    | Mobile, Tablet, Desktop               |
-| Systems   |  iOS, Android, Linux                  |
+| Systems   | iOS, Android, Linux                   |
 
 ---
 
@@ -231,7 +239,8 @@ Regular changes were made and all updates were then committed to the master bran
 name of the main file of a website folder. An assets folder was then created, to include the CSS stylesheet, Javascript files and an sub folder with images used on the site. 
 I proceeded to work on sections, committing as I went. I created a UX folder to hold any wireframes, designs or other research material.
 
-Changes made: Originally I wanted the accordion to be inside a toggles side panel, but after building it, I discovered it just didn't work in mobile view, so I adapted my design 
+#### Changes made: 
+Originally I wanted the accordion to be inside a toggles side panel, but after building it, I discovered it just didn't work in mobile view, so I adapted my design 
 so I fixed the navbar to the top. This caused issues with the first section, so I had to adjust the margin and paddings to fit. The 'about' and 'contact' 
 Throughout the design and implementation of the website I kept code snippets in Repl and notes in Google Docs. I then cross referenced the Read Me page and the website, 
 working through the sections, eg UX, UI, testing, validation, correcting errors when I came across them. 
@@ -244,7 +253,7 @@ working through the sections, eg UX, UI, testing, validation, correcting errors 
 4. Run `$ npm install` to install the project dependencies
 5. Run `$ npm start` to start live preview server
 
-_Post Deployment Snag list_
+#### Post Deployment Snag List_
 
 I had a number of small bugs to fix after deployment.
 - Image paths - image paths differ on Gitpod and Github. I had to modify the paths of the images to display properly - corrected
@@ -254,8 +263,9 @@ I had a number of small bugs to fix after deployment.
 - Spelling errors - fixed
 - Console log errors:
      - Chrome 'SameSite' cookies error - new chrome cookie development. Added suggeted Javascript code from [Google Chrome Labs](https://github.com/GoogleChromeLabs/samesite-examples)
-     `document.cookie = 'same-site-cookie=foo; SameSite=Lax';
-        document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';`
+     ```document.cookie = 'same-site-cookie=foo; SameSite=Lax';
+        document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
+     ```
      - Too many Active WebGL contexts. Oldest context will be lost - In the testing phacse I was constantly refreshing the page, this created too many calls to the WebGl from the 3d scans. When I tested usage in real life of the average user, this was not an issue. 
 
 I had 1 big bug to fix after deployment - Sketchfab models not displaying properly - the appear black.
