@@ -73,7 +73,7 @@ As a developer, I wanted to create a fully responsive website with a clean moder
 ## Design
 
 #### Strategy & Scope:
-The website is designed to have a minimal and clean interface. With most of the information contained in just one scrollable page. I selected 10 stones to work with. If I was using more stones, I probably would move to a slightly different format, perhaps using more pages, but for the purpose of this project, I kept it to a minimal amount. I decided against using modals as opposed to the accordian because firstly on mobile pop ups can be annoying, and secondly to try test out the accordian/hidden information concept, with Javascript DOM manipulation, the information needed to be on the same pageThe website uses a single index.html file to host most of the information, using the Bootstrap Framework to ensure mobile first fully responsive design.
+The website is designed to have a minimal and clean interface. With most of the information contained in just one scrollable page. I selected 10 stones to work with. If I was using more stones, I probably would move to a slightly different format, perhaps using more pages, but for the purpose of this project, I kept it to a minimal amount. I decided against using modals, and used an accordian, because firstly on mobile pop ups can be annoying, and secondly to try test out the accordian/hidden information concept, with Javascript DOM manipulation. The information needed to be on the same page. The website uses a single index.html file to host most of the information, using the Bootstrap Framework to ensure mobile first fully responsive design.
 
 _Style:_
  - Design - minimalist, clean design
@@ -149,7 +149,7 @@ The main body of the website was build using Gitpod. but I used Repl heavily thr
 Using Repl in this way is also helping me build my own personal library of code snippets and hacks that I can use in different projects in the future. Being new to Gitpod, it also helped my overcome my fear of commits and undoing, by knowing my code was safely stored elsewhere.
 
 #### Sections Build
-I had started the website build using the wireframe, when I decided to change structural elements. This was because of the lack of responsiveness of the toggled side panel. And following Victor Gerard Temprano's advice on not presuming your user knows how to use the map, decided to incorporate a section on how to use the map.
+I had started the website build based on the wireframe, when I decided to change structural elements. This was because of the lack of responsiveness of the toggled side panel. Following Victor Gerard Temprano's advice on not presuming your user knows how to use the map, decided to incorporate a section on how to use the map as a side panel and put the main body of the content in the bootstrap accordian.
 
 _Google Maps_
  - I used a Google API key in developer mode to start with, using tutorials from the Code Institute and [YouTube](https://www.youtube.com/) notably Travesty Media, Envato Tuts and Google Devleopers. The Javascript is stored in the script.js file
@@ -196,6 +196,10 @@ _Code Validation:_
 * <a href="https://esprima.org/demo/validate.html">Esprima</a> - Javascript syntax validator
 * <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en">Chrome Lens</a> - Accessibility validator
 
+_Notes_ 
+        - error on Google Fonts link (double checked that it is the prescribed Google Fonts format of link)
+        - Warning on Text type - this is the Ogham Script, as it doesnt recognise this type of writing
+
 _Elements testing_
 
 | Feature      	| Elements                             	| Tested 	| Working 	|
@@ -207,6 +211,8 @@ _Elements testing_
 | Sketchfab    	| Showing, Load on user request        	| ✔      	| ✔       	|
 | Modal        	| toggle, responsive                   	| ✔      	| ✔       	|
 | Contact form 	| required fields, send                	| ✔      	| ✔       	|
+
+---
 
 ## Deployment
 This website was developed using Gitpod and hosted using Github, generated from a template created by the Code Institute, and then deployed directly from the master branch. 
@@ -235,9 +241,6 @@ I had a number of small bugs to fix after deployment.
 - Overflow of text on viewing on tablet at the map section - added overflow scroll option
 - Missing metatags in header - added
 - Spelling errors - fixed
-- HTML Validator 
-        - error on Google Fonts link (doulbe checked that it is the prescribed Google Fonts format of link)
-        - Warning on Text type - this is the Ogham Script, as it doesnt recognise this type of writing
 - Console log errors:
      - Chrome 'SameSite' cookies error - new chrome cookie development. Added suggeted Javascript code from [Google Chrome Labs](https://github.com/GoogleChromeLabs/samesite-examples)
      `document.cookie = 'same-site-cookie=foo; SameSite=Lax';
