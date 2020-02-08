@@ -1,6 +1,6 @@
 # Ogham in 3d
 
-<img src="ux/responsive-desing.png" height="200 " title="Screenshot of website on different devices">
+<img src="ux/responsive-desing.png" height="300" title="Screenshot of website on different devices">
 
 The aim of this website is to explore digital archiving, and create a repository for a local community digital archaeology project. A group of volunteers, with the help of Dublin Institute of Advanced Studies and The Discovery Programme conducted research on ancient antiquities of the Dingle Peninsula, starting with starting with ogham stones. They gathered text, photos and created 3d scans of the stones, using Structure from Motion, a technique to create a 3-D structure of a scene from a set of 2-D images (photos). This website is the beginning of a digital archive of the research carried out.
 
@@ -54,6 +54,8 @@ There is already a website, run by the [Dublin Institute of Advanced Studies](ht
 
 The Ogham in 3d map on the DIAS website is quite annoying to use, if you are looking for stones particular to the Dingle Peninsula. It doesn’t focus on the stones, provides links to other pages but with no backlinks to the map. And you constantly have to zoom in on the map, to get to the stones, in order to pick one in particular. The Corca Dhuibhne 3d website is particular to the pilot project, but does not contain a map, and is also not user friendly, proving too much academic style information to the average viewer. This website I have designed, is harnessing the information from both the existing websites, but in a more modern, responsive style, that will appeal to participants of the project, but also to a generic user. It is an experiment in presenting blocks of information in a minimal way.
 
+<img src="ux/ogham-mock-up" alt="ogham website mockup" width="500">
+
 _For the Generic User:_
 
 I designed this website with a particular type of user. The user is aged 60+, holidaymaker or retired, with a keen interest in local history, and while visiting the Dingle Peninsula, would like to know more about local sites. They have limited digital knowledge and experience, but have researched and prepared for their holiday. They have read about the Dingle Peninsula's wealth of history and ancient antiquities, came across this website and have studied and bookmarked it to view when they reach their destination. They want to see some ogham stones. They have looked and marvelled at the 3d scans of the stones and have picked which ones they want to visit, which they can perfectly locate on the map. They used the website in two ways:
@@ -67,7 +69,7 @@ As a developer, I wanted to create a fully responsive website with a clean moder
 * This website would help me practice my new coding skills, develop logic and understanding of responsive interactive front end development.
 * Development of coding skills using HTML, CSS and Javascript in unison, and in different ways to create a website that is simple, extremely user friendly, with easy navigation, and yet capable of providing large bodies of information.
 * I decided to create a website that incorporated a map as opposed to a single page website which consisted of just the map. My plan was to incorporate as many simple yet effective elements in a website, that could make it interesting but self contained.
-
+ <img src="ux/ogham-map-mock-up.jpg" alt="Ogham map mock up" width="200"> 
 ---
 
 ## Design
@@ -81,7 +83,7 @@ _Style:_
  - Color Scheme - The color scheme is simple, and kept to a minimum to ensure full eligibility. Off white background, dark text with headings and buttons a shade of brown. These browns are  based on colouring from old medieval maps.
  - Map markers -  I played around with map marker types, and decided to stick with generic map markers rather than stylized markers with an icon. This kept within my design remit of simplicity and ease of use. I personalized the markers colours using [Icons8](https://icons8.com/).
 
-  <img src="ux/map-theme.jpg" alt="colour shceme for website design" width="600">  
+  <img src="ux/map-theme.jpg" alt="colour scheme for website design" width="600">  
 
 _Photos and 3D Models:_
 
@@ -93,6 +95,7 @@ Keeping the pyramid of interface success, 'user - utility- usability', and my us
 
 _Wireframing:_
 I created a wireframe for this website using Balsamiq, but found the original design, using a bootstrap collapsible sidebar did not work well on mobile. The design only worked in landscape view on a mobile, and to me this meant it was not fully responsive. So I changed the layout to have a collapsible accordion bootstrap style beneath the map.
+<img src="ux/ogham-mock-up.png" height="300" title="website mock-up">
 <img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/wire-frame-mapping-project.pdf" alt="wireframe of mapping project">
 
 _Detailed mockup_
@@ -160,7 +163,7 @@ _Google Maps_
         if (anchor.length > 0){
         anchor.click();
         }
-    ```
+ ```
 
 _Bootstrap Accordian_
 I used a bootstrap accordian to hold the main body of content. I used tutorials from [YouTube](https://www.youtube.com/), notably The Net Ninja & Quentin Watt. This uses Javascript, to help the smooth scrolling action. This is stored in stones.js file.
@@ -211,6 +214,14 @@ _Elements testing_
 | Sketchfab    	| Showing, Load on user request        	| ✔      	| ✔       	|
 | Modal        	| toggle, responsive                   	| ✔      	| ✔       	|
 | Contact form 	| required fields, send                	| ✔      	| ✔       	|
+
+<img src="browser-testing" height="200" alt="Samples of cross browser testing">
+
+| Testing                                           |
+|---------	|--------------------------------------	|
+| Browser   |Chrome, Firefox, Safari, Opera         |
+| Device    | Mobile, Tablet, Desktop               |
+| Systems   |  iOS, Android, Linux                  |
 
 ---
 
