@@ -76,7 +76,7 @@ As a developer, I wanted to create a fully responsive website with a clean moder
 ## Design
 
 #### Strategy & Scope:
-The website is designed to have a minimal and clean interface. With most of the information contained in just one scrollable page. I selected 10 stones to work with. If I was using more stones, I probably would move to a slightly different format, perhaps using more pages, but for the purpose of this project, I kept it to a minimal amount. I decided against using modals, and used an accordian, because firstly on mobile pop ups can be annoying, and secondly to try test out the accordian/hidden information concept, with Javascript DOM manipulation. The information needed to be on the same page. The website uses a single index.html file to host most of the information, using the Bootstrap Framework to ensure mobile first fully responsive design.
+The website is designed to have a minimal and clean interface. With most of the information contained in just one scrollable page. I selected 10 stones to work with. If I was using more stones, I probably would move to a slightly different format, perhaps using more pages, but for the purpose of this project, I kept it to a minimal amount. I decided against using modals, and used an accordion, because firstly on mobile pop ups can be annoying, and secondly to try test out the accordian/hidden information concept, with Javascript DOM manipulation. The information needed to be on the same page. The website uses a single index.html file to host most of the information, using the Bootstrap Framework to ensure mobile first fully responsive design.
 
 _Style:_
  - Design - minimalist, clean design
@@ -115,7 +115,7 @@ PDF of <img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/
 
 #### Existing Features
  - *Javascript and DOM manipulation - using javascript and DOM manipulation to create a responsive and interactive website
- - *Google Maps API* - incorporate a fully functioning Google Map with locations of ogham stones. Personalized infowindow with image and link to further information in the bootstrap accordian.
+ - *Google Maps API* - incorporate a fully functioning Google Map with locations of ogham stones. Personalized infowindow with image and link to further information in the bootstrap accordion.
  - *Embedded iframes* - css styled iframes embedded online platform 'Sketchfab'
  - *Contact Form* - Simple contact form to connect to the project for information
  
@@ -148,18 +148,18 @@ PDF of <img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/
 ## Building	
 
 #### Website Build
-The main body of the website was build using Gitpod. but I used Repl heavily throughout the build, for 2 reasons. It helped me create and play with elements and sections before incorporating them in the main build on Gitpod. Once I had played with a section and developed it to suit my needs, I then rebuild it in Gitpod and added the styling. 
-Using Repl in this way is also helping me build my own personal library of code snippets and hacks that I can use in different projects in the future. Being new to Gitpod, it also helped my overcome my fear of commits and undoing, by knowing my code was safely stored elsewhere.
+The main body of the website was built using Gitpod. but I used Repl heavily throughout the build, for 2 reasons. It helped me create and play with elements and sections before incorporating them in the main build on Gitpod. Once I had played with a section and developed it to suit my needs, I then rebuilt it in Gitpod and added the styling. 
+Using Repl in this way is also helping me build my own personal library of code snippets and hacks that I can use in different projects in the future. Being new to Gitpod, it also helped me overcome my fear of commits and undoing, by knowing my code was safely stored elsewhere.
 
 #### Sections Build
-I had started the website build based on the wireframe, when I decided to change structural elements. This was because of the lack of responsiveness of the toggled side panel. Following Victor Gerard Temprano's advice on not presuming your user knows how to use the map, decided to incorporate a section on how to use the map as a side panel and put the main body of the content in the bootstrap accordian.
+I had started the website build based on the wireframe, when I decided to change structural elements. This was because of the lack of responsiveness of the toggled side panel. Following Victor Gerard Temprano's advice on not presuming your user knows how to use the map, decided to incorporate a section on how to use the map as a side panel and put the main body of the content in the bootstrap accordion.
 
 <img src="ux/how-to-use.jpg" height="200" alt="Screenshot of how to use section on the website">
 
 _Google Maps_
- - I used a Google API key in developer mode to start with, using tutorials from the Code Institute and [YouTube](https://www.youtube.com/) notably Travesty Media, Envato Tuts and Google Devleopers. The Javascript is stored in the script.js file
- - From research, not all the stones were already located on a public Google Maps, or on official Archaeology map records, so I decided not to pull the information from online sources, but input it all myself. I tried a few different ways of inputting the content, either as a string, or array, but decided on a simple div in the end, because there was not a huge amount of content, it was easier to imput the material myself. I could then style the div using classes and CSS.
- - I had some issues with linking the button in the infowindow with the bootstrap accordian. I tried several different ways to connect. I changed to content to a string and tried calling it, I tried jquery to call a class to open the accordian. However keeping my user story in mind, I didnt want the screen jumping about too much and I wanted to link the the information, but I didnt want the accordian to actually open, it is better to give the user the option to open. Otherwise it would take too many clicks to return to the map, and possibly frustrate the user. Eventually I found the soulution from [Digiplek](https://www.digiplek.nl/open-jquery-ui-panel-via-an-external-link-url-with-hash.html#1)
+ - I used a Google API key in developer mode to start with, using tutorials from the Code Institute and [YouTube](https://www.youtube.com/) notably Travesty Media, Envato Tuts and Google DDevelopers. The Javascript is stored in the script.js file
+ - From research, not all the stones were already located on a public Google Maps, or on official Archaeology map records, so I decided not to pull the information from online sources, but input it all myself. I tried a few different ways of inputting the content, either as a string, or array, but decided on a simple div in the end, because there was not a huge amount of content, it was easier to input the material myself. I could then style the div using classes and CSS.
+ - I had some issues with linking the button in the infowindow with the bootstrap accordian. I tried several different ways to connect. I changed the content to a string and tried calling it. I tried jquery to call a class to open the accordion. However keeping my user story in mind, I didnt want the screen jumping about too much and I wanted to link the the information, but I didn't want the accordion to actually open, it is better to give the user the option to open. Otherwise it would take too many clicks to return to the map, and possibly frustrate the user. Eventually I found the solution from [Digiplek](https://www.digiplek.nl/open-jquery-ui-panel-via-an-external-link-url-with-hash.html#1)
   ```var hash = window.location.hash;
         var anchor = $('a[href$="'+hash+'"]');
         if (anchor.length > 0){
@@ -167,15 +167,15 @@ _Google Maps_
         }
  ```
 
-_Bootstrap Accordian:_
+_Bootstrap Accordion:_
 
-I used a bootstrap accordian to hold the main body of content. I used tutorials from [YouTube](https://www.youtube.com/), notably The Net Ninja & Quentin Watt. This uses Javascript, to help the smooth scrolling action. This is stored in stones.js file.
+I used a bootstrap accordion to hold the main body of content. I used tutorials from [YouTube](https://www.youtube.com/), notably The Net Ninja & Quentin Watt. This uses Javascript, to help the smooth scrolling action. This is stored in stones.js file.
 
 _Sketchfab iFrames:_
 
-I decided to embed the 3d models of the Ogham Stones as they are a majour feature of the project, and it really interesting to be able to see the stones in such detail. The scanning process picks up much more detail than the human eye.
-when I embedded the iframes, I got several console log errors because the styling was incorporated within the iframe element from Sketchfab, but it is not an accepted element. So I removed the styling from the iframes, and altered them using CSS instead.
-I also used a variant of the model that was pre-loaded and user controlled to try cut down on the pressure of the devices capabilitities.
+I decided to embed the 3d models of the Ogham Stones as they are a major feature of the project, and it is really interesting to be able to see the stones in such detail. The scanning process picks up much more detail than the human eye.
+When I embedded the iframes, I got several console log errors because the styling was incorporated within the iframe element from Sketchfab, but it is not an accepted element. So I removed the styling from the iframes, and altered them using CSS instead.
+I also used a variant of the model that was pre-loaded and user controlled to try cut down on the pressure of the devices capabilities.
 
  _Contact Form:_
 
@@ -188,8 +188,10 @@ So many websites fail to update their copyright notice in their footer. A small,
         var year = new Date().getFullYear().toString();
         document.getElementById("year").innerHTML = year;
         ```
+
+
 _About Page:_
-My wireframe did not contain an 'About Page', although I did want to build one. One of the resons for this is because I have a lot of external links. Being a community project, and an archive, its neccessary to fully credit all organisations involved. Originally I had external links on the landing page for the Músaeum Chorca Dhuibhne, Dublin Institute for Advanced Studies and The Discovery Programme. I decided to remove these links from the landing page, as it is probably not good practice to put external links on the landing page. Instead I decided to remove those links to a 'Further Reading' section on the about page, and add a button to the landing page instead.
+My wireframe did not contain an 'About Page', although I did want to build one. One of the reasons for this is because I have a lot of external links. Being a community project, and an archive, it is necessary to fully credit all organisations involved. Originally I had external links on the landing page for the Músaeum Chorca Dhuibhne, Dublin Institute for Advanced Studies and The Discovery Programme. I decided to remove these links from the landing page, as it is probably not good practice to put external links on the landing page. Instead I decided to remove those links to a 'Further Reading' section on the about page, and add a button to the landing page instead.
 
 
 
@@ -197,7 +199,7 @@ My wireframe did not contain an 'About Page', although I did want to build one. 
 _Dev Tools_:
     These tools were used throughout the project build.
 * Google Chrome DevTools ~ used throughout the project for testing and debugging
-* Firebox Developer Tools ~ used throughout the project for testing and debugging
+* Firefox Developer Tools ~ used throughout the project for testing and debugging
 
 _Code Validation:_
     I used a few online validators and formatters to check the code at regular intervals throughout the build.
@@ -218,12 +220,12 @@ _Elements testing_
 | Navbar       	| section link, html links, responsive 	| ✔      	| ✔       	|
 | HTML Links   	| internal, external links             	| ✔      	| ✔       	|
 | Map          	| infowindow, centering, links         	| ✔      	| ✔       	|
-| Accordian    	| toggle, responsive                   	| ✔      	| ✔       	|
+| Accordion    	| toggle, responsive                   	| ✔      	| ✔       	|
 | Sketchfab    	| Showing, Load on user request        	| ✔      	| ✔       	|
 | Modal        	| toggle, responsive                   	| ✔      	| ✔       	|
 | Contact form 	| required fields, send                	| ✔      	| ✔       	|
 
-<img src="browser-testing.jpg" height="200" alt="Samples of cross browser testing">
+<img src="ux/browser-testing.jpg" height="200" alt="Samples of cross browser testing">
 
 | Testing   | Cross-browser/ cross-device           |
 |---------	|--------------------------------------	|
@@ -262,11 +264,11 @@ I had a number of small bugs to fix after deployment.
 - Missing metatags in header - added
 - Spelling errors - fixed
 - Console log errors:
-     - Chrome 'SameSite' cookies error - new chrome cookie development. Added suggeted Javascript code from [Google Chrome Labs](https://github.com/GoogleChromeLabs/samesite-examples)
+     - Chrome 'SameSite' cookies error - new chrome cookie development. Added suggested Javascript code from [Google Chrome Labs](https://github.com/GoogleChromeLabs/samesite-examples)
      ```document.cookie = 'same-site-cookie=foo; SameSite=Lax';
         document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
      ```
-     - Too many Active WebGL contexts. Oldest context will be lost - In the testing phacse I was constantly refreshing the page, this created too many calls to the WebGl from the 3d scans. When I tested usage in real life of the average user, this was not an issue. 
+     - Too many Active WebGL contexts. Oldest context will be lost - In the testing phase I was constantly refreshing the page, this created too many calls to the WebGl from the 3d scans. When I tested usage in real life of the average user, this was not an issue. 
 
 I had 1 big bug to fix after deployment - Sketchfab models not displaying properly - the appear black.
 - I had regularly checked the website during build using Chrome and Firefox dev tools. 
