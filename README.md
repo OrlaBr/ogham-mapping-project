@@ -57,14 +57,16 @@ The Ogham in 3d map on the DIAS website is quite annoying to use, if you are loo
 _For the Generic User:_
 
 I designed this website with a particular type of user. The user is aged 60+, holidaymaker or retired, with a keen interest in local history, and while visiting the Dingle Peninsula, would like to know more about local sites. They have limited digital knowledge and experience, but have researched and prepared for their holiday. They have read about the Dingle Peninsula's wealth of history and ancient antiquities, came across this website and have studied and bookmarked it to view when they reach their destination. They want to see some ogham stones. They have looked and marvelled at the 3d scans of the stones and have picked which ones they want to visit, which they can perfectly locate on the map. They used the website in two ways:
- - research of local sites of interest on the Dingle Peninsula before visiting - desktop or tablet viewing. Reading about the stones and viewing the 3d models
- - actual location of the stones while on the peninsula - mobile view
+ - research of local sites of interest on the Dingle Peninsula before visiting - desktop or tablet viewing. 
+ - Being about to see the location of the stones, while accessing information, images and access to the 3d models
+ - Actual location of the stones while outdoors on the move - mobile view
 
 _For the Developer:_
             
 As a developer, I wanted to create a fully responsive website with a clean modern take on digital archiving. As a history fan I regularly visit online digital archives, but find a lot of them usually feel heavy and clunky, too academic focused, and are not mobile friendly.
 * This website would help me practice my new coding skills, develop logic and understanding of responsive interactive front end development.
 * Development of coding skills using HTML, CSS and Javascript in unison, and in different ways to create a website that is simple, extremely user friendly, with easy navigation, and yet capable of providing large bodies of information.
+* I decided to create a website that incorporated a map as opposed to a single page website which consisted of just the map. My plan was to incorporate as many simple yet effective elements in a website, that could make it interesting but self contained.
 
 ---
 
@@ -82,6 +84,7 @@ _Style:_
   <img src="ux/map-theme.jpg" alt="colour shceme for website design" width="600">  
 
 _Photos and 3D Models:_
+
 The Corca Dhuibhne 3d models were created by volunteers, of which I was one, using an educational copy of Agisoft donated by the Discovery Programme. They are in the public domain, but are copyright to Corca Dhuibhne 3d group. I have full permission to use the information, photos, and 3 models on my website, which I have listed as educational use. I have written a tutorial about using Agisoft, you can read it on my blog [here](http://fitefuaite.com/digital-artefact/agisoft-photoscan/). The Corca Dhuibhne 3d website is currently under review, and I am hoping to incorporate some of the elements of this website and in particular develop a map into the website.
     
 
@@ -104,6 +107,7 @@ After I had started the project, and realised the fault of the wireframe design,
 ---
 
 ## Features 
+
 
 #### Existing Features
  - *Javascript and DOM manipulation - using javascript and DOM manipulation to create a responsive and interactive website
@@ -140,25 +144,44 @@ After I had started the project, and realised the fault of the wireframe design,
 
 ## Building	
 
-##### Website Build
-The main body of the website was build using Gitpod. but I used REpl heavily throughout the build, for 2 reasons. It helped me build and play with elements and sections before incorporating them in the main build on Gitpod. Once I had played with a section, and developed it to suit my needs, I then rebuild it inGitpod and asdded the styling. Using Repl in this way is also helping me build my own personal library of code snippets and hacks that I can use in different projects in the future. Being new to Gitpod, it also helped my overcome my fear of commits and undoing, by feeling the ocde was safely stored elsewhere.
+#### Website Build
+The main body of the website was build using Gitpod. but I used Repl heavily throughout the build, for 2 reasons. It helped me create and play with elements and sections before incorporating them in the main build on Gitpod. Once I had played with a section and developed it to suit my needs, I then rebuild it inGitpod and added the styling. 
+Using Repl in this way is also helping me build my own personal library of code snippets and hacks that I can use in different projects in the future. Being new to Gitpod, it also helped my overcome my fear of commits and undoing, by knowing my code was safely stored elsewhere.
 
-##### Sections Build
+#### Sections Build
 I had started the website build using the wireframe, when I decided to change structural elements. This was because of the lack of responsiveness of the toggled side panel. And following Victor Gerard Temprano's advice on not presuming your user knows how to use the map, decided to incorporate a section on how to use the map.
 
 _Google Maps_
- - I used a Google API key in developer mode to start with. Using tutorials from the Code Institute and [YouTube](https://www.youtube.com/) notably Travesty Media, Envato Tuts and Google Devleopers.
- - From research, not all the stones were already located on a public Google Maps so I decided not to pull the information ofrom online sources, but input it all myself. I tried a few different ways of inputting the content, either as a string, or array, but decided on a simple div in the end, because there is not a huge amount of content, it was easier to imput the material myself. I could then style the div using classes and CSS.
- - I had some issues with linking the button in the infowindow with the bootstrap accordian. I tried several different ways to connect. I changed to content to a string and tried calling it, I tried jquery to call a class to open the accordian. However keeping my user story in mind, I didnt want the screen jumping about too much and I wanted to link th the information, but I didnt want the accordian to actually open, simply give the user the option to open. Otherwise it would take too many clicks to return to the map, and possibly frustrate my user. Eventually I found the soulution from [Digiplek](https://www.digiplek.nl/open-jquery-ui-panel-via-an-external-link-url-with-hash.html#1)
+ - I used a Google API key in developer mode to start with, using tutorials from the Code Institute and [YouTube](https://www.youtube.com/) notably Travesty Media, Envato Tuts and Google Devleopers. The Javascript is stored in the script.js file
+ - From research, not all the stones were already located on a public Google Maps, or on official Archaeology map records, so I decided not to pull the information from online sources, but input it all myself. I tried a few different ways of inputting the content, either as a string, or array, but decided on a simple div in the end, because there was not a huge amount of content, it was easier to imput the material myself. I could then style the div using classes and CSS.
+ - I had some issues with linking the button in the infowindow with the bootstrap accordian. I tried several different ways to connect. I changed to content to a string and tried calling it, I tried jquery to call a class to open the accordian. However keeping my user story in mind, I didnt want the screen jumping about too much and I wanted to link the the information, but I didnt want the accordian to actually open, it is better to give the user the option to open. Otherwise it would take too many clicks to return to the map, and possibly frustrate the user. Eventually I found the soulution from [Digiplek](https://www.digiplek.nl/open-jquery-ui-panel-via-an-external-link-url-with-hash.html#1)
   ```var hash = window.location.hash;
         var anchor = $('a[href$="'+hash+'"]');
         if (anchor.length > 0){
         anchor.click();
-        }```
+        }
+    ```
+
+_Bootstrap Accordian_
+I used a bootstrap accordian to hold the main body of content. I used tutorials from [YouTube](https://www.youtube.com/), notably The Net Ninja & Quentin Watt. This uses Javascript, to help the smooth scrolling action. This is stored in stones.js file.
+
+_Sketchfab iFrames_
+I decided to embed the 3d models of the Ogham Stones as they are a majour feature of the project, and it really interesting to be able to see the stones in such detail. The scanning process picks up much more detail than the human eye.
+when I embedded the iframes, I got several console log errors because the styling was incorporated within the iframe element from Sketchfab, but it is not an accepted element. So I removed the styling from the iframes, and altered them using CSS instead.
+I also used a variant of the model that was pre-loaded and user controlled to try cut down on the pressure of the devices capabilitities.
 
  _Contact From_
- My original design didnt have a contact form on it, but I decided to incorporate a small one, firstly because I wanted to practice building a working contact form. Also, as the Corca Dhuibhne 3d project doesnt have a very visible social media presence, contact the project would have to be through email.
- I used the Code Institute tutorial to build the contact form, using Bootstrap, HTML, CSS and EMail JS
+ My original design didn't have a contact form on it, but I decided to incorporate a small one, firstly because I wanted to practice building a working contact form. Also, as the Corca Dhuibhne 3d project doesnt have a very visible social media presence, contact the project would have to be through email.
+ I used the Code Institute tutorial to build the contact form, using Bootstrap, HTML, CSS and EMail JS. The Javascript is stored in the sendEmail.js file.
+
+_Date Stamp_
+So many websites fail to update their copyright notice in their footer. A small, but noticable factor when trying to validate the authority of the site. I decided to incorporate an automated javascript date. This javascript code is help in script tags in the bottom of the body, even though the date codeing itself is in the footer
+
+_About Page_
+My wireframe did not contain an 'About Page', although I did want to build one. One of the resons for this is because I have a lot of external links. Being a community project, and an archive, its neccessary to fully credit all organisations involved. Originally I had external links on the landing page for the Músaeum Chorca Dhuibhne, Dublin Institute for Advanced Studies and The Discovery Programme. I decided to remove these links from the landing page, as it is probably not good practice to put external links on the landing page. Instead I decided to remove those links to a 'Further Reading' section on the about page, and add a button to the landing page instead.
+
+
+
 ## Testing
 _Dev Tools_:
     These tools were used throughout the project build.
@@ -173,10 +196,17 @@ _Code Validation:_
 * <a href="https://esprima.org/demo/validate.html">Esprima</a> - Javascript syntax validator
 * <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en">Chrome Lens</a> - Accessibility validator
 
-_Bootstrap Accordian_
-I used a bootstrap accordian to hold the main body of content. I used tutorials from [](https://www.youtube.com/)
+_Elements testing_
 
----
+| Feature      	| Elements                             	| Tested 	| Working 	|
+|--------------	|--------------------------------------	|--------	|---------	|
+| Navbar       	| section link, html links, responsive 	| ✔      	| ✔       	|
+| HTML Links   	| internal, external links             	| ✔      	| ✔       	|
+| Map          	| infowindow, centering, links         	| ✔      	| ✔       	|
+| Accordian    	| toggle, responsive                   	| ✔      	| ✔       	|
+| Sketchfab    	| Showing, Load on user request        	| ✔      	| ✔       	|
+| Modal        	| toggle, responsive                   	| ✔      	| ✔       	|
+| Contact form 	| required fields, send                	| ✔      	| ✔       	|
 
 ## Deployment
 This website was developed using Gitpod and hosted using Github, generated from a template created by the Code Institute, and then deployed directly from the master branch. 
@@ -197,19 +227,22 @@ working through the sections, eg UX, UI, testing, validation, correcting errors 
 4. Run `$ npm install` to install the project dependencies
 5. Run `$ npm start` to start live preview server
 
-_Post deployment snag list_
+_Post Deployment Snag list_
 
 I had a number of small bugs to fix after deployment.
 - Image paths - image paths differ on Gitpod and Github. I had to modify the paths of the images to display properly - corrected
 - About Page - social media favicons in the footer were not working as font awesome link was not in header - added
-- Overflow of text on viewing on tablet at the map section - added medium col variable.
+- Overflow of text on viewing on tablet at the map section - added overflow scroll option
 - Missing metatags in header - added
 - Spelling errors - fixed
+- HTML Validator 
+        - error on Google Fonts link (doulbe checked that it is the prescribed Google Fonts format of link)
+        - Warning on Text type - this is the Ogham Script, as it doesnt recognise this type of writing
 - Console log errors:
      - Chrome 'SameSite' cookies error - new chrome cookie development. Added suggeted Javascript code from [Google Chrome Labs](https://github.com/GoogleChromeLabs/samesite-examples)
      `document.cookie = 'same-site-cookie=foo; SameSite=Lax';
         document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';`
-     - Too many Active WebGL contexts. Oldest context will be lost - Sketchfab modals not showing on mobile and
+     - Too many Active WebGL contexts. Oldest context will be lost - In the testing phacse I was constantly refreshing the page, this created too many calls to the WebGl from the 3d scans. When I tested usage in real life of the average user, this was not an issue. 
 
 I had 1 big bug to fix after deployment - Sketchfab models not displaying properly - the appear black.
 - I had regularly checked the website during build using Chrome and Firefox dev tools. 
