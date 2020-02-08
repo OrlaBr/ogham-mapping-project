@@ -269,12 +269,12 @@ I had a number of small bugs to fix after deployment.
 - Missing metatags in header - added
 - Spelling errors - fixed
 - Console log errors:
-     - Chrome 'SameSite' cookies error - new chrome cookie development. Added suggested Javascript code from [Google Chrome Labs](https://github.com/GoogleChromeLabs/samesite-examples)
+    - Too many Active WebGL contexts. Oldest context will be lost - In the testing phase I was constantly refreshing the page, this created too many calls to the WebGl from the 3d scans. When I tested usage in real life of the average user, this was not an issue. 
+    - Favicon missing  - A favicon is a small, iconic image that represents a website, in the address bar of a web browser. Although it seems insignificant, its a small but importnt feature, that users have come to expect to see. It adds an air of authenticity and authority to a website. I used [Favicon.io](https://favicon.io/ target="_blank"), a free falvicon generator to create a favicon of some ogham text. I created a favicon folder in the ux folder, and added links to the head section in my html pages. Its good practice to use favicons, and I wanted to add it to my set of web development toolbox. 
+    - Chrome 'SameSite' cookies error - New Chrome cookie policy. Added suggested Javascript code from [Google Chrome Labs](https://github.com/GoogleChromeLabs/samesite-examples), but it didnt seem to work. I dont feel too bad about this error as it is such a new development, and if Google have this error showing, I think I'm ok for now.
      ```document.cookie = 'same-site-cookie=foo; SameSite=Lax';
         document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
      ```
-     - Too many Active WebGL contexts. Oldest context will be lost - In the testing phase I was constantly refreshing the page, this created too many calls to the WebGl from the 3d scans. When I tested usage in real life of the average user, this was not an issue. 
-
 I had 1 big bug to fix after deployment - Sketchfab models not displaying properly - the appear black.
 - I had regularly checked the website during build using Chrome and Firefox dev tools. 
 The 3d models worked perfectly, when checking the responsive mode, different devices and models. However these were all still on a desktop computer.
