@@ -16,10 +16,10 @@ View deployed site here: https://orlabr.github.io/ogham-mapping-project/index.ht
 3. [Design](#design)
 4. [Features](#features)
 5. [Technologies](#technologies)
-6. [Testing](#testing)
+6. [Testing](#testing) 
 7. [Deployment](#deployment)
-8. [Credits](#credits)
-9. [Further Learning](#further-learning)
+8. [Future Development](#future-development)
+9. [Credits](#credits)
 10. [Acknowledgements](#Acknowledgements)
 
 
@@ -95,13 +95,16 @@ The Corca Dhuibhne 3d models were created by volunteers, of which I was one, usi
 Keeping the pyramid of interface success, 'user - utility- usability', and my user story in mind, simplicity and ease of use were the most important design elements, when creating the wireframe and mock up. Keeping images to a minimum, with simple explanations of how to use the site, with a very deliberate colour scheme and simple fonts.
 
 _Wireframing:_
+
 I created a wireframe for this website using Balsamiq, but found the original design, using a bootstrap collapsible sidebar did not work well on mobile. The design only worked in landscape view on a mobile, and to me this meant it was not fully responsive. So I changed the layout to have a collapsible accordion bootstrap style beneath the map.
-PDF of <img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/wire-frame-mapping-project.pdf" alt="wireframe of mapping project">
+ - PDF of <img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/wire-frame-mapping-project.pdf" alt="wireframe of mapping project">
 
 <img src="ux/ogham-mock-up.jpg" height="300" alt="website mock-up">
-_Detailed mockup_
+
+_Detailed mockup:_
+
 After I had started the project, and realised the fault of the wireframe design, I edited my design using Canva, to create a more detailed mock up of the website. This enabled me to test the details such as fonts, imagery etc, in more detail.
-PDF of <img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/ogham-in-3d.pdf" alt="ogham mapping mock up">
+ - PDF of <img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/ogham-in-3d.pdf" alt="ogham mapping mock up">
 
 
 
@@ -114,7 +117,7 @@ PDF of <img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/
 
 
 #### Existing Features
- - *Javascript and DOM manipulation - using javascript and DOM manipulation to create a responsive and interactive website
+ - *Javascript and DOM manipulation* - using javascript and DOM manipulation to create a responsive and interactive website.
  - *Google Maps API* - incorporate a fully functioning Google Map with locations of ogham stones. Personalized infowindow with image and link to further information in the bootstrap accordion.
  - *Embedded iframes* - css styled iframes embedded online platform 'Sketchfab'
  - *Contact Form* - Simple contact form to connect to the project for information
@@ -183,14 +186,16 @@ I also used a variant of the model that was pre-loaded and user controlled to tr
  I used the Code Institute tutorial to build the contact form, using Bootstrap, HTML, CSS and EMail JS. The Javascript is stored in the sendEmail.js file.
 
 _Date Stamp:_
+
 So many websites fail to update their copyright notice in their footer. A small, but noticable factor when trying to validate the authority of a site. I decided to incorporate an automated javascript date. This javascript code is help in script tags in the bottom of the body, even though the date coding itself is in the footer
-        ```
-        var year = new Date().getFullYear().toString();
+        
+        ```var year = new Date().getFullYear().toString();
         document.getElementById("year").innerHTML = year;
         ```
 
 
 _About Page:_
+
 My wireframe did not contain an 'About Page', although I did want to build one. One of the reasons for this is because I have a lot of external links. Being a community project, and an archive, it is necessary to fully credit all organisations involved. Originally I had external links on the landing page for the Músaeum Chorca Dhuibhne, Dublin Institute for Advanced Studies and The Discovery Programme. I decided to remove these links from the landing page, as it is probably not good practice to put external links on the landing page. Instead I decided to remove those links to a 'Further Reading' section on the about page, and add a button to the landing page instead.
 
 
