@@ -265,8 +265,6 @@
      display: block;
      width: 100%;
 }
-
-
 /******************media query***************************/
  @media screen and (max-width: 767px) {
      .sidenav {
@@ -274,6 +272,7 @@
          padding: 15px;
     }
      .row.content {
-        height: auto;
+         height: auto;
     }
 }
+ 
