@@ -2,7 +2,7 @@
 
 <img src="ux/responsive-desing.png" height="300" title="Screenshot of website on different devices">
 
-The aim of this website is to explore digital archiving, and create a repository for a local community digital archaeology project. A group of volunteers, with the help of Dublin Institute of Advanced Studies and The Discovery Programme conducted research on ancient antiquities of the Dingle Peninsula, starting with starting with ogham stones. They gathered text, photos and created 3d scans of the stones, using Structure from Motion, a technique to create a 3-D structure of a scene from a set of 2-D images (photos). This website is the beginning of a digital archive of the research carried out.
+The aim of this website is to explore digital archiving, and create a repository for a local community digital archaeology project. A group of volunteers, with the help of Dublin Institute of Advanced Studies and The Discovery Programme conducted research on ancient antiquities of the Dingle Peninsula, starting with starting with ogham stones. They gathered text, photos and created 3d scans of the stones, using Structure from Motion, a technique to create a 3-D structure of a scene from a set of 2-D images. This website is the beginning of a digital archive of the research carried out.
 
 View deployed site here: https://orlabr.github.io/ogham-mapping-project/index.html
 
